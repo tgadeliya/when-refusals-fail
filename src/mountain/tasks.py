@@ -34,8 +34,8 @@ def agentharm_benign(
     detailed_behaviors: Optional[bool] = None,
     hint_included: Optional[bool] = None,
     n_irrelevant_tools: int = 0,
-    refusal_judge: str = "ogpt-4.1-nano-2025-04-14",
-    semantic_judge: str = "gpt-4.1-nano-2025-04-14",
+    refusal_judge: str = "openai/gpt-4.1-nano-2025-04-14",
+    semantic_judge: str = "openai/gpt-4.1-nano-2025-04-14",
     agent_kwargs: Optional[Dict[str, Any]] = None,
 ) -> Task:
     """
@@ -79,8 +79,8 @@ def agentharm(
     detailed_behaviors: Optional[bool] = None,
     hint_included: Optional[bool] = None,
     n_irrelevant_tools: int = 0,
-    refusal_judge: str = "gpt-4.1-nano-2025-04-14",
-    semantic_judge: str = "gpt-4.1-nano-2025-04-14",
+    refusal_judge: str = "openai/gpt-4.1-nano-2025-04-14",
+    semantic_judge: str = "openai/gpt-4.1-nano-2025-04-14",
     agent_kwargs: Optional[Dict[str, Any]] = None,
     chat_dataset: Optional[bool] = False,
 ) -> Task:
