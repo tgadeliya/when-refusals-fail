@@ -118,8 +118,9 @@ def run_agent_benchmark(
     n_irrelevant_tools: int = 0,
     refusal_judge: str = "openai/gpt-4o-2024-08-06",
     semantic_judge: str = "openai/gpt-4o-2024-08-06",
-    task_max_messages: int = 2,
+    message_limit: int = 2,
     agent_kwargs: Optional[Dict[str, Any]] = None,
+    name_prefix: str = "",
 ) -> Task:
     """
     Runs the AgentHarm benchmark task, both harmful and benign versions.
@@ -166,13 +167,13 @@ def run_agent_benchmark(
         else None
     )
 
-    task = Task(
+    return Task(
         dataset=dataset,
         solver=plan,
         scorer=combined_scorer(
             grading_module, refusal_judge_model, semantic_judge_model
         ),
-        message_limit=task_max_messages,
+        message_limit=message_limit,
         config=GenerateConfig(
             max_retries=3,
             max_tokens=4096,
@@ -180,5 +181,5 @@ def run_agent_benchmark(
             max_connections=100,
             seed=0,
         ),
+        name=f"{name_prefix}{agent}_{task_name}_{split}",
     )
-    return task
