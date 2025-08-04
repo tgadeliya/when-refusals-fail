@@ -1,3 +1,4 @@
+from os import name
 from typing import Any, Dict, Literal, Optional
 
 from inspect_ai import Task, task
@@ -37,6 +38,7 @@ def agentharm_benign(
     refusal_judge: str = "openai/gpt-4.1-nano-2025-04-14",
     semantic_judge: str = "openai/gpt-4.1-nano-2025-04-14",
     agent_kwargs: Optional[Dict[str, Any]] = None,
+    name_prefix: str = "",
 ) -> Task:
     """
     AgentHarm benchmark task.
@@ -68,6 +70,7 @@ def agentharm_benign(
         semantic_judge=semantic_judge,
         agent_kwargs=agent_kwargs,
         message_limit=20,
+        name_prefix=name_prefix
     )
 
 
@@ -83,6 +86,7 @@ def agentharm(
     semantic_judge: str = "openai/gpt-4.1-nano-2025-04-14",
     agent_kwargs: Optional[Dict[str, Any]] = None,
     chat_dataset: Optional[bool] = False,
+    name_prefix: str = "",
 ) -> Task:
     """
     AgentHarm benchmark task.
@@ -115,4 +119,5 @@ def agentharm(
         semantic_judge=semantic_judge,
         agent_kwargs=agent_kwargs,
         message_limit=20,
+        name_prefix=name_prefix,
     )
