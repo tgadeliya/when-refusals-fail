@@ -10,24 +10,24 @@ load_dotenv()
 
 
 
-@task
-def run_debug_agentharm() -> Task:
+@task()
+def run_debug_agentharm(padding_type: Literal["random"]|None = None, padding_token_length: int|None = None,) -> Task:
     return run_agent_benchmark(
         agent="default",
-        behavior_ids=[],
+        behavior_ids=["26-1"],
         task_name="harmful",
-        split="val",
+        split="test_public",
         hint_included=None,
         detailed_behaviors=None,
         refusal_judge="openai/gpt-4.1-nano-2025-04-14",
         semantic_judge="openai/gpt-4.1-nano-2025-04-14",
-        message_limit=1, # no output tokens
+        message_limit=20, # no output tokens
         name_prefix="debug_",
+        padding_type=None,
+        padding_token_length=None
     )
- 
 
-
-@task
+@task()
 def agentharm_benign(
     agent: str = "default",
     behavior_ids: list[str] = [],
@@ -39,6 +39,8 @@ def agentharm_benign(
     semantic_judge: str = "openai/gpt-4.1-nano-2025-04-14",
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
+    padding_type: Literal["random"]| None = None,
+    padding_token_length: int| None = None,
 ) -> Task:
     """
     AgentHarm benchmark task.
@@ -69,8 +71,10 @@ def agentharm_benign(
         refusal_judge=refusal_judge,
         semantic_judge=semantic_judge,
         agent_kwargs=agent_kwargs,
-        message_limit=20,
-        name_prefix=name_prefix
+        message_limit=40,
+        name_prefix=name_prefix,
+        padding_type=padding_type,
+        padding_token_length=padding_token_length
     )
 
 
@@ -118,6 +122,6 @@ def agentharm(
         refusal_judge=refusal_judge,
         semantic_judge=semantic_judge,
         agent_kwargs=agent_kwargs,
-        message_limit=20,
+        message_limit=40,
         name_prefix=name_prefix,
     )

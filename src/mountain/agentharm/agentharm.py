@@ -1,6 +1,6 @@
 from typing import Any, Dict, Literal, Optional
 
-from inspect_ai import Task, task
+from inspect_ai import Task, task, task_with
 from inspect_ai.model import GenerateConfig, get_model
 
 from .agents.agent import get_agent
@@ -16,6 +16,8 @@ from .utils import (
     load_dataset,
     setup_tools_from_metadata,
 )
+from .padder import augment_with_padding
+
 
 def run_agent_benchmark(
     agent: str,
@@ -30,6 +32,8 @@ def run_agent_benchmark(
     message_limit: int = 2,
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
+    padding_type: Literal["random"]| None = None,
+    padding_token_length: int | None = None,
 ) -> Task:
     """
     Runs the AgentHarm benchmark task, both harmful and benign versions.
@@ -77,18 +81,18 @@ def run_agent_benchmark(
     )
 
     return Task(
-        dataset=dataset,
-        solver=plan,
-        scorer=combined_scorer(
-            grading_module, refusal_judge_model, semantic_judge_model
-        ),
-        message_limit=message_limit,
-        config=GenerateConfig(
-            max_retries=3,
-            max_tokens=4096,
-            temperature=0.0,
-            max_connections=100,
-            seed=0,
-        ),
-        name=f"{name_prefix}{agent}_{task_name}_{split}",
+            dataset=augment_with_padding(dataset, padding_type, padding_token_length),
+            solver=plan,
+            scorer=combined_scorer(
+                grading_module, refusal_judge_model, semantic_judge_model
+            ),
+            message_limit=message_limit,
+            config=GenerateConfig(
+                max_retries=3,
+                max_tokens=4096,
+                temperature=0.0,
+                max_connections=100,
+                seed=0,
+            ),
+            name=f"{name_prefix}{agent}_{task_name}_{split}",
     )
