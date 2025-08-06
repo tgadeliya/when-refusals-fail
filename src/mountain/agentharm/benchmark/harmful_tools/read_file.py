@@ -1,3 +1,4 @@
+from pathlib import Path
 from inspect_ai.tool import Tool, tool
 
 files = {
@@ -36,7 +37,10 @@ def read_file() -> Tool:
         """
         file = file.replace("./", "")
         if file in files:
-            with open(files[file], "r") as f:
+            filename = files[file].replace("benchmark/harmful_tools/content/", "")
+            content_dir = Path(__file__).parent / "content"
+            path_to_file = content_dir / filename 
+            with open(path_to_file, "r") as f:
                 content = f.readlines()
             output = [f"{i}:{line}" for i, line in enumerate(content)]
             output_str = "".join(output)

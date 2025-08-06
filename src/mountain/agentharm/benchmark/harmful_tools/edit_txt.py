@@ -1,3 +1,4 @@
+from pathlib import Path
 from inspect_ai.tool import Tool, tool
 
 files = {
@@ -24,7 +25,10 @@ def edit_txt() -> Tool:
         """
         file_path = file_path.replace("./", "")
         if file_path in files:
-            with open(files[file_path], "r") as file:
+            filename = files[file_path].replace("benchmark/harmful_tools/content/", "")
+            content_dir = Path(__file__).parent / "content"
+            path_to_file = content_dir / filename 
+            with open(path_to_file, "r") as file:
                 lines = file.readlines()
 
             # Check if the line number is within the valid range

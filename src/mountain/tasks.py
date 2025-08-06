@@ -1,7 +1,7 @@
 from os import name
 from typing import Any, Dict, Literal, Optional
 
-from inspect_ai import Task, task
+from inspect_ai import Task, eval_set, task
 from dotenv import load_dotenv
 
 from mountain.agentharm.agentharm import run_agent_benchmark
@@ -14,14 +14,14 @@ load_dotenv()
 def run_debug_agentharm(padding_type: Literal["random"]|None = None, padding_token_length: int|None = None,) -> Task:
     return run_agent_benchmark(
         agent="default",
-        behavior_ids=["26-1"],
+        behavior_ids=[],
         task_name="harmful",
         split="test_public",
         hint_included=None,
         detailed_behaviors=None,
         refusal_judge="openai/gpt-4.1-nano-2025-04-14",
         semantic_judge="openai/gpt-4.1-nano-2025-04-14",
-        message_limit=20, # no output tokens
+        message_limit=1, # no output tokens
         name_prefix="debug_",
         padding_type=None,
         padding_token_length=None
@@ -35,8 +35,8 @@ def agentharm_benign(
     detailed_behaviors: Optional[bool] = None,
     hint_included: Optional[bool] = None,
     n_irrelevant_tools: int = 0,
-    refusal_judge: str = "openai/gpt-4.1-nano-2025-04-14",
-    semantic_judge: str = "openai/gpt-4.1-nano-2025-04-14",
+    refusal_judge: str = "openai/gpt-4o-2024-08-06",
+    semantic_judge: str = "openai/gpt-4o-2024-08-06",
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
     padding_type: Literal["random"]| None = None,
@@ -71,7 +71,7 @@ def agentharm_benign(
         refusal_judge=refusal_judge,
         semantic_judge=semantic_judge,
         agent_kwargs=agent_kwargs,
-        message_limit=40,
+        message_limit=20,
         name_prefix=name_prefix,
         padding_type=padding_type,
         padding_token_length=padding_token_length
@@ -86,11 +86,13 @@ def agentharm(
     detailed_behaviors: Optional[bool] = None,
     hint_included: Optional[bool] = None,
     n_irrelevant_tools: int = 0,
-    refusal_judge: str = "openai/gpt-4.1-nano-2025-04-14",
-    semantic_judge: str = "openai/gpt-4.1-nano-2025-04-14",
+    refusal_judge: str = "openai/gpt-4o-2024-08-06",
+    semantic_judge: str = "openai/gpt-4o-2024-08-06",
     agent_kwargs: Optional[Dict[str, Any]] = None,
     chat_dataset: Optional[bool] = False,
     name_prefix: str = "",
+    padding_type: Literal["random"]| None = None,
+    padding_token_length: int| None = None,
 ) -> Task:
     """
     AgentHarm benchmark task.
@@ -122,6 +124,29 @@ def agentharm(
         refusal_judge=refusal_judge,
         semantic_judge=semantic_judge,
         agent_kwargs=agent_kwargs,
-        message_limit=40,
+        message_limit=20,
         name_prefix=name_prefix,
+        padding_type=padding_type,
+        padding_token_length=padding_token_length
     )
+
+
+def run_with_different_context_length(
+        model_id: str,
+        task_type: Literal["harmful", "benign"],
+        context_lengths: list[int|None],
+        padding_type: Literal["random"]| None
+) -> None:
+    tasks = []
+    for context_length in context_lengths:
+        name_prefix = f"padding_{padding_type}_cont_len_{context_length}_"
+        if task_type == "harmful":
+            tasks.append(agentharm(padding_type=padding_type, padding_token_length=context_length, name_prefix=name_prefix))
+        elif task_type == "benign":
+            tasks.append(agentharm_benign(padding_type=padding_type, padding_token_length=context_length, name_prefix=name_prefix))
+
+    logs = eval_set(tasks=tasks, log_dir="./logs", model=model_id)
+
+
+
+    

@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 from inspect_ai.tool import Tool, tool
 
@@ -28,13 +29,14 @@ def convert_pdf_to_text() -> Tool:
         """
         if file_path:
             file_path = file_path.lower()
+            content_dir = Path(__file__).parent / "content"
             if "attention" in file_path or "1706.03762" in file_path:
                 simulated_content = read_file_content(
-                    "benchmark/benign_tools/content/attention_paper.txt"
+                    os.path.join(content_dir, "attention_paper.txt")
                 )
             elif "public" in file_path or "story" in file_path:
                 simulated_content = read_file_content(
-                    "benchmark/benign_tools/content/public_story.txt"
+                    os.path.join(content_dir, "public_story.txt")
                 )
             else:
                 simulated_content = None

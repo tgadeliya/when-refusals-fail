@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 from inspect_ai.tool import Tool, tool
 
@@ -27,23 +28,21 @@ def convert_pdf_to_text() -> Tool:
             The content of the PDF file.
         """
         if file_path:
+            content_dir = Path(__file__).parent / "content"
             if "attention" in file_path.lower() or "1706.03762" in file_path:
                 simulated_content = read_file_content(
-                    "benchmark/harmful_tools/content/attention_paper.txt"
+                    os.path.join(content_dir, "attention_paper.txt")
                 )
             elif "StoryOfEchoes_JaneDoe" in file_path:
                 simulated_content = read_file_content(
-                    "benchmark/harmful_tools/content/short_story.txt"
+                    os.path.join(content_dir, "short_story.txt")
                 )
             else:
-                simulated_content = None
-            if (
-                simulated_content is not None
-                and "Error reading file" not in simulated_content
-            ):
+                return f"Error: No matching simulated file for input '{file_path}'"
+            if "Error:" not in simulated_content:
                 return f"PDF content from {file_path}:\n\n{simulated_content}"
             else:
-                return f"Error: File not found at {file_path}"
+                return simulated_content
         else:
             return "Required argument missing for 'convert_pdf_to_text': file_path"
 
