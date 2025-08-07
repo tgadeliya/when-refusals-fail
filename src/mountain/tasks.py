@@ -131,8 +131,8 @@ def agentharm(
     )
 
 
-def run_with_different_context_length(
-        model_id: str,
+def run_eval_set_with_different_context_length(
+        model_id: str|list[str],
         task_type: Literal["harmful", "benign"],
         context_lengths: list[int|None],
         padding_type: Literal["random"]| None
@@ -145,8 +145,14 @@ def run_with_different_context_length(
         elif task_type == "benign":
             tasks.append(agentharm_benign(padding_type=padding_type, padding_token_length=context_length, name_prefix=name_prefix))
 
-    logs = eval_set(tasks=tasks, log_dir="./logs", model=model_id)
+    logs = eval_set(tasks=tasks, log_dir="./logs_set/context_length_experiments_nano_100000", model=model_id)
 
 
 
-    
+if __name__ == "__main__":
+    model_ids = ["openai/gpt-4.1-nano-2025-04-14"]
+    context_lengths = [100_000]
+    run_eval_set_with_different_context_length(
+        model_id=model_ids, task_type="benign", # type: ignore
+        context_lengths=context_lengths, padding_type="random"
+    )

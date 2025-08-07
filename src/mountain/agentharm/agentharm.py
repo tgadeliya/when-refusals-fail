@@ -30,6 +30,7 @@ def run_agent_benchmark(
     refusal_judge: str = "openai/gpt-4o-2024-08-06",
     semantic_judge: str = "openai/gpt-4o-2024-08-06",
     message_limit: int = 2,
+    dataset_seed: int = 0,
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
     padding_type: Literal["random"]| None = None,
@@ -81,7 +82,7 @@ def run_agent_benchmark(
     )
 
     return Task(
-            dataset=augment_with_padding(dataset, padding_type, padding_token_length),
+            dataset=augment_with_padding(dataset, padding_type, padding_token_length, seed=dataset_seed),
             solver=plan,
             scorer=combined_scorer(
                 grading_module, refusal_judge_model, semantic_judge_model
