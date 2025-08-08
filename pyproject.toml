@@ -10,11 +10,16 @@ readme = "README.md"
 requires-python = ">=3.13.3"
 dependencies = [
     "datasets>=3.2.0,<4.0.0",
-    "inspect-ai>=0.3.117",
+    "inspect-ai>=0.3.120",
     "ipykernel>=6.30.0",
-    "openai>=1.98.0",
+    "openai>=1.99.3",
     "python-dotenv>=1.1.1",
     "seaborn>=0.13.2",
     "tiktoken>=0.9.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.12.8",
 ]
 
