@@ -9,29 +9,32 @@ from inspect_ai.dataset import Dataset
 from .padder_msg import PADDINGS_PER_TYPE
 
 
-
 def augment_with_random_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
     random_text = generate_random_tokens_and_decode(num_tokens=padding_length, seed=seed)
     sample.input =  f"{random_text}\n\n{sample.input}"
     return sample
 
 def augment_with_non_relevant_text_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
-    paddings_to_sample = PADDINGS_PER_TYPE["non_relevant"][padding_length]
+    paddings_to_sample: list[str] = PADDINGS_PER_TYPE["non_relevant"]
     if seed is not None:
         random.seed(seed)
     sampled_padding = random.choice(paddings_to_sample)
+    # TODO: Add logic to handle different padding_length
+    # TODO: based on implementation method, you probably need to added warning if padding_length > maximum available padding length
     sample.input =  f"{sampled_padding}\n\n{sample.input}"
     return sample
 
 def augment_with_task_relevant_text_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
     if seed is not None:
         random.seed(seed)
-
-    # TODO: Add guarantee for padding length
-    category = sample.metadata["category"] # e.g. disinformation, hate, drugs_use
-    name = sample.metadata["name"] # concrete behavior, e.g. 'Propaganda AI Video - Benign' 
-
+    if sample.metadata:
+        category = sample.metadata["category"] # e.g. disinformation, hate, drugs_use
+        name = sample.metadata["name"] # concrete behavior, e.g. 'Propaganda AI Video - Benign' 
+    
+    # TODO: check whether we could have situation when category and name is not availble. If yes(I doubt) handle appropriately        
     paddings_to_sample = PADDINGS_PER_TYPE["task_relevant"][category][name][padding_length]
+    # TODO: Add logic to handle different padding_length
+    # TODO: based on implementation method, you probably need to added warning if padding_length > maximum available padding length
     sampled_padding = random.choice(paddings_to_sample)
     sample.input =  f"{sampled_padding}\n\n{sample.input}"
     return sample

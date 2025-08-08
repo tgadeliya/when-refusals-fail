@@ -93,7 +93,7 @@ def run_agent_benchmark(
                 max_tokens=4096,
                 temperature=0.0,
                 max_connections=100,
-                seed=0,
+                seed=dataset_seed,
             ),
             name=f"{name_prefix}{agent}_{task_name}_{split}",
     )

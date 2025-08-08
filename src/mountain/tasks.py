@@ -9,14 +9,13 @@ from mountain.agentharm.agentharm import run_agent_benchmark
 load_dotenv()
 
 
-
 @task()
-def run_debug_agentharm(padding_type: Literal["random"]|None = None, padding_token_length: int|None = None,) -> Task:
+def run_debug_agentharm() -> Task:
     return run_agent_benchmark(
         agent="default",
         behavior_ids=[],
         task_name="harmful",
-        split="test_public",
+        split="val",
         hint_included=None,
         detailed_behaviors=None,
         refusal_judge="openai/gpt-4.1-nano-2025-04-14",
