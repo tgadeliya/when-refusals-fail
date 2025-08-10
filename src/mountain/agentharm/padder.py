@@ -69,7 +69,7 @@ def generate_random_tokens_and_decode(num_tokens: int, model="gpt-4o-mini", seed
 
 
 def augment_with_padding(dataset: Dataset, padding_type: Literal["random"]| None, padding_length: int | None, seed: int = 0) -> Dataset:
-    if padding_type is None or padding_length is None:
+    if padding_type is None or padding_length is None or padding_length == 0:
         return dataset
     
     aug_func = PADDING_TYPE_TO_FUNC[padding_type]    

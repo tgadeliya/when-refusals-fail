@@ -1,7 +1,6 @@
-from os import name
 from typing import Any, Dict, Literal, Optional
 
-from inspect_ai import Task, eval_set, task
+from inspect_ai import Task, task
 from dotenv import load_dotenv
 
 from mountain.agentharm.agentharm import run_agent_benchmark
@@ -14,10 +13,10 @@ def run_debug_agentharm() -> Task:
     return run_agent_benchmark(
         agent="default",
         behavior_ids=[],
-        task_name="harmful",
+        task_name="benign",
         split="val",
-        hint_included=None,
-        detailed_behaviors=None,
+        hint_included=False,
+        detailed_behaviors=False,
         refusal_judge="openai/gpt-4.1-nano-2025-04-14",
         semantic_judge="openai/gpt-4.1-nano-2025-04-14",
         message_limit=1, # no output tokens
@@ -38,6 +37,7 @@ def agentharm_benign(
     semantic_judge: str = "openai/gpt-4o-2024-08-06",
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
+    dataset_seed: int = 0,
     padding_type: Literal["random"]| None = None,
     padding_token_length: int| None = None,
 ) -> Task:
@@ -72,6 +72,7 @@ def agentharm_benign(
         agent_kwargs=agent_kwargs,
         message_limit=20,
         name_prefix=name_prefix,
+        dataset_seed=dataset_seed,
         padding_type=padding_type,
         padding_token_length=padding_token_length
     )
@@ -90,6 +91,7 @@ def agentharm(
     agent_kwargs: Optional[Dict[str, Any]] = None,
     chat_dataset: Optional[bool] = False,
     name_prefix: str = "",
+    dataset_seed: int = 0,
     padding_type: Literal["random"]| None = None,
     padding_token_length: int| None = None,
 ) -> Task:
@@ -125,34 +127,7 @@ def agentharm(
         agent_kwargs=agent_kwargs,
         message_limit=20,
         name_prefix=name_prefix,
+        dataset_seed = dataset_seed,
         padding_type=padding_type,
         padding_token_length=padding_token_length
     )
-
-
-def run_eval_set_with_different_context_length(
-        model_id: str|list[str],
-        task_type: Literal["harmful", "benign"],
-        context_lengths: list[int|None],
-        padding_type: Literal["random"]| None,
-        log_subdir_name: str
-) -> None:
-    tasks = []
-    for context_length in context_lengths:
-        name_prefix = f"padding_{padding_type}_cont_len_{context_length}_"
-        if task_type == "harmful":
-            tasks.append(agentharm(padding_type=padding_type, padding_token_length=context_length, name_prefix=name_prefix))
-        elif task_type == "benign":
-            tasks.append(agentharm_benign(padding_type=padding_type, padding_token_length=context_length, name_prefix=name_prefix))
-
-    logs = eval_set(tasks=tasks, log_dir=log_subdir_name, model=model_id)
-
-
-
-# if __name__ == "__main__":
-#     model_ids = ["openai/gpt-4.1-nano-2025-04-14"]
-#     context_lengths = [100_000]
-#     run_eval_set_with_different_context_length(
-#         model_id=model_ids, task_type="benign", # type: ignore
-#         context_lengths=context_lengths, padding_type="random"
-#     )
