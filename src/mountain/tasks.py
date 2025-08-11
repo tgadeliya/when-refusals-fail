@@ -19,7 +19,7 @@ def run_debug_agentharm() -> Task:
         detailed_behaviors=False,
         refusal_judge="openai/gpt-4.1-nano-2025-04-14",
         semantic_judge="openai/gpt-4.1-nano-2025-04-14",
-        message_limit=1, # no output tokens
+        message_limit=5,
         name_prefix="debug_",
         padding_type=None,
         padding_token_length=None

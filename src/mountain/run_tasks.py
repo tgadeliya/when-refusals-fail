@@ -8,7 +8,6 @@ from mountain.tasks import agentharm, agentharm_benign
 
 load_dotenv()
 
-
 def run_eval_set_with_different_context_length(
         model_id: str,
         task_type: Literal["harmful", "benign"],
@@ -29,10 +28,9 @@ def run_eval_set_with_different_context_length(
     return logs
 
 
-
 def eval_gpt41_nano_random_all_contexts_val_subset_benign():
     model_id="openai/gpt-4.1-nano-2025-04-14"
-    context_lengths=[0, 1000, 10_000, 50_000, 100_000, 250_000, 500_000, 990_000]
+    context_lengths=[0, 1000, 10_000, 50_000, 100_000, 250_000]
     padding_type="random" 
 
     tasks = []
@@ -45,11 +43,36 @@ def eval_gpt41_nano_random_all_contexts_val_subset_benign():
         )
         tasks.append(task)
 
-
     eval_set(tasks=tasks, log_dir= "logs/nano_all_contexts_benign" , model=model_id, retry_on_error=3)
 
+def eval_gpt41_nano_random_all_contexts_val_subset_harmful():
+    model_id="openai/gpt-4.1-nano-2025-04-14"
+    context_lengths=[250_000]
+    padding_type="random" 
 
-def main():
+    tasks = []
+    for context_length in context_lengths:
+        model_id_prefix = model_id.split("/")[1][:-11]
+        name_prefix = f"{model_id_prefix}_{padding_type}_{context_length}_val_subset_"
+        task = agentharm(
+            padding_type=padding_type,padding_token_length=context_length, name_prefix=name_prefix,
+            hint_included=False, split="val", detailed_behaviors=False
+        )
+        tasks.append(task)
+
+
+    eval_set(
+        tasks=tasks, log_dir= "logs/nano_all_contexts_harmful_long" , model=model_id,
+        retry_on_error=1,
+        max_connections=1,
+        max_samples=1,
+        max_sandboxes=1,
+        max_subprocesses=1,
+        timeout=60,
+    )
+
+
+if __name__ == "__main__":
     available_tasks = {
         name: obj
         for name, obj in globals().items()
@@ -63,6 +86,3 @@ def main():
     args = parser.parse_args()
     task_function = available_tasks[args.task_name]
     task_function()
-
-if __name__ == "__main__":
-    main()
