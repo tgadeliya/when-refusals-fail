@@ -1,4 +1,9 @@
-.venv
-.vscode
-.env
-src
+# Ignore everything
+*
+
+# Except files with logs and README.md with instructions
+!README.md
+!index.html
+!logs/
+!.gitignore
+!.gitattributes
