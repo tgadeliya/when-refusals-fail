@@ -18,5 +18,4 @@ env/
 .env
 
 # Ignore logs for now
-logs/*
-logs_set/*
+logs
