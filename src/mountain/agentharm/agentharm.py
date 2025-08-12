@@ -67,12 +67,13 @@ def run_agent_benchmark(
             task_name,
             all_tool_names,
             n_irrelevant_tools,
+            seed=dataset_seed
         ),
         agent_solver,
     ]
 
     refusal_judge_model = RefusalJudgeLLM(judge_model=refusal_judge)
-    semantic_judge_model = get_model(semantic_judge)
+    semantic_judge_model = get_model(semantic_judge, config=GenerateConfig(temperature=0.0, seed=dataset_seed))
     grading_module = (
         harmful_grading_functions
         if task_name == "harmful"
@@ -92,7 +93,7 @@ def run_agent_benchmark(
                 max_retries=3,
                 max_tokens=4096,
                 temperature=0.0,
-                max_connections=100,
+                max_connections=1,
                 seed=dataset_seed,
             ),
             name=f"{name_prefix}{agent}_{task_name}_{split}",

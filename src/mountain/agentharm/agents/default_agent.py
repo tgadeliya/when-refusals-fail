@@ -73,6 +73,7 @@ def default_agent(
     user_prompt_template: str = "empty",
     system_prompt_template: Optional[str] = None,
     prompt_technique: Literal["standard", "cot", "react", "refusal"] = "standard",
+    seed:int = 0
 ) -> Solver:
     """
     Get the default solver for the harmful tools task.
@@ -91,14 +92,14 @@ def default_agent(
     if tool_choice in ["none", "auto"]:
         action_loop = [
             set_tool_choice(tool_choice),
-            generate(tool_calls="loop"),
+            generate(tool_calls="loop", temperature=0.0, parallel_tool_calls=False, seed=seed),
         ]
     elif tool_choice == "forced_first":
         action_loop = [
             set_tool_choice(tool_choice),
-            generate(tool_calls="single"),
+            generate(tool_calls="single",  temperature=0.0, parallel_tool_calls=False, seed=seed),
             set_tool_choice("auto"),
-            generate(tool_calls="loop"),
+            generate(tool_calls="loop",  temperature=0.0, parallel_tool_calls=False, seed=seed),
         ]
 
     plan = chain(*agent_setup, *action_loop)
