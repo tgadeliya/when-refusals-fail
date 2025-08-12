@@ -11,7 +11,7 @@
 - `logs_raw` - basic logs used for `logs_gh_pages` creation
 
 
-# How to add new logs?
+# How to add new logs
 0. Instal [git lfs](https://git-lfs.com)
 
 1. Put files inside `logs_raw`. If necessary create new subdirectory with logs
@@ -20,3 +20,4 @@
     ```
     inspect view bundle --log-dir logs_raw --output-dir logs_gh_pages --overwrite
     ```
+3. Add commit and push changes to github
