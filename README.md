@@ -4,8 +4,19 @@
 
 - .gitignore ignores everything besides logs directory and relevant files for serving logs
 - Some logs could be very large, so `git lfs` is used
+- Use subdirectories in `logs_raw` for  
+
+# Logs description
+- `logs_gh_pages` - bundled version of logs suitable to serve via github pages
+- `logs_raw` - basic logs used for `logs_gh_pages` creation
+
 
 # How to add new logs?
+0. Instal [git lfs](https://git-lfs.com)
 
-0. Instal [git lfs](https://git-lfs.com). I have already provided initial setup, so just normal git usage for .eval files
-1. 
+1. Put files inside `logs_raw`. If necessary create new subdirectory with logs
+
+2. Run following command to overwrite existing logs in `logs_gh_pages` and add new logs
+    ```
+    inspect view bundle --log-dir logs_raw --output-dir logs_gh_pages --overwrite
+    ```

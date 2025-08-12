@@ -1,9 +1,14 @@
 # Ignore everything
 *
-
-# Except files with logs and README.md with instructions
+# Except files
 !README.md
-!index.html
-!logs/
 !.gitignore
 !.gitattributes
+
+# Unignore the directories themselves
+!logs_raw/
+!logs_gh_pages/
+
+# Unignore everything inside them
+!logs_raw/**
+!logs_gh_pages/**
