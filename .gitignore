@@ -17,5 +17,5 @@ env/
 # Secrets
 .env
 
-# Ignore logs for now
+# Ignore logs
 logs
