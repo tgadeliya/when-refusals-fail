@@ -1,6 +1,6 @@
 from typing import Any, Dict, Literal, Optional
 
-from inspect_ai import Task, task, task_with
+from inspect_ai import Task
 from inspect_ai.model import GenerateConfig, get_model
 
 from .agents.agent import get_agent
@@ -30,11 +30,12 @@ def run_agent_benchmark(
     refusal_judge: str = "openai/gpt-4o-2024-08-06",
     semantic_judge: str = "openai/gpt-4o-2024-08-06",
     message_limit: int = 2,
-    dataset_seed: int = 0,
+    random_seed: int = 0,
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
     padding_type: Literal["random"]| None = None,
     padding_token_length: int | None = None,
+    padding_kwargs: dict = {}
 ) -> Task:
     """
     Runs the AgentHarm benchmark task, both harmful and benign versions.
@@ -67,13 +68,13 @@ def run_agent_benchmark(
             task_name,
             all_tool_names,
             n_irrelevant_tools,
-            seed=dataset_seed
+            seed=random_seed
         ),
         agent_solver,
     ]
 
     refusal_judge_model = RefusalJudgeLLM(judge_model=refusal_judge)
-    semantic_judge_model = get_model(semantic_judge, config=GenerateConfig(temperature=0.0, seed=dataset_seed))
+    semantic_judge_model = get_model(semantic_judge, config=GenerateConfig(temperature=0.0, seed=random_seed))
     grading_module = (
         harmful_grading_functions
         if task_name == "harmful"
@@ -83,7 +84,7 @@ def run_agent_benchmark(
     )
 
     return Task(
-            dataset=augment_with_padding(dataset, padding_type, padding_token_length, seed=dataset_seed),
+            dataset=augment_with_padding(dataset, padding_type, padding_token_length, random_seed=random_seed, **padding_kwargs),
             solver=plan,
             scorer=combined_scorer(
                 grading_module, refusal_judge_model, semantic_judge_model
@@ -94,7 +95,7 @@ def run_agent_benchmark(
                 max_tokens=4096,
                 temperature=0.0,
                 max_connections=1,
-                seed=dataset_seed,
+                seed=random_seed,
             ),
             name=f"{name_prefix}{agent}_{task_name}_{split}",
     )
