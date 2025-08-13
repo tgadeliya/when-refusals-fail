@@ -48,6 +48,24 @@ def eval_gpt41_nano_random_all_contexts_val_subset_benign():
 
     eval_set(tasks=tasks, log_dir= "logs/nano_all_contexts_benign" , model=model_id, retry_on_error=3)
 
+def eval_gpt_random_eng_padding():
+    model_id = "openai/gpt-4.1-nano-2025-04-14"
+    context_lengths = [0, 100, 1000, 10_000]
+    padding_type = "random_eng"
+    
+    tasks = []
+    for context_length in context_lengths:
+        model_id_prefix = model_id.split("/")[1][:-11]
+        name_prefix = f"{model_id_prefix}_{padding_type}_{context_length}_val_subset_"
+        task = agentharm(
+            padding_type=padding_type,padding_token_length=context_length, name_prefix=name_prefix,
+            hint_included=False, split="val", detailed_behaviors=False
+        )
+        tasks.append(task)
+
+
+    eval_set(tasks=tasks, log_dir= "logs/nano_all_contexts_temp2" , model=model_id, retry_on_error=3)
+    
 
 def main():
     available_tasks = {

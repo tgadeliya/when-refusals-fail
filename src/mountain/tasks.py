@@ -2,6 +2,7 @@ from typing import Any, Dict, Literal, Optional
 
 from inspect_ai import Task, task
 from dotenv import load_dotenv
+from inspect_ai import eval_set, eval
 
 from mountain.agentharm.agentharm import run_agent_benchmark
 
@@ -19,7 +20,7 @@ def run_debug_agentharm() -> Task:
         detailed_behaviors=False,
         refusal_judge="openai/gpt-4.1-nano-2025-04-14",
         semantic_judge="openai/gpt-4.1-nano-2025-04-14",
-        message_limit=1, # no output tokens
+        message_limit=20, # no output tokens
         name_prefix="debug_",
         padding_type=None,
         padding_token_length=None
@@ -131,3 +132,8 @@ def agentharm(
         padding_type=padding_type,
         padding_token_length=padding_token_length
     )
+    
+if __name__ == "__main__":
+    model_id = "openai/gpt-4o-mini-2024-07-18"
+    tasks = [run_debug_agentharm()]
+    logs = eval(tasks=tasks, log_dir="./logs" , model=model_id)

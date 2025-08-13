@@ -1,0 +1,65 @@
+padding_texts = {
+    "100": """I stand silent yet speak volumes, timeless but marked by hours. Kings and beggars alike seek me, though I hold no gold. My face shifts, yet I never change. The more you take, the more I grow. I whisper secrets to those who listen, yet I have no voice. Look for me where shadows stretch and memories linger.""",
+    "1000": """
+    The Labyrinth of Whispers
+    (A Thousand-Word Enigma)
+
+    Prologue:
+    Deep within the Obsidian Library, where books breathe and ink flows like rivers, lies a tome bound in silver and shadow. Its title has long faded, but those who dare open it find not words—but a labyrinth of riddles. Legend says the one who solves them all will uncover the Secret of the Last Echo.
+
+    You have found this book. The first page bears only this inscription:
+
+    To walk my path, you must see with closed eyes, hear the unsaid, and speak in silence. Begin where time ends and endings begin.
+
+    The First Gate: The Mirror of Letters
+    A polished slab of black glass rests before you, etched with these words:
+
+    I am both sword and shield, a single stroke divides me.
+    I begin in light, yet dwell in darkness.
+    Kings fear me, poets revere me, and children wield me without knowing.
+    Remove my heart, and I become my own opposite.
+
+    The Second Gate: The Hourglass Bridge
+    Beyond the mirror, you stand before an hourglass where sand flows upward. Carved into its frame is a poem:
+
+    I dance on the edge of a blade,
+    Neither alive nor dead, yet I fade.
+    I am the child of the moon and the sun,
+    Born in a moment, forever undone.
+    Seek me where shadows kiss the light,
+    I vanish when named.
+
+    The Third Gate: The Chamber of Echoes
+    The walls whisper in fragments:
+
+    I speak without lips, hear without ears.
+    I have no body, but I rise with fear.
+    Rich men ignore me, poor men keep me,
+    Scholars chase me, but fools teach me.
+    I am nothing, yet I weigh more than stone.
+
+    The Fourth Gate: The Chessboard of Fate
+    A chessboard lies before you, but the pieces are letters, not kings or queens. The board reads:
+
+    White moves first, but Black speaks last.
+    The first of beginnings, the end of the past.
+    Take eight from eight, and eight remains,
+    Rearrange my name—the answer sustains.
+
+    The Fifth Gate: The Fountain of Forgotten Questions
+    A pool of liquid silver holds floating words that dissolve when touched. Only one question remains:
+
+    I am always hungry, I must always be fed.
+    The finger I touch will soon turn red.
+
+    The Final Challenge: The Last Echo
+    You stand before a door with no handle, inscribed:
+
+    I am the beginning of eternity,
+    The end of time and space,
+    The start of every end,
+    And the end of every place.
+
+    Epilogue:
+    If you have solved all six gates, the Obsidian Library reveals its greatest treasure—not gold, but the answer to a question you have not yet asked.""",
+    }

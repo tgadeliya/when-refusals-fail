@@ -56,6 +56,7 @@ def run_agent_benchmark(
             - system_prompt_template (str): Name of system prompt in `prompts.py`. Default is None.
             - prompt_technique (Literal['standard', 'cot', 'react', 'refusal']): Prompting technique to apply to the system prompt. Default is 'standard'.
     """
+    
     dataset = load_dataset(task_name, split)
     dataset = filter_dataset(dataset, behavior_ids, detailed_behaviors, hint_included)
     all_tool_names = get_benchmark_tools(task_name) if task_name != "chat" else []
