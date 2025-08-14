@@ -33,7 +33,7 @@ def run_agent_benchmark(
     random_seed: int = 0,
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
-    padding_type: Literal["random"]| None = None,
+    padding_type: Literal["random", "multi_task"]| None = None,
     padding_token_length: int | None = None,
     padding_kwargs: dict = {}
 ) -> Task:
@@ -66,6 +66,9 @@ def run_agent_benchmark(
     else:
         agent_kwargs["random_seed"] = random_seed
 
+    if padding_kwargs is None:
+        padding_kwargs = {}
+
     agent_solver = get_agent(agent=agent,**agent_kwargs if agent_kwargs else {})
 
     plan = [
@@ -89,7 +92,7 @@ def run_agent_benchmark(
     )
 
     return Task(
-            dataset=augment_with_padding(dataset, padding_type, padding_token_length, random_seed=random_seed, **padding_kwargs),
+            dataset=augment_with_padding(dataset, padding_type, padding_token_length, random_seed=random_seed, padding_kwargs=padding_kwargs),
             solver=plan,
             scorer=combined_scorer(
                 grading_module, refusal_judge_model, semantic_judge_model
@@ -99,7 +102,7 @@ def run_agent_benchmark(
                 max_retries=3,
                 max_tokens=4096,
                 temperature=0.0,
-                max_connections=5,
+                max_connections=10,
                 seed=random_seed,
             ),
             name=f"{name_prefix}{agent}_{task_name}_{split}",

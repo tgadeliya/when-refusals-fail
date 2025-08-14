@@ -62,8 +62,8 @@ def augment_with_task_relevant_text_padding(
 
 def augment_with_multi_task_padding(
     sample: Sample,
-    task_type: Literal["benign", "harmful", "mix"],
     padding_length: int,
+    task_type: Literal["benign", "harmful", "mix"] = "benign",
     use_sample_behavior: bool = False,
     use_metadata: bool = False,
     random_seed: int = 0,
@@ -76,7 +76,7 @@ def augment_with_multi_task_padding(
     - use_sample_behavior - sample only tasks with similar behavior and category
     - use_metadata - sample only task with specified `hint_included` value and `detailed_prompt`
     """
-    tasks = pd.read_json("paddings/multi_task.json")
+    tasks = pd.read_json(Path(__file__).parent / "paddings/multi_task.json")
     if use_sample_behavior and sample.metadata:
         category = sample.metadata["category"]  # e.g. disinformation, hate, drugs_use
         # concrete behavior, e.g. 'Propaganda AI Video - Benign'
@@ -96,16 +96,16 @@ def augment_with_multi_task_padding(
             else d[d["detailed_prompt"] == detailed_prompt]
         )
 
-        if task_type != "mix":
-            tasks = tasks.pipe(
-                lambda d: d[d["task_type"] == task_type]
-        )
+    if task_type != "mix":
+        tasks = tasks.pipe(
+            lambda d: d[d["task_type"] == task_type]
+    )
 
 
     sampled_tasks = tasks["task_description"].sample(padding_length, random_state=random_seed).to_list()
     # TODO: Add `Task #` prefix
-    sampled_tasks = "\n".join(sampled_tasks)
-    sample.input = f"{sampled_tasks}\n\n{sample.input}"
+    sampled_tasks = "\n\n".join(sampled_tasks)
+    sample.input = f"{sampled_tasks}\n\n\n{sample.input}"
     return sample
 
 
@@ -161,8 +161,9 @@ def generate_random_tokens_and_decode(num_tokens: int, model="gpt-4o-mini", seed
 
 def augment_with_padding(
     dataset: Dataset,
-    padding_type: Literal["random"] | None,
+    padding_type: Literal["random", "multi_task"] | None,
     padding_length: int | None,
+    padding_kwargs: dict = {},
     random_seed: int = 0,
 ) -> Dataset:
     if padding_type is None or padding_length is None or padding_length == 0:
@@ -171,5 +172,5 @@ def augment_with_padding(
     aug_func = PADDING_TYPE_TO_FUNC[padding_type]
     aug_dataset = []
     for sample in dataset:
-        aug_dataset.append(aug_func(sample, padding_length, seed=random_seed))
+        aug_dataset.append(aug_func(sample, padding_length=padding_length,random_seed=random_seed, **padding_kwargs))
     return MemoryDataset(aug_dataset)

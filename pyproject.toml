@@ -24,3 +24,6 @@ dev = [
     "ruff>=0.12.8",
 ]
 
+[project.entry-points.inspect_ai]
+evals = "mountain._registry"
+
