@@ -9,6 +9,7 @@ description = "A library for evaluating long-context capabilities and safety for
 readme = "README.md"
 requires-python = ">=3.13.3"
 dependencies = [
+    "anthropic>=0.64.0",
     "datasets>=3.2.0,<4.0.0",
     "inspect-ai>=0.3.120",
     "ipykernel>=6.30.0",

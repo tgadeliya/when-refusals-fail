@@ -15,18 +15,27 @@ def augment_with_random_padding(sample: Sample, padding_length: int, seed: int =
     sample.input =  f"{random_text}\n\n{sample.input}"
     return sample
 
-# -- Adding random padding but in English
-def augment_with_random_eng_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
+# -- Adding irrelevant padding in English
+def augment_with_irrelevant_eng_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
     if padding_length == 0:
-        random_text = ""
+        padding_text = ""
     if padding_length == 100:
-        random_text = padding_texts["100"]
+        padding_text = padding_texts["100"]
     if padding_length == 1000:
-        random_text = padding_texts["1000"]
+        padding_text = padding_texts["1000"]
     if padding_length == 10000:
-        random_text = padding_texts["1000"] * 10
-        
-    sample.input = f"{random_text}\n\n{sample.input}"
+        padding_text = padding_texts["10_000"]
+    if padding_length == 50000:
+        padding_text = padding_texts["50_000"]
+    if padding_length == 100000:
+        padding_text = padding_texts["100_000"]
+    if padding_length == 200000:
+        padding_text = padding_texts["200_000"]
+    
+    # padding before instruction
+    # sample.input = f"{padding_text}\n\n{sample.input}" 
+    # padding after instruction
+    sample.input = f"{sample.input}\n\n{padding_text}" 
     return sample
 
 def augment_with_non_relevant_text_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
@@ -58,7 +67,7 @@ PADDING_TYPE_TO_FUNC = {
     "random": augment_with_random_padding,
     "non_relevant": augment_with_non_relevant_text_padding,
     "task_relevant": augment_with_task_relevant_text_padding,
-    "random_eng": augment_with_random_eng_padding
+    "irrelevant_eng": augment_with_irrelevant_eng_padding
 }
 
 # For some reason this tokens couldn't be decoded and raise error encding.decode([BLACKLIST[i]])
