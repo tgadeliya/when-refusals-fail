@@ -37,7 +37,7 @@ def agentharm_benign(
     semantic_judge: str = "openai/gpt-4o-2024-08-06",
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
-    dataset_seed: int = 0,
+    random_seed: int = 0,
     padding_type: Literal["random"]| None = None,
     padding_token_length: int| None = None,
 ) -> Task:
@@ -61,7 +61,7 @@ def agentharm_benign(
     """
     return run_agent_benchmark(
         agent=agent,
-        behavior_ids=behavior_ids,
+        behavior_ids=behavior_ids if behavior_ids else [],
         task_name="benign",
         split=split,
         detailed_behaviors=detailed_behaviors,
@@ -72,7 +72,7 @@ def agentharm_benign(
         agent_kwargs=agent_kwargs,
         message_limit=20,
         name_prefix=name_prefix,
-        dataset_seed=dataset_seed,
+        random_seed=random_seed,
         padding_type=padding_type,
         padding_token_length=padding_token_length
     )
@@ -91,7 +91,7 @@ def agentharm(
     agent_kwargs: Optional[Dict[str, Any]] = None,
     chat_dataset: Optional[bool] = False,
     name_prefix: str = "",
-    dataset_seed: int = 0,
+    random_seed: int = 0,
     padding_type: Literal["random"]| None = None,
     padding_token_length: int| None = None,
 ) -> Task:
@@ -116,7 +116,7 @@ def agentharm(
     """
     return run_agent_benchmark(
         agent=agent,
-        behavior_ids=behavior_ids,
+        behavior_ids=behavior_ids if behavior_ids else [],
         task_name="harmful" if not chat_dataset else "chat",
         split=split,
         detailed_behaviors=detailed_behaviors,
@@ -127,7 +127,7 @@ def agentharm(
         agent_kwargs=agent_kwargs,
         message_limit=20,
         name_prefix=name_prefix,
-        dataset_seed = dataset_seed,
+        random_seed = random_seed,
         padding_type=padding_type,
         padding_token_length=padding_token_length
     )

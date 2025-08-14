@@ -61,7 +61,12 @@ def run_agent_benchmark(
     dataset = filter_dataset(dataset, behavior_ids, detailed_behaviors, hint_included)
     all_tool_names = get_benchmark_tools(task_name) if task_name != "chat" else []
 
-    agent_solver = get_agent(agent=agent, **agent_kwargs if agent_kwargs else {})
+    if agent_kwargs is None:
+        agent_kwargs = {"random_seed": random_seed}
+    else:
+        agent_kwargs["random_seed"] = random_seed
+
+    agent_solver = get_agent(agent=agent,**agent_kwargs if agent_kwargs else {})
 
     plan = [
         setup_tools_from_metadata(
@@ -73,7 +78,7 @@ def run_agent_benchmark(
         agent_solver,
     ]
 
-    refusal_judge_model = RefusalJudgeLLM(judge_model=refusal_judge)
+    refusal_judge_model = RefusalJudgeLLM(judge_model=refusal_judge, random_seed=random_seed)
     semantic_judge_model = get_model(semantic_judge, config=GenerateConfig(temperature=0.0, seed=random_seed))
     grading_module = (
         harmful_grading_functions
@@ -94,7 +99,7 @@ def run_agent_benchmark(
                 max_retries=3,
                 max_tokens=4096,
                 temperature=0.0,
-                max_connections=1,
+                max_connections=5,
                 seed=random_seed,
             ),
             name=f"{name_prefix}{agent}_{task_name}_{split}",
