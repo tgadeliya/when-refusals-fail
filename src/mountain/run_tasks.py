@@ -2,74 +2,31 @@ import argparse
 from typing import Literal
 
 from dotenv import load_dotenv
-from inspect_ai import eval_set
+from inspect_ai import eval_set, eval
 
 from mountain.tasks import agentharm, agentharm_benign
 
 load_dotenv()
 
-def run_eval_set_with_different_context_length(
-        model_id: str,
-        task_type: Literal["harmful", "benign"],
-        context_lengths: list[int],
-        padding_type: Literal["random"]| None,
-        log_subdir_name: str,
-):
-    tasks = []
-    for context_length in context_lengths:
-        model_id_prefix = model_id.split("/")[1][:-11]
-        name_prefix = f"{model_id_prefix}_{padding_type}_{context_length}_"
-        if task_type == "harmful":
-            tasks.append(agentharm(padding_type=padding_type, padding_token_length=context_length, name_prefix=name_prefix))
-        elif task_type == "benign":
-            tasks.append(agentharm_benign(padding_type=padding_type, padding_token_length=context_length, name_prefix=name_prefix))
-
-    logs = eval_set(tasks=tasks, log_dir= f"logs/{log_subdir_name}" , model=model_id)
-    return logs
-
-
-def eval_gpt41_nano_random_all_contexts_val_subset_benign():
+def eval_gpt41_nano_single() -> None:
     model_id="openai/gpt-4.1-nano-2025-04-14"
-    context_lengths=[0, 1000, 10_000, 50_000, 100_000, 250_000]
-    padding_type="random" 
-
+    random_seeds = [3, 14, 15, 65, 92] 
+    padding_length = 10
+    padding_type = "multi_task"
+    padding_kwargs={"task_type": "benign"}
     tasks = []
-    for context_length in context_lengths:
+    for random_seed in random_seeds:
         model_id_prefix = model_id.split("/")[1][:-11]
-        name_prefix = f"{model_id_prefix}_{padding_type}_{context_length}_val_subset_"
+        name_prefix = f"{model_id_prefix}_rs_{random_seed}_{padding_length}_mt_pad_hint_detprompt_test"
         task = agentharm_benign(
-            padding_type=padding_type,padding_token_length=context_length, name_prefix=name_prefix,
-            hint_included=False, split="val", detailed_behaviors=False
+            split="test_public",
+            padding_type=padding_type, padding_token_length=padding_length, padding_kwargs=padding_kwargs,
+            hint_included=True, detailed_behaviors=True,
+            random_seed=random_seed,
+            name_prefix=name_prefix,
         )
         tasks.append(task)
-
-    eval_set(tasks=tasks, log_dir= "logs/nano_all_contexts_benign" , model=model_id, retry_on_error=3)
-
-def eval_gpt41_nano_random_all_contexts_val_subset_harmful():
-    model_id="openai/gpt-4.1-nano-2025-04-14"
-    context_lengths=[250_000]
-    padding_type="random" 
-
-    tasks = []
-    for context_length in context_lengths:
-        model_id_prefix = model_id.split("/")[1][:-11]
-        name_prefix = f"{model_id_prefix}_{padding_type}_{context_length}_val_subset_"
-        task = agentharm(
-            padding_type=padding_type,padding_token_length=context_length, name_prefix=name_prefix,
-            hint_included=False, split="val", detailed_behaviors=False
-        )
-        tasks.append(task)
-
-
-    eval_set(
-        tasks=tasks, log_dir= "logs/nano_all_contexts_harmful_long" , model=model_id,
-        retry_on_error=1,
-        max_connections=1,
-        max_samples=1,
-        max_sandboxes=1,
-        max_subprocesses=1,
-        timeout=60,
-    )
+    eval_set(tasks=tasks, log_dir= f"logs/benign/multi_task_padding/gpt_4.1_nano/only_benign/{padding_length}/test_hint_det_prompt/" , model=model_id, retry_on_error=3, timeout=500, max_connections=5)
 
 
 if __name__ == "__main__":
