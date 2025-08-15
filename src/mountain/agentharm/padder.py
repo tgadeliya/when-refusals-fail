@@ -20,6 +20,10 @@ def augment_with_random_padding(
         sample.input = f"{random_text}\n\n{sample.input}"
     elif padding_position == "after":
         sample.input = f"{sample.input}\n\n{random_text}"
+    elif padding_position == "around":
+        # Split random_text in the middle and insert input between two parts 
+        middle_idx = len(random_text) // 2
+        sample.input = f"{random_text[:middle_idx]}\n\n{sample.input}\n\n{random_text[middle_idx:]}"
     else:
         raise ValueError(f"Unknown padding position: {padding_position}")
     return sample
