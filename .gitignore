@@ -17,6 +17,7 @@ env/
 
 # Secrets
 .env
+secrets
 
 # Ignore logs for now
 logs/*

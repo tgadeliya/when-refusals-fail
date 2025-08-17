@@ -33,9 +33,9 @@ def augment_with_irrelevant_eng_padding(sample: Sample, padding_length: int, see
         padding_text = padding_texts["200_000"]
     
     # padding before instruction
-    # sample.input = f"{padding_text}\n\n{sample.input}" 
+    sample.input = f"{padding_text}\n\n{sample.input}" 
     # padding after instruction
-    sample.input = f"{sample.input}\n\n{padding_text}" 
+    # sample.input = f"{sample.input}\n\n{padding_text}" 
     return sample
 
 def augment_with_non_relevant_text_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
