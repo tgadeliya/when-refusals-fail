@@ -22,7 +22,7 @@ def run_debug_agentharm() -> Task:
         message_limit=5,
         name_prefix="debug_",
         padding_type=None,
-        padding_token_length=None
+        padding_length=None
     )
 
 @task
@@ -39,7 +39,7 @@ def agentharm_benign(
     name_prefix: str = "",
     random_seed: int = 0,
     padding_type: Literal["random", "multi_task"]| None = None,
-    padding_token_length: int| None = None,
+    padding_length: int| None = None,
     padding_kwargs: dict = {}
 ) -> Task:
     return run_agent_benchmark(
@@ -57,7 +57,7 @@ def agentharm_benign(
         name_prefix=name_prefix,
         random_seed=random_seed,
         padding_type=padding_type,
-        padding_token_length=padding_token_length,
+        padding_length=padding_length,
         padding_kwargs=padding_kwargs
     )
 
@@ -77,7 +77,7 @@ def agentharm(
     name_prefix: str = "",
     random_seed: int = 0,
     padding_type: Literal["random", "multi_task"]| None = None,
-    padding_token_length: int| None = None,
+    padding_length: int| None = None,
     padding_kwargs: dict = {}
 ) -> Task:
     return run_agent_benchmark(
@@ -95,6 +95,6 @@ def agentharm(
         name_prefix=name_prefix,
         random_seed = random_seed,
         padding_type=padding_type,
-        padding_token_length=padding_token_length,
-        padding_kwargs=padding_kwargs
+        padding_length=padding_length,
+        padding_kwargs={}
     )

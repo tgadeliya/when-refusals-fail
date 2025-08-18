@@ -34,7 +34,7 @@ def run_agent_benchmark(
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
     padding_type: Literal["random", "multi_task"]| None = None,
-    padding_token_length: int | None = None,
+    padding_length: int | None = None,
     padding_kwargs: dict = {}
 ) -> Task:
     """
@@ -92,7 +92,7 @@ def run_agent_benchmark(
     )
 
     return Task(
-            dataset=augment_with_padding(dataset, padding_type, padding_token_length, random_seed=random_seed, padding_kwargs=padding_kwargs),
+            dataset=augment_with_padding(dataset, padding_type=padding_type, padding_length=padding_length, random_seed=random_seed, padding_kwargs=padding_kwargs),
             solver=plan,
             scorer=combined_scorer(
                 grading_module, refusal_judge_model, semantic_judge_model
