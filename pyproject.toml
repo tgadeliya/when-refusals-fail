@@ -27,3 +27,5 @@ dev = [
 [project.entry-points.inspect_ai]
 evals = "mountain._registry"
 
+[tool.ruff]
+line-length = 88
