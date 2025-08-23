@@ -9,14 +9,14 @@ from mountain.tasks import agentharm, agentharm_benign
 load_dotenv()
 
 def eval_gpt41_nano_single() -> None:
-    for task_type in ["benign"]:
-        for pad_pos in ["around"]:
-            for pad_len in [30, 50]:
+    for task_type in ["benign", "mix"]:
+        for pad_pos in ["before_with_task_instructed", "around_with_task_instructed"]:
+            for pad_len in [5, 10,30, 50]:
                 model_id="openai/gpt-4.1-nano-2025-04-14"
                 random_seeds = [3,14,15,92,65] 
                 padding_length = pad_len
                 padding_type = "multi_task"
-                padding_kwargs={"task_type": task_type, "padding_position": pad_pos }
+                padding_kwargs={"task_type": task_type, "padding_position": pad_pos}
                 tasks = []
                 for random_seed in random_seeds:
                     model_id_prefix = model_id.split("/")[1][:-11]
@@ -31,7 +31,7 @@ def eval_gpt41_nano_single() -> None:
                     tasks.append(task)
                 eval_set(
                     tasks=tasks, 
-                    log_dir= f"logs/harm/multi_task_padding/{task_type}/{pad_len}_{pad_pos}//gpt_4.1_nano/test_hint_det_prompt",
+                    log_dir= f"logs/harm/multi_task_padding/{task_type}/{pad_len}_{pad_pos}/gpt_4.1_nano/test_hint_det_prompt",
                     model=model_id,
                     retry_on_error=3,
                     timeout=500,
