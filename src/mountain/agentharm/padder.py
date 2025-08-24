@@ -16,15 +16,23 @@ def augment_with_random_padding(sample: Sample, padding_length: int, seed: int =
     return sample
 
 # -- Adding irrelevant padding in English
-def augment_with_irrelevant_eng_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
+def augment_with_non_relevant_padding(sample, padding_length: int, seed: int = 0):
     if padding_length == 0:
         padding_text = ""
     if padding_length == 100:
         padding_text = padding_texts["100"]
     if padding_length == 1000:
         padding_text = padding_texts["1000"]
+    if padding_length == 2000:
+        padding_text = padding_texts["2000"]
+    if padding_length == 5000:
+        padding_text = padding_texts["5000"]
     if padding_length == 10000:
         padding_text = padding_texts["10_000"]
+    if padding_length == 20000:
+        padding_text = padding_texts["20_000"]
+    if padding_length == 30000:
+        padding_text = padding_texts["30_000"]
     if padding_length == 50000:
         padding_text = padding_texts["50_000"]
     if padding_length == 100000:
@@ -65,9 +73,8 @@ def augment_with_task_relevant_text_padding(sample: Sample, padding_length: int,
 
 PADDING_TYPE_TO_FUNC = {
     "random": augment_with_random_padding,
-    "non_relevant": augment_with_non_relevant_text_padding,
+    "non_relevant": augment_with_non_relevant_padding,
     "task_relevant": augment_with_task_relevant_text_padding,
-    "irrelevant_eng": augment_with_irrelevant_eng_padding
 }
 
 # For some reason this tokens couldn't be decoded and raise error encding.decode([BLACKLIST[i]])
@@ -102,5 +109,27 @@ def augment_with_padding(dataset: Dataset, padding_type: Literal["random"]| None
     for sample in dataset:
         aug_dataset.append(aug_func(sample, padding_length, seed=seed))
     return MemoryDataset(aug_dataset)
+        
+if __name__ == "__main__":
+    # For debugging purposes only
+    from dataclasses import dataclass
+    from typing import Any
+    import re
 
+    @dataclass
+    class Sample:
+        input: str
+        
+    sample = Sample(input = "abc")
 
+    padding_lengths = [0, 100, 1000, 2000, 5000, 10000, 20000]
+    for padding_length in padding_lengths:
+        sample = augment_with_non_relevant_padding(sample, padding_length=padding_length)
+        text = sample.input
+        # \w+ matches one or more word characters (letters, digits, underscores)
+        words = re.findall(r'\b\w+\b', text)
+        word_count = len(words)
+        words_ = text.split()
+        word_count_ = len(words_)
+
+        print(f"Padding Length: {padding_length}\nWord Count (Regex): {word_count}\nWord Count (WC): {word_count_}")

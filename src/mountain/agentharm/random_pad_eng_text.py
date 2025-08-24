@@ -44,7 +44,11 @@ with open(assets_dir / 'the_gift_of_magi.txt', 'r') as f:
 padding_texts = {
     "100": shortest_58,
     "1000": f"{unstory_701}\n{labyrinth_433}",
+    "2000": f"{pineapple_essay1283}\n{unstory_701}",
+    "5000": f"{shortest_58}\n{the_gift_of_magi_4973}",
     "10_000": f"{pineapple_essay1283}\n{unpuzzle_1932}\n{culinary_1900}\n{the_gift_of_magi_4973}",
+    "20_000": f"{comedian_20397}",
+    "30_000": f"{comedian_20397}\n{ill_kill_you_tomorrow_5600}\n{the_gift_of_magi_4973}",
     "50_000": f"{comedian_20397}\n{ill_kill_you_tomorrow_5600}\n{comedian_20397}\n{the_gift_of_magi_4973}",
     "100_000": f"{comedian_20397}\n{the_lady_with_the_dog_74379}\n{culinary_1900}\n{unpuzzle_1932}\n{unstory_701}\n{pineapple_essay1283}",
     "200_000": f"{comedian_20397}\n{the_girl_from_scotland_yard_65017}\n{the_lady_with_the_dog_74379}\n{comedian_20397}\n{ill_kill_you_tomorrow_5600}\n{pineapple_essay1283}\n{the_gift_of_magi_4973}\n{unpuzzle_1932}\n{culinary_1900}\n{the_gift_of_magi_4973}"
