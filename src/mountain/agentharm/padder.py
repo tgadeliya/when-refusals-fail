@@ -21,6 +21,8 @@ def augment_with_non_relevant_padding(sample, padding_length: int, seed: int = 0
         padding_text = ""
     if padding_length == 100:
         padding_text = padding_texts["100"]
+    if padding_length == 500:
+        padding_text = padding_texts["500"]
     if padding_length == 1000:
         padding_text = padding_texts["1000"]
     if padding_length == 2000:
@@ -41,9 +43,39 @@ def augment_with_non_relevant_padding(sample, padding_length: int, seed: int = 0
         padding_text = padding_texts["200_000"]
     
     # padding before instruction
-    sample.input = f"{padding_text}\n\n{sample.input}" 
+    # sample.input = f"{padding_text}\n\n{sample.input}" 
     # padding after instruction
     # sample.input = f"{sample.input}\n\n{padding_text}" 
+    # padding around instruction
+    sample.input = f"{padding_text}\n{sample.input}\n{padding_text}"
+    return sample
+
+def augment_with_non_relevant_padding_around_task(sample, padding_length: int, seed: int = 0):
+    if padding_length == 0:
+        padding_text = ""
+    if padding_length == 100:
+        padding_text = padding_texts["100"]
+    if padding_length == 1000:
+        padding_text = padding_texts["500"]
+    if padding_length == 2000:
+        padding_text = padding_texts["1000"]
+    if padding_length == 5000:
+        padding_text = padding_texts["2000"] + '\n' + padding_texts["500"]
+    if padding_length == 10000:
+        padding_text = padding_texts["5000"]
+    if padding_length == 20000:
+        padding_text = padding_texts["10_000"]
+    if padding_length == 30000:
+        padding_text = padding_texts["10_000"] + '\n' + padding_texts["5000"]
+    if padding_length == 50000:
+        padding_text = padding_texts["20_000"] + '\n' + padding_texts["5000"]
+    if padding_length == 100000:
+        padding_text = padding_texts["50_000"]
+    if padding_length == 200000:
+        padding_text = padding_texts["100_000"]
+
+    sample.input = f"{padding_text}\n{sample.input}\n{padding_text}"
+
     return sample
 
 def augment_with_non_relevant_text_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
@@ -75,6 +107,7 @@ PADDING_TYPE_TO_FUNC = {
     "random": augment_with_random_padding,
     "non_relevant": augment_with_non_relevant_padding,
     "task_relevant": augment_with_task_relevant_text_padding,
+    "non_relevant_around": augment_with_non_relevant_padding_around_task,
 }
 
 # For some reason this tokens couldn't be decoded and raise error encding.decode([BLACKLIST[i]])

@@ -1,8 +1,8 @@
 model_id: "openai/gpt-4o-mini-2024-07-18"
 task_type: "harmful"
 context_lengths: [0, 100, 1000, 2000, 5000, 10000]
-padding_type: "non_relevant"
-log_dir: "logs/updated/4o_mini_harmful"
+padding_type: "non_relevant_around"
+log_dir: "logs/updated/padding_around_task/4o_mini_harmful"
 retry_on_error: 3
 split: "test_public"
 hint_included: false

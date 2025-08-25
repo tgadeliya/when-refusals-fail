@@ -43,6 +43,7 @@ with open(assets_dir / 'the_gift_of_magi.txt', 'r') as f:
     
 padding_texts = {
     "100": shortest_58,
+    "500": f"{labyrinth_433}",
     "1000": f"{unstory_701}\n{labyrinth_433}",
     "2000": f"{pineapple_essay1283}\n{unstory_701}",
     "5000": f"{shortest_58}\n{the_gift_of_magi_4973}",

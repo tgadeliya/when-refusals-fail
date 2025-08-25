@@ -98,15 +98,18 @@ def load_config_from_yaml(config_path: str) -> dict:
 def main():
     parser = argparse.ArgumentParser(description="Run evaluation with YAML configuration")
     parser.add_argument(
-        "config_file", 
+        "--config_file", 
         type=str,
         help="Path to YAML configuration file"
     )
+    parser.add_argument("--seed", type=int, help="Override config file seed")
     
     args = parser.parse_args()
     
     # Load configuration
     config = load_config_from_yaml(args.config_file)
+    if args.seed is not None:
+        config["seed"] = args.seed
     
     # Run evaluation
     run_eval_set_with_config(config)
