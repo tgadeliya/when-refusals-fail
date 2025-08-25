@@ -158,7 +158,9 @@ def plot_dict_with_rs(
     xlabel: str = "",
     ylabel: str = "score",
     connect_keys: bool = False,
+    figsize: Tuple[float, float] | None = None,
     dict1_color: str = "blue",
+    dict2_color: str | None = None,
     labels: tuple[str, str] = ("", ""),
 ) -> None:
     """
@@ -188,7 +190,7 @@ def plot_dict_with_rs(
     # --- Compute stats for dict1
     cats1, means1, errs1, all_x1, all_y1 = compute_stats(dict_with_rs)
 
-    plt.figure(figsize=(7, 4.5))
+    plt.figure(figsize= figsize or (7, 4.5))
 
     # Scatter for dict1
     plt.scatter(all_x1, all_y1, color="gray", alpha=0.6, label=f"Runs {labels[0]}")
@@ -216,13 +218,15 @@ def plot_dict_with_rs(
             means2,
             yerr=errs2,
             fmt=fmt,
-            color="red" if dict1_color != "red" else "blue",  # ensure different color
+            color=dict2_color if dict2_color is not None else ("red" if dict1_color != "red" else "blue"),
             capsize=5,
             label=f"{labels[1]} mean ± SE",
         )
 
     # Axes, ticks, labels
     plt.xticks(np.arange(len(cats1)), [str(k) for k in cats1], rotation=45)
+    # change xticks size
+    plt.tick_params(axis='x', labelsize=7)
     plt.xlabel(xlabel)
     plt.ylabel(ylabel)
     plt.title(title)

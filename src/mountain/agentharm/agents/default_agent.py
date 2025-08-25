@@ -1,5 +1,8 @@
+from dataclasses import asdict
+import time
 from typing import Literal, Optional
 
+from inspect_ai.model import GenerateConfigArgs
 from inspect_ai.solver import (
     Generate,
     Solver,
@@ -92,7 +95,7 @@ def default_agent(
     if tool_choice in ["none", "auto"]:
         action_loop = [
             set_tool_choice(tool_choice),
-            generate(tool_calls="loop", temperature=0.0, seed=random_seed),
+            generate(tool_calls="loop", temperature=0.0, seed=random_seed, parallel_tool_calls=False, timeout=60, max_connections=1),
         ]
     elif tool_choice == "forced_first":
         action_loop = [

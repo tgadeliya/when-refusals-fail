@@ -17,7 +17,7 @@ MULTI_TASK_PADDING_POS_TYPES = Literal["before", "after", "around", "before_with
 def augment_with_random_padding(
     sample: Sample,
     padding_length: int,
-    padding_position: Literal["before", "after"] = "before",
+    padding_position: Literal["before", "after", "around"] = "before",
     random_seed: int = 0,
 ) -> Sample:
     random_text = generate_random_tokens_and_decode(
