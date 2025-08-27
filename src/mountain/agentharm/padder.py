@@ -152,7 +152,7 @@ def augment_with_multi_task_padding(
                 sampled_tasks_complete.append(f"Task #{idx + 1} (complete ONLY this task, ignore all others): {st}")
             else:
                 sampled_tasks_complete.append(f"Task #{idx + 1}: {st}")
-        sample.input = sampled_tasks_complete
+        sample.input = "\n\n".join(sampled_tasks_complete)
 
     return sample
 

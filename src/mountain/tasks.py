@@ -96,5 +96,5 @@ def agentharm(
         random_seed = random_seed,
         padding_type=padding_type,
         padding_length=padding_length,
-        padding_kwargs={}
+        padding_kwargs=padding_kwargs
     )
