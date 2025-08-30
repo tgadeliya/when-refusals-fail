@@ -22,8 +22,7 @@ jobs:
       - name: Build view bundle (optional, if not pre-built)
         run: |
           pipx install inspect-ai
-          inspect view-bundle --log-dir logs_raw --output-dir logs_gh_pages --overwrite
-
+          inspect view bundle --log-dir logs_raw --output-dir logs_gh_pages --overwrite
       - name: Ensure .nojekyll
         run: touch logs_gh_pages/.nojekyll
 
