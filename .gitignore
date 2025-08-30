@@ -12,3 +12,8 @@
 # Unignore everything inside them
 !logs_raw/**
 !logs_gh_pages/**
+!.github/workflows/**
+
+
+# Unignore specific files
+!logs_gh_pages/.nojekyll
