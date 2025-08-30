@@ -21,4 +21,4 @@
 3. Add commit and push changes to github
  
 # How to view the logs
-- Go [here](https://diogo-cruz.github.io/algoverse_mountain/logs_gh_pages/)
+- Go [here](https://diogo-cruz.github.io/algoverse_mountain/)
