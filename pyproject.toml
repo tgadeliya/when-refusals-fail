@@ -24,3 +24,5 @@ dev = [
     "ruff>=0.12.8",
 ]
 
+[tool.ruff]
+exclude = [".venv", "assets", "configs", "logs", "notebooks"]

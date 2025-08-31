@@ -26,7 +26,7 @@ def edit_txt() -> Tool:
         if file_path in files:
             filename = files[file_path].replace("benchmark/benign_tools/content/", "")
             content_dir = Path(__file__).parent / "content"
-            path_to_file = content_dir / filename 
+            path_to_file = content_dir / filename
             with open(path_to_file, "r") as file:
                 lines = file.readlines()
 

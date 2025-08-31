@@ -2,7 +2,7 @@ from typing import Any, Dict, Literal, Optional
 
 from inspect_ai import Task, task
 from dotenv import load_dotenv
-from inspect_ai import eval_set, eval
+from inspect_ai import eval
 
 from mountain.agentharm.agentharm import run_agent_benchmark
 
@@ -20,11 +20,12 @@ def run_debug_agentharm() -> Task:
         detailed_behaviors=False,
         refusal_judge="openai/gpt-4.1-nano-2025-04-14",
         semantic_judge="openai/gpt-4.1-nano-2025-04-14",
-        message_limit=20, # no output tokens
+        message_limit=20,  # no output tokens
         name_prefix="debug_",
         padding_type=None,
-        padding_token_length=None
+        padding_token_length=None,
     )
+
 
 @task
 def agentharm_benign(
@@ -39,8 +40,8 @@ def agentharm_benign(
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
     dataset_seed: int = 0,
-    padding_type: Literal["random"]| None = None,
-    padding_token_length: int| None = None,
+    padding_type: Literal["random"] | None = None,
+    padding_token_length: int | None = None,
 ) -> Task:
     """
     AgentHarm benchmark task.
@@ -75,7 +76,7 @@ def agentharm_benign(
         name_prefix=name_prefix,
         dataset_seed=dataset_seed,
         padding_type=padding_type,
-        padding_token_length=padding_token_length
+        padding_token_length=padding_token_length,
     )
 
 
@@ -93,8 +94,8 @@ def agentharm(
     chat_dataset: Optional[bool] = False,
     name_prefix: str = "",
     dataset_seed: int = 0,
-    padding_type: Literal["random"]| None = None,
-    padding_token_length: int| None = None,
+    padding_type: Literal["random"] | None = None,
+    padding_token_length: int | None = None,
 ) -> Task:
     """
     AgentHarm benchmark task.
@@ -128,12 +129,13 @@ def agentharm(
         agent_kwargs=agent_kwargs,
         message_limit=20,
         name_prefix=name_prefix,
-        dataset_seed = dataset_seed,
+        dataset_seed=dataset_seed,
         padding_type=padding_type,
-        padding_token_length=padding_token_length
+        padding_token_length=padding_token_length,
     )
-    
+
+
 if __name__ == "__main__":
     model_id = "openai/gpt-4o-mini-2024-07-18"
     tasks = [run_debug_agentharm()]
-    logs = eval(tasks=tasks, log_dir="./logs" , model=model_id)
+    logs = eval(tasks=tasks, log_dir="./logs", model=model_id)

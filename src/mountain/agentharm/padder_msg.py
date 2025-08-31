@@ -1,8 +1,4 @@
-PADDINGS_PER_TYPE = {
-    "non_relevant": [],
-    "task_relevant":{
-    }
-}
+PADDINGS_PER_TYPE = {"non_relevant": [], "task_relevant": {}}
 
 
 # categories and names from public test
