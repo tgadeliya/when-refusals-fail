@@ -17,3 +17,7 @@
 
 # Unignore specific files
 !logs_gh_pages/.nojekyll
+
+
+# Ignore cache files inside some directories
+logs_raw/jauhar/.DS_Store
