@@ -19,6 +19,8 @@ env/
 .env
 secrets
 
+# Ignore logs
+logs
 # Ignore logs for now
 logs/*
 logs_set/*

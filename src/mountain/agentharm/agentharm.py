@@ -30,11 +30,12 @@ def run_agent_benchmark(
     refusal_judge: str = "openai/gpt-4o-2024-08-06",
     semantic_judge: str = "openai/gpt-4o-2024-08-06",
     message_limit: int = 2,
-    dataset_seed: int = 0,
+    random_seed: int = 0,
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
-    padding_type: Literal["random"] | None = None,
-    padding_token_length: int | None = None,
+    padding_type: Literal["random", "multi_task"]| None = None,
+    padding_length: int | None = None,
+    padding_kwargs: dict = {}
 ) -> Task:
     """
     Runs the AgentHarm benchmark task, both harmful and benign versions.
@@ -61,19 +62,28 @@ def run_agent_benchmark(
     dataset = filter_dataset(dataset, behavior_ids, detailed_behaviors, hint_included)
     all_tool_names = get_benchmark_tools(task_name) if task_name != "chat" else []
 
-    agent_solver = get_agent(agent=agent, **agent_kwargs if agent_kwargs else {})
+    if agent_kwargs is None:
+        agent_kwargs = {"random_seed": random_seed}
+    else:
+        agent_kwargs["random_seed"] = random_seed
+
+    if padding_kwargs is None:
+        padding_kwargs = {}
+
+    agent_solver = get_agent(agent=agent,**agent_kwargs if agent_kwargs else {})
 
     plan = [
         setup_tools_from_metadata(
             task_name,
             all_tool_names,
             n_irrelevant_tools,
+            seed=random_seed
         ),
         agent_solver,
     ]
 
-    refusal_judge_model = RefusalJudgeLLM(judge_model=refusal_judge)
-    semantic_judge_model = get_model(semantic_judge)
+    refusal_judge_model = RefusalJudgeLLM(judge_model=refusal_judge, random_seed=random_seed)
+    semantic_judge_model = get_model(semantic_judge, config=GenerateConfig(temperature=0.0, seed=random_seed))
     grading_module = (
         harmful_grading_functions
         if task_name == "harmful"
@@ -83,20 +93,18 @@ def run_agent_benchmark(
     )
 
     return Task(
-        dataset=augment_with_padding(
-            dataset, padding_type, padding_token_length, seed=dataset_seed
-        ),
-        solver=plan,
-        scorer=combined_scorer(
-            grading_module, refusal_judge_model, semantic_judge_model
-        ),
-        message_limit=message_limit,
-        config=GenerateConfig(
-            max_retries=3,
-            max_tokens=4096,
-            temperature=0.0,
-            max_connections=100,
-            seed=dataset_seed,
-        ),
-        name=f"{name_prefix}{agent}_{task_name}_{split}",
+            dataset=augment_with_padding(dataset, padding_type=padding_type, padding_length=padding_length, random_seed=random_seed, padding_kwargs=padding_kwargs),
+            solver=plan,
+            scorer=combined_scorer(
+                grading_module, refusal_judge_model, semantic_judge_model
+            ),
+            message_limit=message_limit,
+            config=GenerateConfig(
+                max_retries=3,
+                max_tokens=4096,
+                temperature=0.0,
+                max_connections=10,
+                seed=random_seed,
+            ),
+            name=f"{name_prefix}{agent}_{task_name}_{split}",
     )

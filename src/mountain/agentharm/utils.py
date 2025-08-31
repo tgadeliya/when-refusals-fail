@@ -190,6 +190,7 @@ def setup_tools_from_metadata(
     task_name: Literal["harmful", "benign", "chat"],
     all_tool_names: list[str],
     n_irrelevant_tools: int = 0,
+    seed: int = 0
 ) -> Solver:
     """
     Inject tools from state.metadata["target_functions"] and n_irrelevant_tools into the task state to be used in generate().
@@ -233,6 +234,9 @@ def setup_tools_from_metadata(
             ]
 
             tools_list.extend(k_irrelevant_tools)
+
+        if seed is not None:
+            random.seed(seed)
 
         # Shuffle the tools_list
         random.shuffle(tools_list)
