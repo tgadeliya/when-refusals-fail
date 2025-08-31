@@ -2,7 +2,7 @@ from pathlib import Path
 
 repo_root = Path(__file__).resolve().parent.parent.parent.parent
 
-assets_dir = repo_root / "assets"
+assets_dir = repo_root / "src/mountain/agentharm/paddings"
 
 with open(assets_dir / "shortest.txt", "r") as f:
     shortest_58 = f.read()
