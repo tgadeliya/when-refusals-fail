@@ -1,10 +1,14 @@
 
 
+
 PADDINGS_PER_TYPE = {
-    "non_relevant": [],
-    "task_relevant":{
-    }
+   "non_relevant": [],               
+    "task_relevant": []
 }
+
+# padder_msg.py
+
+# Define padding tokens
 
 
 # categories and names from public test
