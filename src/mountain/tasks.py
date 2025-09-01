@@ -38,7 +38,7 @@ def agentharm_benign(
     semantic_judge: str = "openai/gpt-4.1-nano-2025-04-14",
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
-    dataset_seed: int = 0,
+    random_seed: int = 0,
     padding_type: Literal["random"]| None = None,
     padding_token_length: int| None = None,
 ) -> Task:
@@ -55,7 +55,7 @@ def agentharm_benign(
         agent_kwargs=agent_kwargs,
         message_limit=20,
         name_prefix=name_prefix,
-        random_seed=random_seed,
+        dataset_seed=random_seed,
         padding_type=padding_type,
         padding_token_length=padding_token_length
     )
@@ -74,7 +74,7 @@ def agentharm(
     agent_kwargs: Optional[Dict[str, Any]] = None,
     chat_dataset: Optional[bool] = False,
     name_prefix: str = "",
-    dataset_seed: int = 0,
+    random_seed: int = 0,
     padding_type: Literal["random"]| None = None,
     padding_token_length: int| None = None,
 ) -> Task:
@@ -91,7 +91,7 @@ def agentharm(
         agent_kwargs=agent_kwargs,
         message_limit=20,
         name_prefix=name_prefix,
-        dataset_seed = dataset_seed,
+        dataset_seed=random_seed,
         padding_type=padding_type,
         padding_token_length=padding_token_length
     )

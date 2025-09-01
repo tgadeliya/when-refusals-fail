@@ -17,7 +17,7 @@ def augment_with_random_padding(sample: Sample, padding_length: int, seed: int =
     return sample
 
 # -- Adding irrelevant padding in English
-def augment_with_non_relevant_padding(sample, padding_length: int, seed: int = 0):
+def augment_with_non_relevant_padding(sample, padding_length: int, random_seed: int = 0):
     if padding_length == 0:
         padding_text = ""
     if padding_length == 100:
@@ -51,33 +51,64 @@ def augment_with_non_relevant_padding(sample, padding_length: int, seed: int = 0
     sample.input = f"{padding_text}\n{sample.input}\n{padding_text}"
     return sample
 
-def augment_with_non_relevant_padding_around_task(sample, padding_length: int, seed: int = 0):
+# def augment_with_non_relevant_padding_around_task(sample, padding_length: int, seed: int = 0):
+#     if padding_length == 0:
+#         padding_text = ""
+#     if padding_length == 100:
+#         padding_text = padding_texts["100"]
+#     if padding_length == 1000:
+#         padding_text = padding_texts["500"]
+#     if padding_length == 2000:
+#         padding_text = padding_texts["1000"]
+#     if padding_length == 5000:
+#         padding_text = padding_texts["2000"] + '\n' + padding_texts["500"]
+#     if padding_length == 10000:
+#         padding_text = padding_texts["5000"]
+#     if padding_length == 20000:
+#         padding_text = padding_texts["10_000"]
+#     if padding_length == 30000:
+#         padding_text = padding_texts["10_000"] + '\n' + padding_texts["5000"]
+#     if padding_length == 50000:
+#         padding_text = padding_texts["20_000"] + '\n' + padding_texts["5000"]
+#     if padding_length == 100000:
+#         padding_text = padding_texts["50_000"]
+#     if padding_length == 200000:
+#         padding_text = padding_texts["100_000"]
+
+#     sample.input = f"{padding_text}\n{sample.input}\n{padding_text}"
+
+#     return sample
+
+def augment_with_non_relevant_padding_around_task(sample, padding_length: int, random_seed: int = 0):
+    """
+        Assuming around 5 characters per word in English
+    """
+    text = padding_texts["20_000"]
     if padding_length == 0:
-        padding_text = ""
+        left_text = ""
+        right_text = ""
     if padding_length == 100:
-        padding_text = padding_texts["100"]
+        left_text = text[:250]
+        right_text = text[250:500]
     if padding_length == 1000:
-        padding_text = padding_texts["500"]
+        left_text = text[:2500]
+        right_text = text[2500:5000]
     if padding_length == 2000:
-        padding_text = padding_texts["1000"]
+        left_text = text[:5000]
+        right_text = text[5000:10000]
     if padding_length == 5000:
-        padding_text = padding_texts["2000"] + '\n' + padding_texts["500"]
+        left_text = text[:12500]
+        right_text = text[12500:25000]
     if padding_length == 10000:
-        padding_text = padding_texts["5000"]
+        left_text = text[:25000]
+        right_text = text[25000:50000]
     if padding_length == 20000:
-        padding_text = padding_texts["10_000"]
-    if padding_length == 30000:
-        padding_text = padding_texts["10_000"] + '\n' + padding_texts["5000"]
-    if padding_length == 50000:
-        padding_text = padding_texts["20_000"] + '\n' + padding_texts["5000"]
-    if padding_length == 100000:
-        padding_text = padding_texts["50_000"]
-    if padding_length == 200000:
-        padding_text = padding_texts["100_000"]
-
-    sample.input = f"{padding_text}\n{sample.input}\n{padding_text}"
-
+        left_text = text[:50000]
+        right_text = text[50000:100000]
+    
+    sample.input = f"{left_text}\n\n{sample.input}\n\n{right_text}"
     return sample
+
 
 def augment_with_non_relevant_text_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
     paddings_to_sample: list[str] = PADDINGS_PER_TYPE["non_relevant"]
@@ -108,8 +139,8 @@ PADDING_TYPE_TO_FUNC = {
     "random": augment_with_random_padding,
     "non_relevant": augment_with_non_relevant_padding,
     "task_relevant": augment_with_task_relevant_text_padding,
-    "non_relevant_around": augment_with_non_relevant_padding_around_task,,
-    "multi_task": augment_with_multi_task_padding,
+    "non_relevant_around": augment_with_non_relevant_padding_around_task,
+    # "multi_task": augment_with_multi_task_padding,
 }
 
 # For some reason this tokens couldn't be decoded and raise error encding.decode([BLACKLIST[i]])
@@ -120,9 +151,7 @@ BLACKLIST_RANDOM_TOKENS_ID = set(
 
 def generate_random_tokens_and_decode(
     num_tokens: int, model="gpt-4o-mini", seed=0
-) -> str:
-def generate_random_tokens_and_decode(num_tokens: int, model="gpt-4o-mini", seed=0):
-
+    ) -> str:
     if seed is not None:
         random.seed(seed)
     encoding = tiktoken.encoding_for_model(model)
@@ -139,7 +168,10 @@ def generate_random_tokens_and_decode(num_tokens: int, model="gpt-4o-mini", seed
     return decoded
 
 
-def augment_with_padding(dataset: Dataset, padding_type: Literal["random"]| None, padding_length: int | None, seed: int = 0) -> Dataset:
+def augment_with_padding(
+        dataset: Dataset, padding_type: Literal["random"]| None, padding_length: int | None,
+        padding_kwargs: dict = {},
+        random_seed: int = 0,) -> Dataset:
     if padding_type is None or padding_length is None or padding_length == 0:
         return dataset
     
