@@ -8,7 +8,7 @@ import tiktoken
 from inspect_ai.dataset import Dataset, MemoryDataset, Sample
 
 from .padder_msg import PADDINGS_PER_TYPE
-from .random_pad_eng_text import padding_texts
+from .non_relevant_padding_text import padding_texts
 
 
 def augment_with_random_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
@@ -16,106 +16,33 @@ def augment_with_random_padding(sample: Sample, padding_length: int, seed: int =
     sample.input =  f"{random_text}\n\n{sample.input}"
     return sample
 
-# -- Adding irrelevant padding in English
-def augment_with_non_relevant_padding(sample, padding_length: int, random_seed: int = 0):
-    if padding_length == 0:
-        padding_text = ""
-    if padding_length == 100:
-        padding_text = padding_texts["100"]
-    if padding_length == 500:
-        padding_text = padding_texts["500"]
-    if padding_length == 1000:
-        padding_text = padding_texts["1000"]
-    if padding_length == 2000:
-        padding_text = padding_texts["2000"]
-    if padding_length == 5000:
-        padding_text = padding_texts["5000"]
-    if padding_length == 10000:
-        padding_text = padding_texts["10_000"]
-    if padding_length == 20000:
-        padding_text = padding_texts["20_000"]
-    if padding_length == 30000:
-        padding_text = padding_texts["30_000"]
-    if padding_length == 50000:
-        padding_text = padding_texts["50_000"]
-    if padding_length == 100000:
-        padding_text = padding_texts["100_000"]
-    if padding_length == 200000:
-        padding_text = padding_texts["200_000"]
+def augment_with_non_relevant_text_padding(
+        sample: Sample,
+        padding_length: int,
+        random_seed: int = 0,
+        padding_position: Literal["before", "after", "around"] = "before",
+        ) -> Sample:
+    if random_seed is not None:
+        random.seed(random_seed)
+    try:
+        padding_text = padding_texts[str(padding_length)]
+    except KeyError:
+        print(f"Text for the padding: {padding_length} not found.\nPadding text available only for (0, 100, 500, 1000, 2000, 5000, 10000, 20000, 30000, 50000, 100000, 200000) lengths")
     
-    # padding before instruction
-    sample.input = f"{padding_text}\n\n{sample.input}" 
-    # padding after instruction
-    # sample.input = f"{sample.input}\n\n{padding_text}" 
-    return sample
-
-# def augment_with_non_relevant_padding_around_task(sample, padding_length: int, seed: int = 0):
-#     if padding_length == 0:
-#         padding_text = ""
-#     if padding_length == 100:
-#         padding_text = padding_texts["100"]
-#     if padding_length == 1000:
-#         padding_text = padding_texts["500"]
-#     if padding_length == 2000:
-#         padding_text = padding_texts["1000"]
-#     if padding_length == 5000:
-#         padding_text = padding_texts["2000"] + '\n' + padding_texts["500"]
-#     if padding_length == 10000:
-#         padding_text = padding_texts["5000"]
-#     if padding_length == 20000:
-#         padding_text = padding_texts["10_000"]
-#     if padding_length == 30000:
-#         padding_text = padding_texts["10_000"] + '\n' + padding_texts["5000"]
-#     if padding_length == 50000:
-#         padding_text = padding_texts["20_000"] + '\n' + padding_texts["5000"]
-#     if padding_length == 100000:
-#         padding_text = padding_texts["50_000"]
-#     if padding_length == 200000:
-#         padding_text = padding_texts["100_000"]
-
-#     sample.input = f"{padding_text}\n{sample.input}\n{padding_text}"
-
-#     return sample
-
-def augment_with_non_relevant_padding_around_task(sample, padding_length: int, random_seed: int = 0):
-    """
-        Assuming around 5 characters per word in English
-    """
-    text = padding_texts["20_000"]
-    if padding_length == 0:
-        left_text = ""
-        right_text = ""
-    if padding_length == 100:
-        left_text = text[:250]
-        right_text = text[250:500]
-    if padding_length == 1000:
-        left_text = text[:2500]
-        right_text = text[2500:5000]
-    if padding_length == 2000:
-        left_text = text[:5000]
-        right_text = text[5000:10000]
-    if padding_length == 5000:
-        left_text = text[:12500]
-        right_text = text[12500:25000]
-    if padding_length == 10000:
-        left_text = text[:25000]
-        right_text = text[25000:50000]
-    if padding_length == 20000:
-        left_text = text[:50000]
-        right_text = text[50000:100000]
+    if padding_position == "before":
+        sample.input = f"{padding_text}\n\n{sample.input}"
+    elif padding_position == "after":
+        sample.input = f"{sample.input}\n\n{padding_text}"
+    elif padding_position == "around":
+        if padding_length == 0:
+            left_text, right_text = "", ""
+        else:
+            split_point = len(padding_text) // 2
+            left_text = padding_text[:split_point]
+            right_text = padding_text[split_point:]
+        
+        sample.input = f"{left_text}\n\n{sample.input}\n\n{right_text}"
     
-    sample.input = f"{left_text}\n\n{sample.input}\n\n{right_text}"
-    return sample
-
-
-def augment_with_non_relevant_text_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
-    paddings_to_sample: list[str] = PADDINGS_PER_TYPE["non_relevant"]
-    if seed is not None:
-        random.seed(seed)
-    sampled_padding = random.choice(paddings_to_sample)
-    # TODO: Add logic to handle different padding_length
-    # TODO: based on implementation method, you probably need to added warning if padding_length > maximum available padding length
-    sample.input =  f"{sampled_padding}\n\n{sample.input}"
     return sample
 
 def augment_with_task_relevant_text_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
@@ -135,9 +62,8 @@ def augment_with_task_relevant_text_padding(sample: Sample, padding_length: int,
 
 PADDING_TYPE_TO_FUNC = {
     "random": augment_with_random_padding,
-    "non_relevant": augment_with_non_relevant_padding,
+    "non_relevant": augment_with_non_relevant_text_padding,
     "task_relevant": augment_with_task_relevant_text_padding,
-    "non_relevant_around": augment_with_non_relevant_padding_around_task,
     # "multi_task": augment_with_multi_task_padding,
 }
 
@@ -187,7 +113,7 @@ def augment_with_padding(
     return MemoryDataset(aug_dataset)
         
 if __name__ == "__main__":
-    # For debugging purposes only
+    # For debugging purpose only
     from dataclasses import dataclass
     from typing import Any
     import re
@@ -200,7 +126,7 @@ if __name__ == "__main__":
 
     padding_lengths = [0, 100, 1000, 2000, 5000, 10000, 20000]
     for padding_length in padding_lengths:
-        sample = augment_with_non_relevant_padding(sample, padding_length=padding_length)
+        sample = augment_with_non_relevant_text_padding(sample, padding_length=padding_length)
         text = sample.input
         # \w+ matches one or more word characters (letters, digits, underscores)
         words = re.findall(r'\b\w+\b', text)
