@@ -1,10 +1,12 @@
 from dataclasses import dataclass
 from pathlib import Path
 from collections import defaultdict
+from tkinter import E
 from typing import Any, Dict, List, Tuple, Optional
 from pprint import pprint
 import ast
 
+from inspect_ai import task
 from inspect_ai.log import EvalSampleScore, read_eval_log 
 from inspect_ai.log import EvalSample
 import pandas as pd
@@ -66,6 +68,8 @@ class EvalRun:
             num_turns_per_sample.append(len(sample.messages))
         task_args = logs.eval.task_args_passed
         task_args["padding_token_length"] = task_args.get("padding_token_length", task_args.get("padding_length", None)) 
+        import random
+        task_args["random_seed"] = task_args.get("random_seed", random.randint(0, 2**32 - 1))
         return cls(
             task_name=logs.plan.steps[0].params["task_name"],
             model_name = logs.eval.model,
@@ -236,6 +240,88 @@ def plot_dict_with_rs(
     plt.show()
 
 
+from typing import Tuple, List
+import numpy as np
+import matplotlib.pyplot as plt
+
+def plot_dicts_with_rs(
+    dicts_with_rs: List[dict],
+    dict_colors: List[str],
+    labels: List[str],
+    title: str = "",
+    xlabel: str = "",
+    ylabel: str = "score",
+    connect_keys: bool = False,
+    figsize: Tuple[float, float] | None = None,
+) -> None:
+
+    n_dicts = len(dicts_with_rs)
+    # Check that all dicts share identical keys (and order)
+    cats_ref = list(dicts_with_rs[0].keys())
+    for j, d in enumerate(dicts_with_rs[1:], start=1):
+        if list(d.keys()) != cats_ref:
+            raise ValueError(
+                f"All dicts must have the same keys in the same order. Mismatch at dict index {j}."
+            )
+
+    x_positions = np.arange(len(cats_ref))
+
+    def compute_stats(d: dict, cats: list[str]):
+        """
+        Returns positions where data exists, means, SEs, and all raw points (x,y).
+        Skips categories with empty lists for means/SEs, but keeps raw points empty if no runs.
+        """
+        means_idx, means, errs = [], [], []
+        all_x, all_y = [], []
+
+        for i, k in enumerate(cats):
+            runs = np.asarray(d[k], dtype=float)
+            if runs.size > 0:
+                mean = runs.mean()
+                sd = runs.std(ddof=1) if runs.size > 1 else 0.0
+                se = sd / np.sqrt(runs.size)
+                means_idx.append(i)
+                means.append(mean)
+                errs.append(se)
+                all_x.extend([i] * runs.size)
+                all_y.extend(runs.tolist())
+
+        return np.asarray(means_idx), np.asarray(means), np.asarray(errs), np.asarray(all_x), np.asarray(all_y)
+
+    plt.figure(figsize=figsize or (7, 4.5))
+
+    # Plot each dict
+    for j, (dct, color, label) in enumerate(zip(dicts_with_rs, dict_colors, labels)):
+        means_idx, means, errs, all_x, all_y = compute_stats(dct, cats_ref)
+
+        # Raw runs (slightly transparent). Offset x a tiny bit per series to reduce overlap.
+        if all_x.size > 0:
+            # offset = (j - (n_dicts - 1) / 2) * 0.08  # small deterministic offset
+            plt.scatter(all_x, all_y, alpha=0.35, s=16, label=None, color=color)
+
+        # Means + SE
+        fmt = "o-" if connect_keys else "o"
+        if means_idx.size > 0:
+            plt.errorbar(
+                means_idx,
+                means,
+                yerr=errs,
+                fmt=fmt,
+                color=color,
+                capsize=5,
+                label=f"{label} mean ± SE",
+            )
+
+    # Axes, ticks, labels
+    plt.xticks(x_positions, [str(k) for k in cats_ref], rotation=45)
+    plt.tick_params(axis="x", labelsize=7)
+    plt.xlabel(xlabel)
+    plt.ylabel(ylabel)
+    plt.title(title)
+    plt.grid(True, linestyle="--", alpha=0.5)
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
 
 
 def aggregate_histograms(
