@@ -1,9 +1,7 @@
 from dataclasses import dataclass
 from pathlib import Path
 from collections import defaultdict
-from tkinter import E
 from typing import Any, Dict, List, Tuple, Optional
-from pprint import pprint
 import ast
 
 from inspect_ai import task
