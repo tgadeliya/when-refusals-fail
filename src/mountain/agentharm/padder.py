@@ -44,11 +44,9 @@ def augment_with_non_relevant_padding(sample, padding_length: int, random_seed: 
         padding_text = padding_texts["200_000"]
     
     # padding before instruction
-    # sample.input = f"{padding_text}\n\n{sample.input}" 
+    sample.input = f"{padding_text}\n\n{sample.input}" 
     # padding after instruction
     # sample.input = f"{sample.input}\n\n{padding_text}" 
-    # padding around instruction
-    sample.input = f"{padding_text}\n{sample.input}\n{padding_text}"
     return sample
 
 # def augment_with_non_relevant_padding_around_task(sample, padding_length: int, seed: int = 0):
