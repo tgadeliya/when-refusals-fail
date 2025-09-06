@@ -2,7 +2,6 @@ from typing import Any, Dict, Literal, Optional
 
 from inspect_ai import Task, task
 from dotenv import load_dotenv
-from inspect_ai import eval_set, eval
 
 from mountain.agentharm.agentharm import run_agent_benchmark
 
@@ -23,7 +22,7 @@ def run_debug_agentharm() -> Task:
         message_limit=20, # no output tokens
         name_prefix="debug_",
         padding_type=None,
-        padding_token_length=None
+        padding_length=None
     )
 
 @task
@@ -39,8 +38,9 @@ def agentharm_benign(
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
     random_seed: int = 0,
-    padding_type: Literal["random"]| None = None,
-    padding_token_length: int| None = None,
+    padding_type: Literal["random", "multi_task", "non_relevant"]| None = None,
+    padding_length: int| None = None,
+    padding_kwargs: dict = {}
 ) -> Task:
     return run_agent_benchmark(
         agent=agent,
@@ -57,7 +57,8 @@ def agentharm_benign(
         name_prefix=name_prefix,
         random_seed=random_seed,
         padding_type=padding_type,
-        padding_token_length=padding_token_length
+        padding_length=padding_length,
+        padding_kwargs=padding_kwargs
     )
 
 @task
@@ -74,8 +75,9 @@ def agentharm(
     chat_dataset: Optional[bool] = False,
     name_prefix: str = "",
     random_seed: int = 0,
-    padding_type: Literal["random"]| None = None,
-    padding_token_length: int| None = None,
+    padding_type: Literal["random", "multi_task", "non_relevant"]| None = None,
+    padding_length: int| None = None,
+    padding_kwargs: dict = {}
 ) -> Task:
     return run_agent_benchmark(
         agent=agent,
@@ -92,10 +94,6 @@ def agentharm(
         name_prefix=name_prefix,
         random_seed=random_seed,
         padding_type=padding_type,
-        padding_token_length=padding_token_length
+        padding_length=padding_length,
+        padding_kwargs=padding_kwargs
     )
-
-if __name__ == "__main__":
-    model_id = "openai/gpt-4o-mini-2024-07-18"
-    tasks = [run_debug_agentharm()]
-    logs = eval(tasks=tasks, log_dir="./logs" , model=model_id)
