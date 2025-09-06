@@ -7,13 +7,10 @@ from dotenv import load_dotenv
 from inspect_ai import eval_set, eval
 
 from mountain.tasks import agentharm, agentharm_benign
-import random
 import yaml
 
 load_dotenv()
 
-def set_seed(seed: int):
-    random.seed(seed)
 
 def eval_gpt41_nano_single_rand() -> None:
     for pad_len in [800_000]:
@@ -62,15 +59,9 @@ def run_eval_set_with_config(config: dict):
     hint_included = config.get("hint_included", False)
     detailed_behaviors = config.get("detailed_behaviors", False)
     padding_position = config.get("padding_position", "before")
-    random_seed = config.get("random_seed", 42)  # Default seed if not specified
+    random_seeds = config.get("random_seeds")  # Default seed if not specified
     padding_kwargs={"padding_position": padding_position}
-    
-    log_dirs = []
 
-    # Set seed for reproducibility
-    set_seed(random_seed)
-    
-    tasks = []
     for context_length in context_lengths:
         # Extract model name prefix (handling various model ID formats)
         model_parts = model_id.split("/")
@@ -86,51 +77,49 @@ def run_eval_set_with_config(config: dict):
         
         name_prefix = f"{model_id_prefix}_{context_length}_{padding_type}_{split}_"
 
+        tasks = []
+        for random_seed in random_seeds:
+            # Create appropriate task based on type
+            if task_type == "harm":
+                task = agentharm(
+                    padding_type=padding_type,
+                    padding_length=context_length, 
+                    name_prefix=name_prefix,
+                    hint_included=hint_included, 
+                    split=split, 
+                    detailed_behaviors=detailed_behaviors,
+                    random_seed=random_seed,
+                    padding_kwargs=padding_kwargs
+                )
+            elif task_type == "benign":
+                task = agentharm_benign(
+                    padding_type=padding_type,
+                    padding_length=context_length, 
+                    name_prefix=name_prefix,
+                    hint_included=hint_included, 
+                    split=split, 
+                    detailed_behaviors=detailed_behaviors,
+                    random_seed=random_seed,
+                    padding_kwargs=padding_kwargs
+                )
+            else:
+                raise ValueError(f"Unknown task type: {task_type}")
+            
+            tasks.append(task)
+
         hint_flag = "hint" if hint_included else "no_hint"
         detailed_behavior_flag = "det" if detailed_behaviors else "no_det"
 
         _log_dir = f"{log_dir}/{task_type}/{padding_type}/{context_length}_{padding_position}/{model_id_prefix}/test_{hint_flag}_{detailed_behavior_flag}_prompt"
-        log_dirs.append(_log_dir)
 
-        # Create appropriate task based on type
-        if task_type == "harm":
-            task = agentharm(
-                padding_type=padding_type,
-                padding_length=context_length, 
-                name_prefix=name_prefix,
-                hint_included=hint_included, 
-                split=split, 
-                detailed_behaviors=detailed_behaviors,
-                random_seed=random_seed,
-                padding_kwargs=padding_kwargs
-            )
-        elif task_type == "benign":
-            task = agentharm_benign(
-                padding_type=padding_type,
-                padding_length=context_length, 
-                name_prefix=name_prefix,
-                hint_included=hint_included, 
-                split=split, 
-                detailed_behaviors=detailed_behaviors,
-                random_seed=random_seed,
-                padding_kwargs=padding_kwargs
-            )
-        else:
-            raise ValueError(f"Unknown task type: {task_type}")
-        
-        tasks.append(task)
-    
-    # Run evaluation
-    logs = []
-    for task, dir in zip(tasks, log_dirs):
-        log = eval(
-            tasks=task,
-            log_dir=dir,
+        # Run evaluation
+        eval_set(
+            tasks=tasks,
+            log_dir=_log_dir,
             model=model_id,
             retry_on_error=retry_on_error
-        )
-        logs.append(log)
-    return logs
+            )
+        time.sleep(25)
 
 def load_config_from_yaml(config_path: str) -> dict:
     """Load configuration from YAML file"""
@@ -156,21 +145,16 @@ def main():
         help="Path to YAML configuration file",
         required=False
     )
-    parser.add_argument("--random_seed", type=int, help="Override config file seed", required=False)
     parser.add_argument("--long_context", type=bool, default=False, required=False)
 
     args = parser.parse_args()
 
     # Load configuration
+    # And run evaluation
     if args.config_file is not None:
         config = load_config_from_yaml(args.config_file)
-    # To set the seed via command line or shell script. Optional.
-    if args.random_seed is not None and args.config_file is not None:
-        config["random_seed"] = args.random_seed
-
-    # Run evaluation
-    if args.config_file is not None:
         run_eval_set_with_config(config)
+
 
     if args.task_name is not None:
         task_function = available_tasks[args.task_name]
