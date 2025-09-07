@@ -1,0 +1,10 @@
+model_id: "openai/gpt-4.1-nano-2025-04-14"
+task_type: "harmful"
+context_lengths: [50000, 100000, 200000]
+padding_type: "non_relevant"
+log_dir: "logs/lc/padding_before_task/41_nano_harmful"
+retry_on_error: 3
+split: "test_public"
+hint_included: false
+detailed_behaviors: false
+seed: 42

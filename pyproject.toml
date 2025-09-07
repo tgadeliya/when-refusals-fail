@@ -9,6 +9,7 @@ description = "A library for evaluating long-context capabilities and safety deg
 readme = "README.md"
 requires-python = ">=3.13.3"
 dependencies = [
+    "anthropic>=0.64.0",
     "datasets>=3.2.0,<4.0.0",
     "google-genai>=1.31.0",
     "google-generativeai>=0.8.5",
@@ -29,6 +30,3 @@ dev = [
 
 [project.entry-points.inspect_ai]
 evals = "mountain._registry"
-
-[tool.ruff]
-line-length = 88

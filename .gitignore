@@ -1,6 +1,7 @@
 # OS-based
 .DS_Store
 .vscode
+notebooks/.ipynb_checkpoints
 
 # Byte-compiled / optimized / DLL files
 **__pycache__**
@@ -16,6 +17,10 @@ env/
 
 # Secrets
 .env
+secrets
 
 # Ignore logs
 logs
+# Ignore logs for now
+logs/*
+logs_set/*

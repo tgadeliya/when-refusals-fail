@@ -3,6 +3,10 @@ from typing import Any, Dict, Literal, Optional
 from inspect_ai import Task
 from inspect_ai.model import GenerateConfig, get_model
 
+import random
+from collections import defaultdict
+from inspect_ai.dataset import MemoryDataset
+
 from .agents.agent import get_agent
 
 from .benchmark import (
@@ -33,9 +37,9 @@ def run_agent_benchmark(
     random_seed: int = 0,
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
-    padding_type: Literal["random", "multi_task"]| None = None,
+    padding_type: Literal["random", "multi_task", "non_relevant"]| None = None,
     padding_length: int | None = None,
-    padding_kwargs: dict = {}
+    padding_kwargs: dict = {},
 ) -> Task:
     """
     Runs the AgentHarm benchmark task, both harmful and benign versions.
@@ -59,6 +63,7 @@ def run_agent_benchmark(
     """
     dataset = load_dataset(task_name, split)
     dataset = filter_dataset(dataset, behavior_ids, detailed_behaviors, hint_included)
+        
     all_tool_names = get_benchmark_tools(task_name) if task_name != "chat" else []
 
     if agent_kwargs is None:
@@ -69,7 +74,7 @@ def run_agent_benchmark(
     if padding_kwargs is None:
         padding_kwargs = {}
 
-    agent_solver = get_agent(agent=agent,**agent_kwargs if agent_kwargs else {})
+    agent_solver = get_agent(agent=agent, **agent_kwargs if agent_kwargs else {})
 
     plan = [
         setup_tools_from_metadata(
