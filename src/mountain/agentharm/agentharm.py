@@ -29,7 +29,7 @@ def run_agent_benchmark(
     task_name: Literal["harmful", "benign", "chat"] = "harmful",
     split: Literal["val", "test_private", "test_public"] = "test_public",
     detailed_behaviors: Optional[bool] = None,
-    hint_included: Optional[bool] = True,
+    hint_included: Optional[bool] = None,
     n_irrelevant_tools: int = 0,
     refusal_judge: str = "openai/gpt-4o-2024-08-06",
     semantic_judge: str = "openai/gpt-4o-2024-08-06",
@@ -40,7 +40,6 @@ def run_agent_benchmark(
     padding_type: Literal["random", "multi_task", "non_relevant"]| None = None,
     padding_length: int | None = None,
     padding_kwargs: dict = {},
-    long_context: Optional[bool] = False,
 ) -> Task:
     """
     Runs the AgentHarm benchmark task, both harmful and benign versions.
@@ -61,22 +60,9 @@ def run_agent_benchmark(
             - user_prompt_template (str): Name of user prompt in `prompts.py`. Default is 'empty'.
             - system_prompt_template (str): Name of system prompt in `prompts.py`. Default is None.
             - prompt_technique (Literal['standard', 'cot', 'react', 'refusal']): Prompting technique to apply to the system prompt. Default is 'standard'.
-        long_context (Optional[bool]): If true, evaluate only on a subset of the dataset.
     """
     dataset = load_dataset(task_name, split)
     dataset = filter_dataset(dataset, behavior_ids, detailed_behaviors, hint_included)
-
-    if long_context:
-        categories = defaultdict(list)
-        for sample in dataset:
-            category = sample.metadata.get("category")
-            if category:
-                categories[category].append(sample)
-        
-        # Select random sample from each category
-        random.seed(random_seed)
-        selected_samples = [random.choice(samples) for samples in categories.values()]
-        dataset = MemoryDataset(samples=selected_samples)
         
     all_tool_names = get_benchmark_tools(task_name) if task_name != "chat" else []
 
@@ -100,7 +86,7 @@ def run_agent_benchmark(
         agent_solver,
     ]
 
-    refusal_judge_model = RefusalJudgeLLM(judge_model=refusal_judge)
+    refusal_judge_model = RefusalJudgeLLM(judge_model=refusal_judge, random_seed=random_seed)
     semantic_judge_model = get_model(semantic_judge, config=GenerateConfig(temperature=0.0, seed=random_seed))
     grading_module = (
         harmful_grading_functions

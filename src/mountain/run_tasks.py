@@ -56,8 +56,8 @@ def run_eval_set_with_config(config: dict):
     log_dir = config["log_dir"] # log directory root
     retry_on_error = config.get("retry_on_error", 3)
     split = config.get("split", "val")
-    hint_included = config.get("hint_included", False)
-    detailed_behaviors = config.get("detailed_behaviors", False)
+    hint_included = config.get("hint_included", None)
+    detailed_behaviors = config.get("detailed_behaviors", None)
     padding_position = config.get("padding_position", "before")
     random_seeds = config.get("random_seeds")  # Default seed if not specified
     padding_kwargs={"padding_position": padding_position}
@@ -107,8 +107,8 @@ def run_eval_set_with_config(config: dict):
             
             tasks.append(task)
 
-        hint_flag = "hint" if hint_included else "no_hint"
-        detailed_behavior_flag = "det" if detailed_behaviors else "no_det"
+        hint_flag = "hint" if hint_included == True else "no_hint" if hint_included == False else "all"
+        detailed_behavior_flag = "det" if detailed_behaviors == True else "no_det" if detailed_behaviors == False else "all"
 
         _log_dir = f"{log_dir}/{task_type}/{padding_type}/{context_length}_{padding_position}/{model_id_prefix}/test_{hint_flag}_{detailed_behavior_flag}_prompt"
 
@@ -145,7 +145,6 @@ def main():
         help="Path to YAML configuration file",
         required=False
     )
-    parser.add_argument("--long_context", type=bool, default=False, required=False)
 
     args = parser.parse_args()
 

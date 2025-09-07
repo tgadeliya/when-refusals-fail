@@ -52,13 +52,10 @@ def augment_with_non_relevant_text_padding(
     elif padding_position == "after":
         sample.input = f"{sample.input}\n\n{padding_text}"
     elif padding_position == "around":
-        if padding_length == 0:
-            left_text, right_text = "", ""
-        else:
-            split_point = len(padding_text) // 2
-            left_text = padding_text[:split_point]
-            right_text = padding_text[split_point:]
-        
+        split_point = len(padding_text) // 2
+        left_text = padding_text[:split_point]
+        right_text = padding_text[split_point:]
+    
         sample.input = f"{left_text}\n\n{sample.input}\n\n{right_text}"
     
     return sample
