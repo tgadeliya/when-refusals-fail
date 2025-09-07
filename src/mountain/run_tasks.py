@@ -60,6 +60,7 @@ def run_eval_set_with_config(config: dict):
     detailed_behaviors = config.get("detailed_behaviors", None)
     padding_position = config.get("padding_position", "before")
     random_seeds = config.get("random_seeds")  # Default seed if not specified
+    behavior_ids = config.get("behavior_ids", None)
     padding_kwargs={"padding_position": padding_position}
 
     for context_length in context_lengths:
@@ -83,6 +84,7 @@ def run_eval_set_with_config(config: dict):
             if task_type == "harm":
                 task = agentharm(
                     padding_type=padding_type,
+                    behavior_ids=behavior_ids,
                     padding_length=context_length, 
                     name_prefix=name_prefix,
                     hint_included=hint_included, 
@@ -94,6 +96,7 @@ def run_eval_set_with_config(config: dict):
             elif task_type == "benign":
                 task = agentharm_benign(
                     padding_type=padding_type,
+                    behavior_ids=behavior_ids,
                     padding_length=context_length, 
                     name_prefix=name_prefix,
                     hint_included=hint_included, 
