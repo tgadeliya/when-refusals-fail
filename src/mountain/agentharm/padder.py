@@ -9,7 +9,7 @@ import tiktoken
 from inspect_ai.dataset import Dataset, MemoryDataset, Sample
 
 from .padder_msg import PADDINGS_PER_TYPE
-from .non_relevant_padding_text import padding_texts
+from .non_relevant_padding_text import padding_texts, select_padding_text
 
 MULTI_TASK_PADDING_POS_TYPES = Literal["before", "after", "around", "before_with_task_instructed", "around_with_task_instructed"]
 
@@ -42,10 +42,8 @@ def augment_with_non_relevant_text_padding(
         ) -> Sample:
     if random_seed is not None:
         random.seed(random_seed)
-    try:
-        padding_text = padding_texts[str(padding_length)]
-    except KeyError:
-        print(f"Text for the padding: {padding_length} not found.\nPadding text available only for (0, 100, 500, 1000, 2000, 5000, 10000, 20000, 30000, 50000, 100000, 200000) lengths")
+        
+    padding_text = select_padding_text(padding_length=padding_length,random_seed=random_seed)
     
     if padding_position == "before":
         sample.input = f"{padding_text}\n\n{sample.input}"

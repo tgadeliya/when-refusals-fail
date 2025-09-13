@@ -1,11 +1,11 @@
 model_id: "openai/gpt-4.1-nano-2025-04-14"
 task_type: "harm"
-context_lengths: [0, 100]
+context_lengths: [0, 100, 1000, 2000, 5000, 10000]
 padding_type: "non_relevant"
-log_dir: "logs/temp2/"
+log_dir: "logs/new_padding/"
 retry_on_error: 3
-split: "val"
+split: "test_public"
 hint_included: false
 detailed_behaviors: false
-random_seeds: [42]
+random_seeds: [42, 21]
 padding_position: "before"
