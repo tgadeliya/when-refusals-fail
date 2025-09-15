@@ -1,298 +1,663 @@
+Exaggeration is the representation of something as more extreme or dramatic than it is, intentionally or unintentionally. It can be a rhetorical device or figure of speech, used to evoke strong feelings or to create a strong impression.
 
-Insurance is a means of protection from financial loss in which, in exchange for a fee, a party agrees to compensate another party in the event of a certain loss, damage, or injury. It is a form of risk management, primarily used to protect against the risk of a contingent or uncertain loss.
+Amplifying achievements, obstacles and problems to seek attention is an everyday occurrence[1] Inflating the difficulty of achieving a goal after attaining it, can be used to bolster self-esteem.[2]
 
-An entity which provides insurance is known as an insurer, insurance company, insurance carrier, or underwriter. A person or entity who buys insurance is known as a policyholder, while a person or entity covered under the policy is called an insured. The insurance transaction involves the policyholder assuming a guaranteed, known, and relatively small loss in the form of a payment to the insurer (a premium) in exchange for the insurer's promise to compensate the insured in the event of a covered loss. The loss may or may not be financial, but it must be reducible to financial terms. Furthermore, it usually involves something in which the insured has an insurable interest established by ownership, possession, or pre-existing relationship.
+In the arts, exaggerations are used to create emphasis or effect. As a literary device, exaggerations are often used in poetry, and is frequently encountered in casual speech.[3] Many times the usages of hyperbole describes something as better or worse than it really is. [4] An example of hyperbole is: "The bag weighed a ton."[5] Hyperbole makes the point that the bag was very heavy, though it probably does not weigh a ton.[6]
 
-The insured receives a contract, called the insurance policy, which details the conditions and circumstances under which the insurer will compensate the insured, or their designated beneficiary or assignee. The amount of money charged by the insurer to the policyholder for the coverage set forth in the insurance policy is called the premium. If the insured experiences a loss which is potentially covered by the insurance policy, the insured submits a claim to the insurer for processing by a claims adjuster. A mandatory out-of-pocket expense required by an insurance policy before an insurer will pay a claim is called a deductible or excess (or if required by a health insurance policy, a copayment). The insurer may mitigate its own risk by taking out reinsurance, whereby another insurance company agrees to carry some of the risks, especially if the primary insurer deems the risk too large for it to carry.
+Exaggerating is also a type of deception,[7] as well as a means of malingering – magnifying small injuries or discomforts as an excuse to avoid responsibilities.[8]
+
+Etymology
+The word has origins in the mid-16th century: from Latin exaggerat- 'heaped up', from the verb exaggerare, from ex- 'thoroughly' + aggerare 'heap up' (from agger 'heap'). The word originally meant 'pile up, accumulate', later 'intensify praise or blame', giving rise to current senses.
+
+In the arts
+The exaggerator has been a familiar figure in Western culture since at least Aristotle's discussion of the alazon.[9]
+
+Expressionism
+Harold Bloom describes expressionist art as attempting to "intensify the expression of feeling and attitude by exaggeration".[10] Harold Osborne writes that in its wake, even the "new and hard realism...kept much of the distortion and exaggeration which had been one of the chief devices of earlier Expressionism".[11]
+
+Tragedy
+
+The "braggart soldier" Pyrgopolynices in a 2012 production of the play Miles Gloriosus
+Although primarily a comic figure, the boastful alazon may be one aspect of the tragic hero as well: the touch of miles gloriosus ("braggart soldier") in Tamburlaine, even in Othello, has been commented upon, as has the touch of the obsessed philosopher in Faustus and Hamlet'.[12]
+
+Humour
+Emil Draitser writes that "Some theoreticians of the comic consider exaggeration to be a universal comic device."[13] It may take different forms in different genres, but in the words of M. Eastman and W. Fry, all rely on the fact that 'the easiest way to make things laughable is to exaggerate to the point of absurdity their salient traits'.[14]
+
+A caricature is a type of portrait that exaggerates or distorts the essence of a person or thing to create an easily identifiable visual likeness: Filippo Baldinucci describes this as "disproportionately increasing and emphasizing the defects of the features".[15] In literature, a caricature is a description of a person using exaggeration of some characteristics and oversimplification of others.[16]
+
+Slapstick is the recourse to humor involving exaggerated physical activity which exceeds the boundaries of common sense.[17][18][19] These exaggerated depictions are often found in cartoons, and light film comedies aimed at younger audiences.
+
+Overacting
+Overacting is the exaggeration of gestures and speech when acting. It may be unintentional, particularly in the case of a bad actor, or be required for the role. For the latter, it is commonly used in comical situations or to stress the evil characteristics of a villain. Since the perception of acting quality differs between people the extent of overacting can be subjective.
+
+Exaggeration is an effect especially useful for animation, as perfect imitation of reality can look static and dull in cartoons.[20] The level of exaggeration depends on whether one seeks realism or a particular style, like a caricature or the style of a specific artist. The classical definition of exaggeration, employed by Disney, was to remain true to reality, just presenting it in a wilder, more extreme form.[21] Other forms of exaggeration can involve the supernatural or surreal, alterations in the physical features of a character; or elements in the storyline itself.[22] It is important to employ a certain level of restraint when using exaggeration. If a scene contains several elements, there should be a balance in how those elements are exaggerated in relation to each other, to avoid confusing or overawing the viewer.[23]
+
+Shock jockery
+A shock jock, a type of radio broadcaster or disc jockey, entertains listeners or attracts attention using humor or melodramatic exaggeration that some portion of the listening audience may find offensive.
+
+In journalism
+Schopenhauer saw exaggeration as essential to journalism.[24] He may have overstated this case, but yellow journalism thrived on exaggeration,[25] and fact-checking and independent verification have not succeeded in suppressing clickbait or hyperbolic headlines.
+
+In politics
+
+During the election of 1800, surrogates of John Adams' political campaign warned voters that if Thomas Jefferson won the election, "murder, robbery, rape, adultery and incest will openly be taught and practiced."[26]
+Politicians can exaggerate.[27] In the electoral process one may expect exaggeration.[28] Outside, the exaggerations of propaganda[29] can bolster an incumbent's position.
+
+In psychology
+People with the following mental health issues are prone to make exaggerated representations:
+
+Factitious disorder/malingering,[30]
+Substance related and addictive disorders
+Acute stress disorder,[30]
+Post traumatic stress disorder,[30]
+Avoidant personality disorder,[30] and
+Narcissistic personality disorder.[30]
+Factitious disorder is when a person acts as if they have a physical or psychological illness. People with this disorder created the symptoms and are willing to undergo painful or risky tests to get sympathy and special attention.[31]
+
+In popular culture
+In 1969, The Monty Python Dirty Fork sketch demonstrates an absurd level of catastrophization where restaurant staff commit suicide and murder each other because of a customer complaint of a dirty fork. Compare with the scene in the film Monty Python and the Holy Grail[32] involving the Black Knight character which is the opposite extreme of absurdity (minimisation).[33][32]
+
+A grey market or dark market (sometimes confused with the similar term "parallel market")[1][2] is the trade of a commodity through distribution channels that are not authorised by the original manufacturer or trademark proprietor. Grey market products (grey goods) are products traded outside the manufacturer's authorised channel.
+
+Etymology
+Manufacturers of computers, telecom, and technology equipment often sell these products through distributors. Most distribution agreements require the distributor to resell the products strictly to end users. However, some distributors choose to resell products to other resellers. In the late 1980s, manufacturers labelled the resold products as the "grey market".[3]
+
+Description
+Grey market goods are goods sold outside the authorized distribution channels by entities which may have no relationship with the producer of the goods. This form of parallel import frequently occurs when the price of an item is significantly higher in one country than another.[4] This commonly takes place with electronic equipment such as cameras. Entrepreneurs buy the product where it is available cheaply, often at retail but sometimes at wholesale, and import it to the target market. They then sell it at a price high enough to provide a profit but below the normal market price.
+
+International efforts to promote free trade, including reduced tariffs and harmonised national standards, facilitate this form of arbitrage whenever manufacturers attempt to preserve highly disparate pricing. Because of the nature of grey markets, it is difficult or impossible to track the precise numbers of grey market sales. Grey market goods are often new, but some grey market goods are used goods. A market in used goods is sometimes nicknamed a green market.
+
+The two main types of grey markets are those of imported manufactured goods that would normally be unavailable or more expensive in a certain country and unissued securities that are not yet traded in official markets. Sometimes the term dark market is used to describe secretive, unregulated trading in commodity futures, notably crude oil in 2008.[5] This can be considered a third type of "grey market" not intended or explicitly authorised by oil producers.[6]
+
+The import of legally restricted or prohibited items such as prescription drugs or firearms, on the other hand, is considered black market, as is the smuggling of goods into a target country to avoid import duties. A related concept is bootlegging; the smuggling or transport of highly regulated goods, especially alcoholic beverages. The term "bootlegging" is also often applied to the production or distribution of counterfeit or otherwise infringing goods (also black market).
+
+Grey markets sometimes develop for video game consoles[7] and titles whose demand temporarily exceeds their supply causing authorised local suppliers to run out of stock. This happens especially during the Christmas and holiday season. Other popular items, such as dolls, magnets and contraception, can also be affected. In such situations, the grey market price may be considerably higher than the manufacturer's suggested retail price, with unscrupulous sellers buying items in bulk for the express purpose of inflating the prices during resale, a practice called scalping. Online auction sites such as eBay have contributed to the emergence of the video-game grey market.[citation needed]
+
+Goods
+Arcade games
+Certain otherwise identical arcade games are marketed under different titles, such as Carrier Air Wing/U.S. Navy, Mega Man/Rockman, and Police 911/Police 24/7. When certain arcade games are first powered on, a warning message is shown such as "[t]his game is intended only for sale and use in (country/region)" and often, such a message is occasionally displayed while the machine is in an attract mode.
+
+One reason for these regional name variants is trademark issues. A company may not own the rights to a trademark in another country, where that trademark may be owned by an entirely different entity. Because of this, a different name must be used.
+
+These regional name variations may also be used to prevent the sale of bootleg arcade games,[citation needed] including those from Japanese versions.
+
+Automobiles
+Main article: Grey import vehicle
+Automobile manufacturers segment world markets by territory and price, thus creating a demand for grey import vehicles.
+
+
+A Honda Stepwgn as seen in the Philippines, converted to left-hand drive. Right-hand drive vehicles are not allowed to be used in the country except in freeport zones, and are thus modified to be driven legally.[8]
+Although some grey imports are a bargain, some buyers have discovered that their vehicles do not meet local regulations, or that parts and services are difficult to obtain because these cars are different from the versions sold through the new car dealer network.[9]
+
+Many used cars come from Singapore or Japan, and are sold in other countries around the world, including the United Kingdom, Russia and New Zealand. Japan and Singapore both have strict laws against older cars. The Japanese Shaken road­worthiness testing regime requires progressively more expensive maintenance, involving the replacement of entire vehicle systems, that are unnecessary for safety, year on year, to devalue older cars and promote new cars on their home market that were available for low prices. This makes these well running cars seem reasonably priced, even after transport expenses. There are very few cars in Japan more than five years old.[10]
+
+New car arbitrage has become an issue in the US as well, especially when the US price is lower in the US than in countries like China.[11]
+
+Beyond cost issues, grey market cars provide consumer access to models never officially released. Before 1987, the Range Rover, Mercedes-Benz G-Class, and Lamborghini Countach, all revolutionary designs, were grey import vehicles in the United States. The grey market provided a clear signal to these manufacturers that the United States had significant demand for these cars, and their present-day US model descendants remain popular. Years later, Nissan similarly decided to sell the GT-R in North America after seeing how many people were importing older Skylines. Although Mercedes-Benz was also a beneficiary of the signals to US consumer demand that the grey market provided, their lobbying in Washington succeeded in virtually ending the US grey market in 1988.[12]
+
+In the UK, some Japanese domestic market models fetch a high price because of their performance, novelty or status, assisted by the fact that the Japanese drive on the left, in common with the UK, so vehicles are right hand drive. Popular types include off-road vehicles, people carriers, affordable sports cars like the Mazda MX-5 / Roadster, very high performance sports cars including the rally homologation based cars like the Subaru Impreza and Mitsubishi Lancer Evolution, ultra-compact kei cars, and limited edition Japanese market designer cars like the Nissan Figaro.
+
+In Japan, due to strict and differing car classifications and emission regulations, or lack of main consumer demand, some international models or certain regional models are not sold in Japanese domestic market. Grey importers are trying to import some of these models into Japan but it is permitted due to lack of restrictions imposed on them, unlike in other countries. Among the grey-imported vehicles in Japan are pickup trucks like Toyota Tundra, Nissan Navara and Subaru BRAT, which are not officially sold in Japan.
+
+Broadcasting
+Main article: Pirate decryption
+In television and radio broadcasting, grey markets primarily exist in relation to satellite radio and satellite television delivery. The most common form is companies reselling the equipment and services of a provider not licensed to operate in the market. For instance, a Canadian consumer who wants access to American television and radio services that are not available in Canada may approach a grey market reseller of Dish Network or DirecTV. There is also a grey market in the United States (especially from Canadian citizens with winter homes in the U.S.) for Canadian satellite services such as Bell Satellite TV or Shaw Direct.
+
+VPN services also market access to programming restricted by broadcasting deals through spoofing an IP address within a different territory. This is commonly used to access a television series otherwise stuck on an unpopular streaming service and instead access it easier through a service such as Netflix, which may have it in their library within another territory.
+
+In Europe, some satellite TV services are encrypted since they have only been authorised by content suppliers to broadcast films, sporting events and US entertainment programming in a certain country or countries. For example, only residents of the UK and Ireland may subscribe to Sky Digital. In other European countries with large British expatriate populations, such as Spain, Sky is widely available through the grey market. Although Sky discourages the use of its viewing cards outside the UK or Ireland, and has the technology to render them invalid, many people continue to use them.
+
+Parallel importing of "free-to-view" Sky cards from the UK to Ireland is often done so that Irish Sky customers can receive Channel 5 and some of the other channels not generally available via Sky in Ireland because of trademark and other licensing issues. Conversely, Sky viewing cards from Ireland, which allow viewing of Irish terrestrial channels, are imported into the UK. Northern Ireland residents subscribing to Sky can watch RTÉ One and Two and TG4, although not TV3, which carries many of the same programmes as ITV, a lot of the programmes airing before ITV can show them.
+
+It is also becoming increasingly common in the UK for some pubs to use satellite decoder cards from Greece, Norway, Poland or the Arab world to receive satellite TV broadcasting live English football matches from those countries. Alternatively, they may use cards which allow pirate decryption of scrambled signals. Such cards are typically much cheaper than the cards available in the UK from Sky (who charge extra fees for public showing licences). However, Sky has taken civil and criminal action against some who do this. Two cases involving grey cards, originating in 2008 were referred to the European Court of Justice.[13][14] The suppliers of grey cards and Karen Murphy, the landlady of a pub which showed Premier League matches using a Greek decoder card,[15] won their cases at the European Court of Justice. The judges ruled that right holders cannot license their content on an exclusive territorial basis, as this breaches EU law on competition and free movement of goods and services. However, whilst this ruling allows domestic viewers to subscribe to foreign satellite services, pubs may still need permission from rights holders such as the Premier League to broadcast content. This is because certain elements of the broadcast such as branding are copyrighted.[13]
+
+There followed two High Court judgements on this matter. Mr Justice Kitchin ruled that QC Leisure and other suppliers of foreign satellite systems could carry on with their businesses if they could prevent copyright elements such as branding of football matches from being shown in a public place. The Premier League could pursue prosecutions of licensees who showed branding of matches via foreign satellite systems. Karen Murphy won her case in the High Court following the ruling from the European Court of Justice. The ruling from Justice Stanley Burnton allowed Ms Murphy to shop for the cheapest foreign satellite provider. However, the ruling from Justice Kitchin prevented Ms Murphy from showing matches in her pub via foreign satellite systems because branding is subject to trade mark law. It is no longer illegal though for a customer to purchase a foreign viewing card from an EU country and use it outside the territory.
+
+Cannabis in the United States
+Main article: Cannabis in the United States
+Unlike other countries that have legalized recreational cannabis, federal law in the United States still prohibits possessing, transporting, or selling cannabis, while many states have legalized it at the state level. These contradictory laws have led to an unusual situation where a person may purchase cannabis at a legal dispensary, but may face charges if they take it into another state where it has not been legalized or attempt to take it on an airplane.[16]
+
+Cell phones
+The emergence of the GSM international standard for cell phones in 1990 prompted the beginning of the grey market in the cell phone industry. As global demand for mobile phones grew, so did the size of the parallel market. Today,[when?] it is estimated that over 30% of all mobile phones traded will pass through the grey market and that statistic continues to grow. It is impossible to quantify an exact figure, but sources[17][not specific enough to verify] suggest that as many as 500,000 mobile phones are bought and sold outside official distribution channels through their trading platforms every day. Many smaller countries and markets (Croatia, for example) are still prone to grey imports of mobile phones, apparently due to very limited number of mobile phone models ever to be sold in that particular country.
+
+The driving forces behind a heavily active mobile phone grey market include currency fluctuations, customers demands, manufacturers policies, market-specific features, and price variations. It is not uncommon for grey market traders to introduce a product into a market months in advance of the official launch. This was evident with the launch of the iPhone 4, where international grey market traders bought large quantities at Apple's retail price then shipped to countries where the product was not available, adding a substantial margin to the resale price. The launch of the iPhone 14, which removed the SIM card slot in the United States and was replaced with eSIM technology, but remains elsewhere, including Canada, also created a grey market for a version with a traditional SIM card slot.
+
+Computer software
+
+Product key on a Proof of License Certificate of Authenticity for Windows Vista Home Premium
+Purchasing some games from online content distribution systems, such as Valve's Steam, simply requires entering a valid CD key to associate with an account. In 2007, after the release of The Orange Box, Valve deactivated accounts with CD keys that were purchased outside the consumer's territory in order to maintain the integrity of region-specific licensing. This generated complaints from North American customers who had circumvented their Steam end-user licence agreement by purchasing The Orange Box through cheaper, market retailers.[18][19]
+
+Due to regional lockout, video game consoles and their games are often subjected to grey market trade and are chosen as the alternative to modding by some gamers. The reasons for this may range from the console being crippled in some markets to that of the desired game not being released for the market the potential consumer of the game is in.
+
+PC code stripping is a process by which boxed PC product is bought in large quantities at cheap rates. Manual labor is then used to open the box, retrieve the activation code from the box and enter the code into a database. The activation code is then sold online as a download key and the physical product is discarded or sold as backup media. [20]
+
+Electronics
+There is a grey market in electronics in which retailers import merchandise from regions where the prices are cheaper or where regional design differences are more favourable to consumers, and subsequently sell merchandise in regions where the manufacturer's selling price is more expensive. Online retailers are often able to exploit pricing disparities in various countries by using grey-market imports from regions where the product is sold at lower costs and reselling them without regional buyer restrictions. Websites such as Taobao and eBay enable customers to buy products designed for foreign regions with different features or at cheaper costs, using parallel importation.
+
+The grey market for photographic equipment and other such electronics is thriving in heavily taxed states like Singapore with dealers importing directly from lower taxed states and selling at lower prices, creating competition against local distributors recognised by the products' manufacturers. "Grey sets", as colloquially called, are often comparable to products purchased from the manufacturer's preferred retailer. Lenses or flash units of parallel imports often only differ by the warranty provided, and since the grey sets were manufactured for another state, photographic equipment manufacturers often offer local warranty, instead of international warranty, which will render grey sets ineligible for warranty claims with the manufacturer.
+
+Because of the nature of local warranties, importers of grey sets usually offer their own warranty schemes to compensate for the manufacturers' refusal of service. Grey sets do not differ particularly from official imports. They look and function identically. In the early days of camera sales during the 1960s and 70s, when lenses had amber coating, the bargain basements for Japanese equipment were Hong Kong and Singapore, through which goods were channeled to European shop windows bypassing the often substantial levy of the official importers. World-market pricing and the Internet have largely eliminated this. Canon gives their hard-selling DSLR cameras names like "Rebel" in the US and "EOS xx0/xx00" outside it, aimed at preventing the competitively priced US-merchandise reaching Europe where sales are slower but achieve a higher profit.
+
+Frequent-flyer miles
+Trade or bartering of frequent-flyer miles is prohibited by nearly all major airlines, although an authorised medium exists for specific frequent flyer programs.[21][non-primary source needed] Unauthorised exchanges of frequent flyer miles – of which several exist – are also major examples of grey markets.
+
+Infant formula
+
+Milk-powder runners queuing outside Sheung Shui station, near the Hong Kong border
+Following the 2008 Chinese milk scandal, parents in China lost confidence in locally produced infant formula, creating a demand for European, Japanese and American produced formula. Import restrictions on formula from these sources has led to parents willing to pay a premium for foreign brands leading to the emergence of milk-powder runners, who buy formula at ticket price over the counter in Hong Kong, carry the tins over the border to Shenzhen before returning to Hong Kong to repeat the process. The effect of the runners led to a shortage of infant formula in Hong Kong forcing the government to impose an export restriction of two tins per person per trip.[22] The Chinese then turned to Australia, subsequently also causing shortages there[23] and for milk formula producers to ask retailers in the United Kingdom to restrict purchasers to two tins, as there was evidence that milk formula is being purchased for onward shipment to China.[24]
+
+
+Securities
+Public company securities that are not listed, traded or quoted on any U.S. stock exchange or the OTC markets are sometimes purchased or sold over the counter (OTC) via the grey market. Grey market securities have no market makers quoting the stock. Since grey market securities are not traded or quoted on an exchange or interdealer quotation system, investor's bids and offers are not collected in a central spot so market transparency is diminished and effective execution of orders is difficult.[25]
+
+In India, the unofficial grey market trades are prevalent for the initial public offering (IPOs). The people put their money in the unregulated and unofficial grey market before the listing of the IPOs. The promoters of the company, along with the market operators, buy and sell the shares before the listing. This is the easiest way to manipulate the share price before IPO listing.
+
+
+Corporate action
+The parties most opposed to the grey market are usually the authorised agents or importers, or the retailers of the item in the target market. Often this is the national subsidiary of the manufacturer, or a related company. In response to the resultant damage to their profits and reputation, manufacturers and their official distribution chain will often seek to restrict the grey market. Such responses can breach competition law, particularly in the European Union. Manufacturers or their licensees often seek to enforce trademark or other intellectual-property laws against the grey market. Such rights may be exercised against the import, sale and/or advertisement of grey imports. In 2002, Levi Strauss, after a 4-year legal case, prevented the UK supermarket Tesco from selling grey market jeans.[44][45] However, such rights can be limited. Examples of such limitations include the first-sale doctrine in the United States and the doctrine of the exhaustion of rights in the European Union.
+
+When grey-market products are advertised on Google, eBay or other legitimate web sites, it is possible to petition for removal of any advertisements that violate trademark or copyright laws. This can be done directly, without the involvement of legal professionals. For example, eBay will remove listings of such products even in countries where their purchase and use is not against the law. Manufacturers may refuse to supply distributors and retailers (and with commercial products, customers) that trade in grey market goods. They may also more broadly limit supplies in markets where prices are low. Manufacturers may refuse to honor the warranty of an item purchased from grey market sources, on the grounds that the higher price on the non-grey market reflects a higher level of service even though the manufacturer does of course control their own prices to distributors. Alternatively, they may provide the warranty service only from the manufacturer's subsidiary in the intended country of import, not the diverted third country where the grey-market goods are ultimately sold by the distributor or retailer. This response to the grey market is especially evident in electronics goods. Local laws (or customer demand) concerning distribution and packaging (for example, the language on labels, units of measurement, and nutritional disclosure on foodstuffs) can be brought into play, as can national standards certifications for certain goods.
+
+Manufacturers may give the same item different model numbers in different countries, even though the functions of the item are identical, so that they can identify grey imports. Manufacturers can also use supplier codes to enable similar tracing of grey imports. Parallel market importers often decode the product in order to avoid the identification of the supplier. In the United States, courts have ruled decoding is legal, however manufacturers and brand owners may have rights if they can prove that the decoding has materially altered the product where certain trademarks have been defaced or the decoding has removed the ability of the manufacturer from enforcing quality-control measures. For example, if the decoding defaces the logo of the product or brand or if the batch code is removed preventing the manufacturer from re-calling defective batches.
+
+The development of DVD region codes, and equivalent regional-lockout techniques in other media, are examples of technological features designed to limit the flow of goods between national markets, effectively fighting the grey market that would otherwise develop. This enables movie studios and other content creators to charge more for the same product in one market than in another, or alternatively withhold the product from some markets for a particular time.
+
+Canon
+
+This section needs to be updated. Please help update this article to reflect recent events or newly available information. (April 2018)
+The lawsuits started by Canon U.S.A. Inc. against a number of retailers on 25 October 2015 in the New York Eastern District Court (Case No. 2:15-cv-6019[46] and No. 2:15-cv-6015)[47] will not be tried until 2016 at the earliest, but are based on a trademark violation. The plaintiff alleges that the defendant retailers applied counterfeit serial numbers to Canon digital SLR cameras and sold kits with inferior (non-Canon) warranties as well as counterfeit batteries and chargers that did not comply with U.S. certification regulations.[48] Canon U.S.A. Inc. also reserves the right to claim damages for "further violations of CUSA's intellectual property and other rights [that] will come to light as this litigation progresses".
+
+Alliance for Gray Market and Counterfeit Abatement
+Main article: Alliance for Gray Market and Counterfeit Abatement
+The Alliance for Gray Market and Counterfeit Abatement (AGMA) is a California-based non-profit organisation of information technology (IT) companies that works to educate and raise awareness on counterfeiting; digital IP protection; service and warranty abuse; and the grey market.
+
+Persuasion or persuasion arts is an umbrella term for influence. Persuasion can influence a person's beliefs, attitudes, intentions, motivations, or behaviours.[1]
+
+Persuasion is studied in many disciplines. Rhetoric studies modes of persuasion in speech and writing and is often taught as a classical subject.[2]: 46  Psychology looks at persuasion through the lens of individual behaviour[3] and neuroscience studies the brain activity associated with this behaviour.[4] History and political science are interested in the role of propaganda in shaping historical events.[5] In business, persuasion is aimed at influencing a person's (or group's) attitude or behaviour towards some event, idea, object, or another person (s) by using written, spoken, or visual methods to convey information, feelings, or reasoning, or a combination thereof.[6] Persuasion is also often used to pursue personal gain, such as election campaigning, giving a sales pitch,[7] or in trial advocacy. Persuasion can also be interpreted as using personal or positional resources to change people.
+
+Forms
+Propaganda is a form of persuasion used to indoctrinate a population towards an individual or a particular agenda.[8]: 7 
+
+Coercion is a form of persuasion that uses aggressive threats and the provocation of fear and/or shame to influence a person's behavior.[9]: 37 
+
+Systematic persuasion is the process through which attitudes or beliefs are leveraged by appeals to logic and reason.
+
+Heuristic persuasion, on the other hand, is the process through which attitudes or beliefs are leveraged by appeals to habit or emotion.[10]
+
+History and philosophy
+See also: Rhetoric § History
+The academic study of persuasion began with the Greeks, who emphasized rhetoric and elocution as the highest standard for a successful politician. All trials were held in front of the Assembly, and the likelihood of success of the prosecution versus the defense rested on the persuasiveness of the speaker.[11] Rhetoric is the art of effective persuasive speaking, often through the use of figures of speech, metaphors, and other techniques.
+
+The Greek philosopher Aristotle listed four reasons why one should learn the art of persuasion:[12]
+
+Truth and justice are perfect; thus if a case loses, it is the fault of the speaker.
+It is an excellent tool for teaching.
+A good rhetorician must be able to argue both sides to understand the whole problem, and
+There is no better way to defend one's self.
+He described three fundamental ways to communicate persuasively:
+
+Ethos (credibility): refers to the effort to convince your audience of your credibility or character. It is not automatic and can be created through actions, deeds, understanding, or expertise by the speaker.
+Logos (reason): refers to the effort to convince your audience by using logic and reason. This can be formal and non-formal. Formal reasoning uses syllogisms, arguments where two statements validly imply a third statement. Non-formal reasoning uses enthymemes, arguments that have valid reasoning but are informal and assume the audience has prior knowledge.[13]
+Pathos (emotion):[14] refers to the effort to persuade your audience by making an appeal to their feelings.[2]
+Ethics of persuasion
+Part of a series on
+Rhetoric
 
 History
-Main article: History of insurance
-Early methods
+Concepts
+Genres
+Criticism
+Rhetoricians
+Works
+Subfields
+Related
+vte
+Many philosophers have commented on the morality of persuasion. Socrates argued that rhetoric was based on appearances rather than the essence of a matter.[15]: 22  Thomas Hobbes was critical of use rhetoric to create controversy, particularly the use of metaphor.[16]: 28  Immanuel Kant was critical of rhetoric, arguing that it could cause people to reach conclusions that are at odds with those that they would have reached if they had applied their full judgment. He draws parallels between the function of rhetoric and the deterministic function of the mind like a machine.[16]: 88 
+
+Aristotle was critical of persuasion, though argued that judges would often allow themselves to be persuaded by choosing to apply emotions rather than reason.[16]: 122  However, he argued that persuasion could be used to induce an individual to apply reason and judgment.[16]: 136 
 
-Merchants have sought methods to minimize risks since early times. Pictured, Governors of the Wine Merchant's Guild by Ferdinand Bol, c. 1680.
-Methods for transferring or distributing risk were practiced by Chinese and Indian traders as long ago as the 3rd and 2nd millennia BC, respectively.[1][2] Chinese merchants travelling treacherous river rapids would redistribute their wares across many vessels to limit the loss due to any single vessel capsizing.
+Writers such as William Keith and Christian O. Lundberg argue that uses of force and threats in trying to influence others does not lead to persuasion, but rather talking to people does, going further to add "While Rhetoric certainly has its dark side that deals in tricks and perceptions... the systematic study of rhetoric generally ignores these techniques, in part because they are not very systematic or reliable."[17] There is also in legal disputes, the matter of the burden of proof when bringing up an argument, where it often falls on the hands of the one presenting a case to prove its validity to another person and where presumptions may be made where of the burden of proof has not been met, an argument may be dropped such as in a more famous example of "Innocent until proven guilty", although this line of presumption or burden of proof may not always be followed. While Keith and Lundberg do go into detail about the different intricacies of persuasion, they do explain that lapses in logic and or reasoning could lead to persuasive arguments with faults. These faults can come as enthymemes, where more likely than not only certain audiences with specific pieces of knowledge may understand the reasoning being presented with missing logic, or the more egregious example of fallacies where conclusions may be drawn (almost always incorrectly) through invalid argument.[17] In contrast to the reasoning behind enthymemes, the use of examples can help prove a person's rhetorical claims through inductive reasoning, which assumes that "if something is true in specific cases, it is true in general".[13]
 
-Codex Hammurabi Law 238 (c. 1755–1750 BC) stipulated that a sea captain, ship-manager, or ship charterer who saved a ship from total loss was only required to pay one-half the value of the ship to the ship-owner.[3][4][5] In the Digesta seu Pandectae (533), the second volume of the codification of laws ordered by Justinian I (527–565), a legal opinion written by the Roman jurist Paulus in 235 AD was included about the Lex Rhodia ("Rhodian law"). It articulates the general average principle of marine insurance established on the island of Rhodes in approximately 1000 to 800 BC, plausibly by the Phoenicians during the proposed Dorian invasion and emergence of the purported Sea Peoples during the Greek Dark Ages (c. 1100–c. 750).[6][7][8]
+Examples can be split into two categories real and hypothetical. Real examples come from personal experience or academic/scientific research which can support the argument you're making. Hypothetical examples are made-up. When arguing something, speakers can put forward a hypothetical situation that illustrates the point they are making to connect better with the audience. These examples must be plausible to properly illustrate a persuasive argument.[13]
 
-The law of general average is the fundamental principle that underlies all insurance.[7] In 1816, an archeological excavation in Minya, Egypt produced a Nerva–Antonine dynasty-era tablet from the ruins of the Temple of Antinous in Antinoöpolis, Aegyptus. The tablet prescribed the rules and membership dues of a burial society collegium established in Lanuvium, Italia in approximately 133 AD during the reign of Hadrian (117–138) of the Roman Empire.[7] In 1851 AD, future U.S. Supreme Court Associate Justice Joseph P. Bradley (1870–1892 AD), once employed as an actuary for the Mutual Benefit Life Insurance Company, submitted an article to the Journal of the Institute of Actuaries. His article detailed an historical account of a Severan dynasty-era life table compiled by the Roman jurist Ulpian in approximately 220 AD that was also included in the Digesta.[9]
+Theories
+There are many psychological theories for what influences an individual's behaviour in different situations. These theories will have implications about how persuasion works.
 
-Concepts of insurance has been also found in 3rd century BC Hindu scriptures such as Dharmasastra, Arthashastra and Manusmriti.[10] The ancient Greeks had marine loans. Money was advanced on a ship or cargo, to be repaid with large interest if the voyage prospers. However, the money would not be repaid at all if the ship were lost, thus making the rate of interest high enough to pay for not only for the use of the capital but also for the risk of losing it (fully described by Demosthenes). Loans of this character have ever since been common in maritime lands under the name of bottomry and respondentia bonds.[11]
+Attribution theory
+Main article: Attribution (psychology)
+Humans attempt to explain the actions of others through either dispositional attribution or situational attribution.
 
-The direct insurance of sea-risks for a premium paid independently of loans began in Belgium about 1300 AD.[11]
+Dispositional attribution, also referred to as internal attribution, attempts to point to a person's traits, abilities, motives, or dispositions as a cause or explanation for their actions. A citizen criticizing a president by saying the nation is lacking economic progress and health because the president is either lazy or lacking in economic intuition is utilizing a dispositional attribution.
 
-Separate insurance contracts (i.e., insurance policies not bundled with loans or other kinds of contracts) were invented in Genoa in the 14th century, as were insurance pools backed by pledges of landed estates. The first known insurance contract dates from Genoa in 1347. In the next century, maritime insurance developed widely, and premiums were varied with risks.[12] These new insurance contracts allowed insurance to be separated from investment, a separation of roles that first proved useful in marine insurance.
+Situational attribution, also referred to as external attribution, attempts to point to the context around the person and factors of his surroundings, particularly things that are completely out of his control. A citizen claiming that a lack of economic progress is not a fault of the president but rather the fact that he inherited a poor economy from the previous president is situational attribution.
 
-The earliest known policy of life insurance was made in the Royal Exchange, London, on 18 June 1583, for £383, 6s. 8d. for twelve months on the life of William Gibbons.[11]
+A fundamental attribution error occurs when people wrongly attribute either a shortcoming or accomplishment to internal factors while disregarding all external factors. In general, people use dispositional attribution more often than situational attribution when trying to explain or understand the behavior of others. This happens because we focus more on the individual when we lack information about that individual's situation and context. When trying to persuade others to like us or another person, we tend to explain positive behaviors and accomplishments with dispositional attribution and negative behaviors and shortcomings with situational attributions.[18]
 
-Modern methods
-Insurance became far more sophisticated in Enlightenment-era Europe, where specialized varieties developed.
+Behaviour change theories
+The Theory of Planned Behavior is the foremost theory of behaviour change. It has support from[19] meta-analyses which reveals it can predict around 30% of behaviour. Theories, by nature however, prioritize internal validity, over external validity. They are coherent and therefore make for an easily reappropriated story. On the other hand, they will correspond more poorly with the evidence, and mechanics of reality, than a straightforward itemization of the behaviour change interventions (techniques) by their individual efficacy. These behaviour change interventions have been[20] categorized by behavioral scientists. A mutually exclusive, comprehensively exhaustive (MECE) translation of this taxonomy, in decreasing order of effectiveness are:
 
+positive and negative consequences
+offering/removing incentives,
+offering/removing threats/punishments,
+distraction,
+changing exposure to cues (triggers) for the behaviour,
+prompts/cues,
+goal-setting,
+(increasing the salience of) emotional/health/social/environmental/regret consequences,
+self-monitoring of the behaviour and outcomes of behaviour,
+mental rehearsal of successful performance (planning?),
+self-talk,
+focus on past success,
+comparison of outcomes via persuasive argument,
+pros/cons and comparative imaging of future outcomes,
+identification of self as role model,
+self-affirmation,
+reframing,
+cognitive dissonance,
+reattribution,
+(increasing salience of) antecedents
+A typical instantiations of these techniques in therapy is[21][circular reference]exposure / response prevention for OCD.
 
-Lloyd's Coffee House was the first organized market for marine insurance.
-Property insurance as we know it today can be traced to the Great Fire of London, which in 1666 devoured more than 13,000 houses. The devastating effects of the fire converted the development of insurance "from a matter of convenience into one of urgency, a change of opinion reflected in Sir Christopher Wren's inclusion of a site for "the Insurance Office" in his new plan for London in 1667."[13] A number of attempted fire insurance schemes came to nothing, but in 1681, economist Nicholas Barbon and eleven associates established the first fire insurance company, the "Insurance Office for Houses", at the back of the Royal Exchange to insure brick and frame homes. Initially, 5,000 homes were insured by his Insurance Office.[14]
+Conditioning theories
+Main article: Classical conditioning
+Conditioning plays a huge part in the concept of persuasion. It is more often about leading someone into taking certain actions of their own, rather than giving direct commands. In advertisements for example, this is done by attempting to connect a positive emotion to a brand/product logo. This is often done by creating commercials that make people laugh, using a sexual undertone, inserting uplifting images and/or music etc. and then ending the commercial with a brand/product logo. Great examples of this are professional athletes. They are paid to connect themselves to things that can be directly related to their roles; sport shoes, tennis rackets, golf balls, or completely irrelevant things like soft drinks, popcorn poppers and panty hose. The important thing for the advertiser is to establish a connection to the consumer.[22]
 
-At the same time, the first insurance schemes for the underwriting of business ventures became available. By the end of the seventeenth century, London's growth as a centre for trade was increasing due to the demand for marine insurance. In the late 1680s, Edward Lloyd opened a coffee house, which became the meeting place for parties in the shipping industry wishing to insure cargoes and ships, including those willing to underwrite such ventures. These informal beginnings led to the establishment of the insurance market Lloyd's of London and several related shipping and insurance businesses.[15]
+This conditioning is thought to affect how people view certain products, knowing that most purchases are made on the basis of emotion. Just like you sometimes recall a memory from a certain smell or sound, the objective of some ads is solely to bring back certain emotions when you see their logo in your local store. The hope is that repeating the message several times makes consumers more likely to purchase the product because they already connect it with a good emotion and positive experience. Stefano DellaVigna and Matthew Gentzkow did a comprehensive study on the effects of persuasion in different domains. They discovered that persuasion has little or no effect on advertisement; however, there was a substantial effect of persuasion on voting if there was face-to-face contact.[23]
 
+Cognitive dissonance theory
+Main article: Cognitive dissonance
+Leon Festinger originally proposed the theory of cognitive dissonance in 1957. He theorized that human beings constantly strive for mental consistency. Our cognition (thoughts, beliefs, or attitudes) can be in agreement, unrelated, or in disagreement with each other. Our cognition can also be in agreement or disagreement with our behaviors. When we detect conflicting cognition, or dissonance, it gives us a sense of incompleteness and discomfort. For example, a person who is addicted to smoking cigarettes but also suspects it could be detrimental to their health suffers from cognitive dissonance.
 
-Leaflet promoting the National Insurance Act 1911
-Life insurance policies were taken out in the early 18th century. The first company to offer life insurance was the Amicable Society for a Perpetual Assurance Office, founded in London in 1706 by William Talbot and Sir Thomas Allen.[16][17] Upon the same principle, Edward Rowe Mores established the Society for Equitable Assurances on Lives and Survivorship in 1762.
+Festinger suggests that we are motivated to reduce this dissonance until our cognition is in harmony with itself. We strive for mental consistency. There are four main ways we go about reducing or eliminating our dissonance:
 
-It was the world's first mutual insurer and it pioneered age based premiums based on mortality rate laying "the framework for scientific insurance practice and development" and "the basis of modern life assurance upon which all life assurance schemes were subsequently based."[18]
+changing our minds about one of the facets of cognition
+reducing the importance of a cognition
+increasing the overlap between the two, and
+re-evaluating the cost/reward ratio.
+Revisiting the example of the smoker, they can either quit smoking, reduce the importance of their health, convince themself they are not at risk, or decide that the reward of smoking is worth the cost of their health.
 
-In the late 19th century "accident insurance" began to become available.[19] The first company to offer accident insurance was the Railway Passengers Assurance Company, formed in 1848 in England to insure against the rising number of fatalities on the nascent railway system.
+Cognitive dissonance is powerful when it relates to competition and self-concept. The most famous example of how cognitive dissonance can be used for persuasion comes from Festinger and Carlsmith's 1959 experiment in which participants were asked to complete a very dull task for an hour. Some were paid $20, while others were paid $1, and afterwards they were instructed to tell the next waiting participants that the experiment was fun and exciting. Those who were paid $1 were much more likely to convince the next participants that the experiment really was enjoyable than those who received $20. This is because $20 is enough reason to participate in a dull task for an hour, so there is no dissonance. Those who received $1 experienced great dissonance, so they had to truly convince themselves that the task actually was enjoyable to avoid feeling taken advantage of, and therefore reduce their dissonance.[24]
 
-The first international insurance rule was the York Antwerp Rules (YAR) for the distribution of costs between ship and cargo in the event of general average. In 1873 the "Association for the Reform and Codification of the Law of Nations", the forerunner of the International Law Association (ILA), was founded in Brussels. It published the first YAR in 1890, before switching to the present title of the "International Law Association" in 1895.[20][21]
+Elaboration likelihood model
+Main article: Elaboration likelihood model
+Persuasion has traditionally been associated with two routes:[25]
 
-By the late 19th century governments began to initiate national insurance programs against sickness and old age. Germany built on a tradition of welfare programs in Prussia and Saxony that began as early as in the 1840s. In the 1880s Chancellor Otto von Bismarck introduced old age pensions, accident insurance and medical care that formed the basis for Germany's welfare state.[22][23] In Britain more extensive legislation was introduced by the Liberal government in the National Insurance Act 1911. This gave the British working classes the first contributory system of insurance against illness and unemployment.[24] This system was greatly expanded after the Second World War under the influence of the Beveridge Report, to form the first modern welfare state.[22][25]
+Central route: Whereby an individual evaluates information presented to them based on the pros and cons of it and how well it supports their values
+Peripheral route: Change is mediated by how attractive the source of communication is and by bypassing the deliberation process.[25]
+The Elaboration likelihood model (ELM) forms a new facet of the route theory. It holds that the probability of effective persuasion depends on how successful the communication is at bringing to mind a relevant mental representation, which is the elaboration likelihood. Thus if the target of the communication is personally relevant, this increases the elaboration likelihood of the intended outcome and would be more persuasive if it were through the central route. Communication which does not require careful thought would be better suited to the peripheral route.[26]
 
-In 2008, the International Network of Insurance Associations (INIA), then an informal network, became active and it has been succeeded by the Global Federation of Insurance Associations (GFIA), which was formally founded in 2012 to aim to increase insurance industry effectiveness in providing input to international regulatory bodies and to contribute more effectively to the international dialogue on issues of common interest. It consists of its 40 member associations and 1 observer association in 67 countries, which companies account for around 89% of total insurance premiums worldwide.[26]
+Functional theories
+Functional theorists attempt to understand the divergent attitudes individuals have towards people, objects or issues in different situations.[27] There are four main functional attitudes:
 
-Principles
-Insurance involves pooling funds from many insured entities (known as exposures) to pay for the losses that only some insureds may incur. The insured entities are therefore protected from risk for a fee, with the fee being dependent upon the frequency and severity of the event occurring. In order to be an insurable risk, the risk insured against must meet certain characteristics. Insurance as a financial intermediary is a commercial enterprise and a major part of the financial services industry, but individual entities can also self-insure through saving money for possible future losses.[27]
+Adjustment function: A main motivation for individuals is to increase positive external rewards and minimize the costs. Attitudes serve to direct behavior towards the rewards and away from punishment.
+Ego Defensive function: The process by which an individual protects their ego from being threatened by their own negative impulses or threatening thoughts.
+Value-expressive: When an individual derives pleasure from presenting an image of themselves which is in line with their self-concept and the beliefs that they want to be associated with.
+Knowledge function: The need to attain a sense of understanding and control over one's life. An individual's attitudes therefore serve to help set standards and rules which govern their sense of being.[27]
+When communication targets an underlying function, its degree of persuasiveness influences whether individuals change their attitude after determining that another attitude would more effectively fulfill that function.[28]
 
-Insurability
-Main article: Insurability
-Risk which can be insured by private companies typically share seven common characteristics:[28]
+Inoculation theory
+Main article: Inoculation theory
+A vaccine introduces a weak form of a virus that can easily be defeated to prepare the immune system should it need to fight off a stronger form of the same virus. In much the same way, the theory of inoculation suggests that a certain party can introduce a weak form of an argument that is easily thwarted in order to make the audience inclined to disregard a stronger, full-fledged form of that argument from an opposing party.[29]
 
-A large number of similar exposure units: Since insurance operates through pooling resources, the majority of insurance policies cover individual members of large classes, allowing insurers to benefit from the law of large numbers in which predicted losses are similar to the actual losses. Exceptions include Lloyd's of London, which is famous for insuring the life or health of actors, sports figures, and other famous individuals. However, all exposures will have distinct differences, which may lead to different premium rates.
-Definite loss: This type of loss takes place at a known time and place from a known cause. The classic example involves the death of an insured person on a life insurance policy. Fire, automobile accidents, and worker injuries may all easily meet this criterion. Other types of losses may only be definite in theory. Occupational disease, for instance, may involve prolonged exposure to injurious conditions where no specific time, place, or cause is identifiable. Ideally, the time, place, and cause of a loss should be clear enough that a reasonable person, with sufficient information, could objectively verify all three elements.
-Accidental loss: The event that constitutes the trigger of a claim should be fortuitous, or at least outside the control of the beneficiary of the insurance. The loss should be pure because it results from an event for which there is only the opportunity for cost. Events that contain speculative elements such as ordinary business risks or even purchasing a lottery ticket are generally not considered insurable.
-Large loss: The size of the loss must be meaningful from the perspective of the insured. Insurance premiums need to cover both the expected cost of losses, plus the cost of issuing and administering the policy, adjusting losses, and supplying the capital needed to reasonably assure that the insurer will be able to pay claims. For small losses, these latter costs may be several times the size of the expected cost of losses. There is hardly any point in paying such costs unless the protection offered has real value to a buyer.
-Affordable premium: If the likelihood of an insured event is so high, or the cost of the event so large, that the resulting premium is large relative to the amount of protection offered, then it is not likely that insurance will be purchased, even if on offer. Furthermore, as the accounting profession formally recognizes in financial accounting standards, the premium cannot be so large that there is not a reasonable chance of a significant loss to the insurer. Suppose there is no such chance of loss. In that case, the transaction may have the form of insurance, but not the substance (see the U.S. Financial Accounting Standards Board pronouncement number 113: "Accounting and Reporting for Reinsurance of Short-Duration and Long-Duration Contracts").
-Calculable loss: There are two elements that must be at least estimable, if not formally calculable: the probability of loss and the attendant cost. Probability of loss is generally an empirical exercise, while cost has more to do with the ability of a reasonable person in possession of a copy of the insurance policy and a proof of loss associated with a claim presented under that policy to make a reasonably definite and objective evaluation of the amount of the loss recoverable as a result of the claim.
-Limited risk of catastrophically large losses: Insurable losses are ideally independent and non-catastrophic, meaning that the losses do not happen all at once and that individual losses are not severe enough to bankrupt the insurer; insurers may prefer to limit their exposure to a loss from a single event to some small portion of their capital base. Capital constrains insurers' ability to sell earthquake insurance as well as wind insurance in hurricane zones. In the United States, the federal government insures flood risk in specifically identified areas. In commercial fire insurance, it is possible to find single properties whose total exposed value is well in excess of any individual insurer's capital constraint. Such properties are generally shared among several insurers or are insured by a single insurer which syndicates the risk into the reinsurance market.
-Legal
-When a company insures an individual entity, there are basic legal requirements and regulations. Several commonly cited legal principles of insurance include:[29]
+This often occurs in negative advertisements and comparative advertisements—both for products and political causes. An example would be a manufacturer of a product displaying an ad that refutes one particular claim made about a rival's product, so that when the audience sees an ad for said rival product, they refute the product claims automatically.[30]
 
-Indemnity – the insurance company indemnifies or compensates the insured in the case of certain losses only up to the insured's interest.
-Benefit insurance – as it is stated in the study books of The Chartered Insurance Institute, the insurance company does not have the right of recovery from the party who caused the injury and must compensate the Insured regardless of the fact that Insured had already sued the negligent party for the damages (for example, personal accident insurance)
-Insurable interest – the insured typically must directly suffer from the loss. Insurable interest must exist whether property insurance or insurance on a person is involved. The concept requires that the insured have a "stake" in the loss or damage to the life or property insured. What that "stake" is will be determined by the kind of insurance involved and the nature of the property ownership or relationship between the persons. The requirement of an insurable interest is what distinguishes insurance from gambling.
-Utmost good faith – (Uberrima fides) the insured and the insurer are bound by a good faith bond of honesty and fairness. Material facts must be disclosed.
-Contribution – insurers, which have similar obligations to the insured, contribute in the indemnification, according to some method.
-Subrogation – the insurance company acquires legal rights to pursue recoveries on behalf of the insured; for example, the insurer may sue those liable for the insured's loss. The Insurers can waive their subrogation rights by using the special clauses.
-Causa proxima, or proximate cause – the cause of loss (the peril) must be covered under the insuring agreement of the policy, and the dominant cause must not be excluded
-Mitigation – In case of any loss or casualty, the asset owner must attempt to keep loss to a minimum, as if the asset was not insured.
-Indemnification
-Main article: Indemnity
-To "indemnify" means to make whole again, or to be reinstated to the position that one was in, to the extent possible, prior to the happening of a specified event or peril. Accordingly, life insurance is generally not considered to be indemnity insurance, but rather "contingent" insurance (i.e., a claim arises on the occurrence of a specified event). There are generally three types of insurance contracts that seek to indemnify an insured:
+Narrative transportation theory
+Main article: Transportation theory (psychology)
+Narrative transportation theory proposes that when people lose themselves in a story, their attitudes and intentions change to reflect that story.[31] The mental state of narrative transportation can explain the persuasive effect of stories on people, who may experience narrative transportation when certain contextual and personal preconditions are met, as Green and Brock[32] postulate for the transportation-imagery model. Narrative transportation occurs whenever the story receiver experiences a feeling of entering a world evoked by the narrative because of empathy for the story characters and imagination of the story plot.
 
-A "reimbursement" policy
-A "pay on behalf" or "on behalf of policy"[30]
-An "indemnification" policy
-From an insured's standpoint, the result is usually the same: the insurer pays the loss and claims expenses.
+Social judgment theory
+Main article: Social judgment theory
+Social judgment theory suggests that when people are presented with an idea or any kind of persuasive proposal, their natural reaction is to immediately seek a way to sort the information subconsciously and react to it. We evaluate the information and compare it with the attitude we already have, which is called the initial attitude or anchor point.
 
-If the Insured has a "reimbursement" policy, the insured can be required to pay for a loss and then be "reimbursed" by the insurance carrier for the loss and out of pocket costs including, with the permission of the insurer, claim expenses.[30][note 1]
+When trying to sort incoming persuasive information, an audience evaluates whether it lands in their latitude of acceptance, latitude of non-commitment or indifference, or the latitude of rejection. The size of these latitudes varies from topic to topic. Our "ego-involvement" generally plays one of the largest roles in determining the size of these latitudes. When a topic is closely connected to how we define and perceive ourselves, or deals with anything we care passionately about, our latitudes of acceptance and non-commitment are likely to be much smaller and our attitude of rejection much larger. A person's anchor point is considered to be the center of their latitude of acceptance, the position that is most acceptable to them.
 
-Under a "pay on behalf" policy, the insurance carrier would defend and pay a claim on behalf of the insured who would not be out of pocket for anything. Most modern liability insurance is written on the basis of "pay on behalf" language, which enables the insurance carrier to manage and control the claim.
+An audience is likely to distort incoming information to fit into their unique latitudes. If something falls within the latitude of acceptance, the subject tends to assimilate the information and consider it closer to his anchor point than it really is. Inversely, if something falls within the latitude of rejection, the subject tends to contrast the information and convince themself the information is farther away from their anchor point than it really is.
 
-Under an "indemnification" policy, the insurance carrier can generally either "reimburse" or "pay on behalf of", whichever is more beneficial to it and the insured in the claim handling process.
+When trying to persuade an individual target or an entire audience, it is vital to first learn the average latitudes of acceptance, non-commitment, and rejection of your audience. It is ideal to use persuasive information that lands near the boundary of the latitude of acceptance if the goal is to change the audience's anchor point. Repeatedly suggesting ideas on the fringe of the acceptance latitude makes people gradually adjust their anchor points, while suggesting ideas in the rejection latitude or even the non-commitment latitude does not change the a Exaggeration is the representation of something as more extreme or dramatic than it is, intentionally or unintentionally. It can be a rhetorical device or figure of speech, used to evoke strong feelings or to create a strong impression.
 
-An entity seeking to transfer risk (an individual, corporation, or association of any type, etc.) becomes the "insured" party once risk is assumed by an "insurer", the insuring party, by means of a contract, called an insurance policy. Generally, an insurance contract includes, at a minimum, the following elements: identification of participating parties (the insurer, the insured, the beneficiaries), the premium, the period of coverage, the particular loss event covered, the amount of coverage (i.e., the amount to be paid to the insured or beneficiary in the event of a loss), and exclusions (events not covered). An insured is thus said to be "indemnified" against the loss covered in the policy.
+Amplifying achievements, obstacles and problems to seek attention is an everyday occurrence[1] Inflating the difficulty of achieving a goal after attaining it, can be used to bolster self-esteem.[2]
 
-When insured parties experience a loss for a specified peril, the coverage entitles the policyholder to make a claim against the insurer for the covered amount of loss as specified by the policy. The fee paid by the insured to the insurer for assuming the risk is called the premium. Insurance premiums from many insureds are used to fund accounts reserved for later payment of claims – in theory for a relatively few claimants – and for overhead costs. So long as an insurer maintains adequate funds set aside for anticipated losses (called reserves), the remaining margin is an insurer's profit.
+In the arts, exaggerations are used to create emphasis or effect. As a literary device, exaggerations are often used in poetry, and is frequently encountered in casual speech.[3] Many times the usages of hyperbole describes something as better or worse than it really is. [4] An example of hyperbole is: "The bag weighed a ton."[5] Hyperbole makes the point that the bag was very heavy, though it probably does not weigh a ton.[6]
 
-Exclusions
-Policies typically include a number of exclusions, for example:
+Exaggerating is also a type of deception,[7] as well as a means of malingering – magnifying small injuries or discomforts as an excuse to avoid responsibilities.[8]
 
-Nuclear exclusion clause, excluding damage caused by nuclear and radiation accidents
-War exclusion clause, excluding damage from acts of war or terrorism.[31][32]
-Insurers may prohibit certain activities which are considered dangerous and therefore excluded from coverage. One system for classifying activities according to whether they are authorised by insurers refers to "green light" approved activities and events, "yellow light" activities and events which require insurer consultation and/or waivers of liability, and "red light" activities and events which are prohibited and outside the scope of insurance cover.[33]
+Etymology
+The word has origins in the mid-16th century: from Latin exaggerat- 'heaped up', from the verb exaggerare, from ex- 'thoroughly' + aggerare 'heap up' (from agger 'heap'). The word originally meant 'pile up, accumulate', later 'intensify praise or blame', giving rise to current senses.
 
+In the arts
+The exaggerator has been a familiar figure in Western culture since at least Aristotle's discussion of the alazon.[9]
 
-Methods of insurance
-According to the study books of The Chartered Insurance Institute, there are variant methods of insurance as follows:
+Expressionism
+Harold Bloom describes expressionist art as attempting to "intensify the expression of feeling and attitude by exaggeration".[10] Harold Osborne writes that in its wake, even the "new and hard realism...kept much of the distortion and exaggeration which had been one of the chief devices of earlier Expressionism".[11]
 
-Co-insurance – risks shared between insurers (sometimes referred to as "Retention")
-Dual insurance – having two or more policies with overlapping coverage of a risk (both the individual policies would not pay separately – under a concept named contribution, they would contribute together to make up the policyholder's losses. However, in case of contingency insurances such as life insurance, dual payment is allowed)
-Self-insurance – situations where risk is not transferred to insurance companies and solely retained by the entities or individuals themselves
-Reinsurance – situations when the insurer passes some part of or all risks to another Insurer, called the reinsurer
-Insurers' business model
-Accidents will happen (William H. Watson, 1922) is a slapstick silent film about the methods and mishaps of an insurance broker. Collection EYE Film Institute Netherlands.
-Insurers may use the subscription business model, collecting premium payments periodically in return for on-going and/or compounding benefits offered to policyholders.
+Tragedy
 
-Insurance premium
-Insurers' business model aims to collect more in insurance premiums than is paid out in losses, and to also offer a competitive price which consumers will accept. Insurance premiums can be simplified as:[36]
+The "braggart soldier" Pyrgopolynices in a 2012 production of the play Miles Gloriosus
+Although primarily a comic figure, the boastful alazon may be one aspect of the tragic hero as well: the touch of miles gloriosus ("braggart soldier") in Tamburlaine, even in Othello, has been commented upon, as has the touch of the obsessed philosopher in Faustus and Hamlet'.[12]
 
-insurance premium = expected value of claims + underwriting expenses + operating expense + profit - return on investment.
-At the most basic level, insurance premium estimation involves looking at the frequency of claims, and the expected value of the payout for these claims. The most complicated aspect of insuring is the actuarial science of ratemaking (price-setting) of policies, which uses statistics and probability to approximate the rate of future claims based on a given risk. After producing rates, the insurer will use discretion to reject or accept risks through the underwriting process. The insurance company will collect historical loss-data, bring the loss data to present value, and compare these prior losses to the premium collected in order to assess rate adequacy.[37] Loss ratios and expense loads are also used. Rating for different risk characteristics involves—at the most basic level—comparing the losses with "loss relativities"—a policy with twice as many losses would, therefore, be charged twice as much. More complex multivariate analyses are sometimes used when multiple characteristics are involved and a univariate analysis could produce confounded results. Other statistical methods may be used in assessing the probability of future losses.
+Humour
+Emil Draitser writes that "Some theoreticians of the comic consider exaggeration to be a universal comic device."[13] It may take different forms in different genres, but in the words of M. Eastman and W. Fry, all rely on the fact that 'the easiest way to make things laughable is to exaggerate to the point of absurdity their salient traits'.[14]
 
-Upon termination of a given policy, the amount of premium collected minus the amount paid out in claims is the insurer's underwriting profit on that policy. Underwriting performance is measured by something called the "combined ratio", which is the ratio of expenses/losses to premiums.[38] A combined ratio of less than 100% indicates an underwriting profit, while anything over 100 indicates an underwriting loss.
+A caricature is a type of portrait that exaggerates or distorts the essence of a person or thing to create an easily identifiable visual likeness: Filippo Baldinucci describes this as "disproportionately increasing and emphasizing the defects of the features".[15] In literature, a caricature is a description of a person using exaggeration of some characteristics and oversimplification of others.[16]
 
-Insurers make money in two ways:
+Slapstick is the recourse to humor involving exaggerated physical activity which exceeds the boundaries of common sense.[17][18][19] These exaggerated depictions are often found in cartoons, and light film comedies aimed at younger audiences.
 
-Through underwriting, the process by which insurers select the risks to insure and decide how much in insurance premiums to charge for accepting those risks, and taking the brunt of the risk should it come to fruition.
-By investing the insurance premiums they collect from insured parties
-A company with a combined ratio over 100% may nevertheless remain profitable due to investment earnings. Insurance companies earn investment profits on "float". Float, or available reserve, is the amount of money on hand at any given moment that an insurer has collected in insurance premiums but has not paid out in claims. Insurers start investing insurance premiums as soon as they are collected and continue to earn interest or other income on them until claims are paid out. The Association of British Insurers (grouping together 400 insurance companies and 94% of UK insurance services) has almost 20% of the investments in the London Stock Exchange.[39] In 2007, U.S. industry profits from float totaled $58 billion. In a 2009 letter to investors, Warren Buffett wrote, "we were paid $2.8 billion to hold our float in 2008".[40]
+Overacting
+Overacting is the exaggeration of gestures and speech when acting. It may be unintentional, particularly in the case of a bad actor, or be required for the role. For the latter, it is commonly used in comical situations or to stress the evil characteristics of a villain. Since the perception of acting quality differs between people the extent of overacting can be subjective.
 
-In the United States, the underwriting loss of property and casualty insurance companies was $142.3 billion in the five years ending 2003. But overall profit for the same period was $68.4 billion, as the result of float. Some insurance-industry insiders, most notably Hank Greenberg, do not believe that it is possible to sustain a profit from float forever without an underwriting profit as well, but this opinion is not universally held. Reliance on float for profit has led some industry experts to call insurance companies "investment companies that raise the money for their investments by selling insurance".[41]
+Exaggeration is an effect especially useful for animation, as perfect imitation of reality can look static and dull in cartoons.[20] The level of exaggeration depends on whether one seeks realism or a particular style, like a caricature or the style of a specific artist. The classical definition of exaggeration, employed by Disney, was to remain true to reality, just presenting it in a wilder, more extreme form.[21] Other forms of exaggeration can involve the supernatural or surreal, alterations in the physical features of a character; or elements in the storyline itself.[22] It is important to employ a certain level of restraint when using exaggeration. If a scene contains several elements, there should be a balance in how those elements are exaggerated in relation to each other, to avoid confusing or overawing the viewer.[23]
 
-Naturally, the float method is difficult to carry out in an economically depressed period generally causing insurers to shift away from investments and to toughen up their underwriting standards, so a poor economy generally means high insurance-premiums. This tendency to swing between profitable and unprofitable periods over time is commonly known as the underwriting, or insurance, cycle.[42]
+Shock jockery
+A shock jock, a type of radio broadcaster or disc jockey, entertains listeners or attracts attention using humor or melodramatic exaggeration that some portion of the listening audience may find offensive.
 
-Claims
+In journalism
+Schopenhauer saw exaggeration as essential to journalism.[24] He may have overstated this case, but yellow journalism thrived on exaggeration,[25] and fact-checking and independent verification have not succeeded in suppressing clickbait or hyperbolic headlines.
 
-Claims examiner at work. (1992)
-Claims and loss handling is the materialized utility of insurance; it is the actual "product" paid for. Claims may be filed by insureds directly with the insurer or through brokers or agents. The insurer may require that the claim be filed on its own proprietary forms, or may accept claims on a standard industry form, such as those produced by ACORD.
+In politics
 
-Insurance company claims departments employ a large number of claims adjusters, supported by a staff of records management and data entry clerks. Incoming claims are classified based on severity and are assigned to adjusters, whose settlement authority varies with their knowledge and experience. An adjuster undertakes an investigation of each claim, usually in close cooperation with the insured, determines if coverage is available under the terms of the insurance contract (and if so, the reasonable monetary value of the claim), and authorizes payment.
+During the election of 1800, surrogates of John Adams' political campaign warned voters that if Thomas Jefferson won the election, "murder, robbery, rape, adultery and incest will openly be taught and practiced."[26]
+Politicians can exaggerate.[27] In the electoral process one may expect exaggeration.[28] Outside, the exaggerations of propaganda[29] can bolster an incumbent's position.
 
-Policyholders may hire their own public adjusters to negotiate settlements with the insurance company on their behalf. For policies that are complicated, where claims may be complex, the insured may take out a separate insurance policy add-on, called loss recovery insurance, which covers the cost of a public adjuster in the case of a claim.
+In psychology
+People with the following mental health issues are prone to make exaggerated representations:
 
-Adjusting liability insurance claims is particularly difficult because they involve a third party, the plaintiff, who is under no contractual obligation to cooperate with the insurer and may in fact regard the insurer as a deep pocket. The adjuster must obtain legal counsel for the insured—either inside ("house") counsel or outside ("panel") counsel, monitor litigation that may take years to complete, and appear in person or over the telephone with settlement authority at a mandatory settlement conference when requested by a judge.
+Factitious disorder/malingering,[30]
+Substance related and addictive disorders
+Acute stress disorder,[30]
+Post traumatic stress disorder,[30]
+Avoidant personality disorder,[30] and
+Narcissistic personality disorder.[30]
+Factitious disorder is when a person acts as if they have a physical or psychological illness. People with this disorder created the symptoms and are willing to undergo painful or risky tests to get sympathy and special attention.[31]
 
-If a claims adjuster suspects underinsurance, the condition of average may come into play to limit the insurance company's exposure.
+In popular culture
+In 1969, The Monty Python Dirty Fork sketch demonstrates an absurd level of catastrophization where restaurant staff commit suicide and murder each other because of a customer complaint of a dirty fork. Compare with the scene in the film Monty Python and the Holy Grail[32] involving the Black Knight character which is the opposite extreme of absurdity (minimisation).[33][32]
 
-In managing the claims-handling function, insurers seek to balance the elements of customer satisfaction, administrative handling expenses, and claims overpayment leakages. Disputes between insurers and insureds over the validity of claims or claims-handling practices occasionally escalate into litigation (see insurance bad faith).
+A grey market or dark market (sometimes confused with the similar term "parallel market")[1][2] is the trade of a commodity through distribution channels that are not authorised by the original manufacturer or trademark proprietor. Grey market products (grey goods) are products traded outside the manufacturer's authorised channel.
 
-Marketing
-Insurers will often use insurance agents to initially market or underwrite their customers. Agents can be captive, meaning they write only for one company, or independent, meaning that they can issue policies from several companies. The existence and success of companies using insurance agents is likely due to the availability of improved and personalised services. Companies also use Broking firms, Banks and other corporate entities (like Self Help Groups, Microfinance Institutions, NGOs, etc.) to market their products.[43]
+Etymology
+Manufacturers of computers, telecom, and technology equipment often sell these products through distributors. Most distribution agreements require the distributor to resell the products strictly to end users. However, some distributors choose to resell products to other resellers. In the late 1980s, manufacturers labelled the resold products as the "grey market".[3]
 
-Types
-Any risk that can be quantified can potentially be insured. Specific kinds of risk that may give rise to claims are known as perils. An insurance policy will set out in detail which perils are covered by the policy and which are not. Below are non-exhaustive lists of the many different types of insurance that exist. A single policy may cover risks in one or more of the categories set out below. For example, vehicle insurance would typically cover both the property risk (theft or damage to the vehicle) and the liability risk (legal claims arising from an accident). A home insurance policy in the United States typically includes coverage for damage to the home and the owner's belongings, certain legal claims against the owner, and even a small amount of coverage for medical expenses of guests who are injured on the owner's property.
+Description
+Grey market goods are goods sold outside the authorized distribution channels by entities which may have no relationship with the producer of the goods. This form of parallel import frequently occurs when the price of an item is significantly higher in one country than another.[4] This commonly takes place with electronic equipment such as cameras. Entrepreneurs buy the product where it is available cheaply, often at retail but sometimes at wholesale, and import it to the target market. They then sell it at a price high enough to provide a profit but below the normal market price.
 
-Business insurance can take a number of different forms, such as the various kinds of professional liability insurance, also called professional indemnity (PI), which are discussed below under that name; and the business owner's policy (BOP), which packages into one policy many of the kinds of coverage that a business owner needs, in a way analogous to how homeowners' insurance packages the coverages that a homeowner needs.[44]
+International efforts to promote free trade, including reduced tariffs and harmonised national standards, facilitate this form of arbitrage whenever manufacturers attempt to preserve highly disparate pricing. Because of the nature of grey markets, it is difficult or impossible to track the precise numbers of grey market sales. Grey market goods are often new, but some grey market goods are used goods. A market in used goods is sometimes nicknamed a green market.
 
-Vehicle insurance
-Main article: Vehicle insurance
+The two main types of grey markets are those of imported manufactured goods that would normally be unavailable or more expensive in a certain country and unissued securities that are not yet traded in official markets. Sometimes the term dark market is used to describe secretive, unregulated trading in commodity futures, notably crude oil in 2008.[5] This can be considered a third type of "grey market" not intended or explicitly authorised by oil producers.[6]
 
-A wrecked vehicle in Copenhagen
-Vehicle insurance protects the policyholder against financial loss in the event of an incident involving a vehicle they own, such as in a traffic collision.
+The import of legally restricted or prohibited items such as prescription drugs or firearms, on the other hand, is considered black market, as is the smuggling of goods into a target country to avoid import duties. A related concept is bootlegging; the smuggling or transport of highly regulated goods, especially alcoholic beverages. The term "bootlegging" is also often applied to the production or distribution of counterfeit or otherwise infringing goods (also black market).
 
-Coverage typically includes:
+Grey markets sometimes develop for video game consoles[7] and titles whose demand temporarily exceeds their supply causing authorised local suppliers to run out of stock. This happens especially during the Christmas and holiday season. Other popular items, such as dolls, magnets and contraception, can also be affected. In such situations, the grey market price may be considerably higher than the manufacturer's suggested retail price, with unscrupulous sellers buying items in bulk for the express purpose of inflating the prices during resale, a practice called scalping. Online auction sites such as eBay have contributed to the emergence of the video-game grey market.[citation needed]
 
-Property coverage, for damage to or theft of the car
-Liability coverage, for the legal responsibility to others for bodily injury or property damage
-Medical coverage, for the cost of treating injuries, rehabilitation and sometimes lost wages and funeral expenses
-Gap insurance
-Main article: Gap insurance
-GAP (Guaranteed Asset Protection) insurance covers the excess amount on an auto loan in an instance where the policyholder's insurance company does not cover the entire loan. Depending on the company's specific policies it might or might not cover the deductible as well. This coverage is marketed for those who put low down payments, have high interest rates on their loans, and those with 60-month or longer terms. Gap insurance is typically offered by a finance company when the vehicle owner purchases their vehicle, but many auto insurance companies offer this coverage to consumers as well.
+Goods
+Arcade games
+Certain otherwise identical arcade games are marketed under different titles, such as Carrier Air Wing/U.S. Navy, Mega Man/Rockman, and Police 911/Police 24/7. When certain arcade games are first powered on, a warning message is shown such as "[t]his game is intended only for sale and use in (country/region)" and often, such a message is occasionally displayed while the machine is in an attract mode.
 
-Health insurance
-Main articles: Health insurance and Dental insurance
+One reason for these regional name variants is trademark issues. A company may not own the rights to a trademark in another country, where that trademark may be owned by an entirely different entity. Because of this, a different name must be used.
 
-Great Western Hospital, Swindon
-Health insurance policies cover the cost of medical treatments. Dental insurance, like medical insurance, protects policyholders for dental costs. In most developed countries, all citizens receive some health coverage from their governments, paid through taxation. In most countries, health insurance is often part of an employer's benefits.
+These regional name variations may also be used to prevent the sale of bootleg arcade games,[citation needed] including those from Japanese versions.
 
-Income protection insurance
+Automobiles
+Main article: Grey import vehicle
+Automobile manufacturers segment world markets by territory and price, thus creating a demand for grey import vehicles.
 
-Workers' compensation, or employers' liability insurance, is compulsory in some countries.
-Disability insurance policies provide financial support in the event of the policyholder becoming unable to work because of disabling illness or injury. It provides monthly support to help pay such obligations as mortgage loans and credit cards. Short-term and long-term disability policies are available to individuals, but considering the expense, long-term policies are generally obtained only by those with at least six-figure incomes, such as doctors, lawyers, etc. Short-term disability insurance covers a person for a period typically up to six months, paying a stipend each month to cover medical bills and other necessities.
-Long-term disability insurance covers an individual's expenses for the long term, up until such time as they are considered permanently disabled and thereafter insurance companies will often try to encourage the person back into employment in preference to and before declaring them unable to work at all and therefore totally disabled.
-Disability overhead insurance allows business owners to cover the overhead expenses of their business while they are unable to work.
-Total permanent disability insurance provides benefits when a person is permanently disabled and can no longer work in their profession, often taken as an adjunct to life insurance.
-Workers' compensation insurance replaces all or part of a worker's wages lost and accompanying medical expenses incurred because of a job-related injury.
-Casualty insurance
-Main article: Casualty insurance
-Casualty insurance insures against accidents, not necessarily tied to any specific property. It is a broad spectrum of insurance that a number of other types of insurance could be classified, such as auto, workers compensation, and some liability insurances.
-
-Crime insurance is a form of casualty insurance that covers the policyholder against losses arising from the criminal acts of third parties. For example, a company can obtain crime insurance to cover losses arising from theft or embezzlement.
-Terrorism insurance provides protection against any loss or damage caused by terrorist activities. In the United States in the wake of 9/11, the Terrorism Risk Insurance Act 2002 (TRIA) set up a federal program providing a transparent system of shared public and private compensation for insured losses resulting from acts of terrorism. The program was extended until the end of 2014 by the Terrorism Risk Insurance Program Reauthorization Act 2007 (TRIPRA).
-Kidnap and ransom insurance is designed to protect individuals and corporations operating in high-risk areas around the world against the perils of kidnap, extortion, wrongful detention and hijacking.
-Political risk insurance is a form of casualty insurance that can be taken out by businesses with operations in countries in which there is a risk that revolution or other political conditions could result in a loss.
-Life insurance
-Main article: Life insurance
 
-Amicable Society for a Perpetual Assurance Office, Serjeants' Inn, Fleet Street, London, 1801
-Life insurance provides a monetary benefit to a decedent's family or other designated beneficiary, and may specifically provide for income to an insured person's family, burial, funeral and other final expenses. Life insurance policies often allow the option of having the proceeds paid to the beneficiary either in a lump sum cash payment or an annuity. In most states, a person cannot purchase a policy on another person without their knowledge.
+A Honda Stepwgn as seen in the Philippines, converted to left-hand drive. Right-hand drive vehicles are not allowed to be used in the country except in freeport zones, and are thus modified to be driven legally.[8]
+Although some grey imports are a bargain, some buyers have discovered that their vehicles do not meet local regulations, or that parts and services are difficult to obtain because these cars are different from the versions sold through the new car dealer network.[9]
 
-Annuities provide a stream of payments and are generally classified as insurance because they are issued by insurance companies, are regulated as insurance, and require the same kinds of actuarial and investment management expertise that life insurance requires. Annuities and pensions that pay a benefit for life are sometimes regarded as insurance against the possibility that a retiree will outlive his or her financial resources. In that sense, they are the complement of life insurance and, from an underwriting perspective, are the mirror image of life insurance.
+Many used cars come from Singapore or Japan, and are sold in other countries around the world, including the United Kingdom, Russia and New Zealand. Japan and Singapore both have strict laws against older cars. The Japanese Shaken road­worthiness testing regime requires progressively more expensive maintenance, involving the replacement of entire vehicle systems, that are unnecessary for safety, year on year, to devalue older cars and promote new cars on their home market that were available for low prices. This makes these well running cars seem reasonably priced, even after transport expenses. There are very few cars in Japan more than five years old.[10]
 
-Certain life insurance contracts accumulate cash values, which may be taken by the insured if the policy is surrendered or which may be borrowed against. Some policies, such as annuities and endowment policies, are financial instruments to accumulate or liquidate wealth when it is needed.
+New car arbitrage has become an issue in the US as well, especially when the US price is lower in the US than in countries like China.[11]
 
-In many countries, such as the United States and the UK, the tax law provides that the interest on this cash value is not taxable under certain circumstances. This leads to widespread use of life insurance as a tax-efficient method of saving as well as protection in the event of early death.
+Beyond cost issues, grey market cars provide consumer access to models never officially released. Before 1987, the Range Rover, Mercedes-Benz G-Class, and Lamborghini Countach, all revolutionary designs, were grey import vehicles in the United States. The grey market provided a clear signal to these manufacturers that the United States had significant demand for these cars, and their present-day US model descendants remain popular. Years later, Nissan similarly decided to sell the GT-R in North America after seeing how many people were importing older Skylines. Although Mercedes-Benz was also a beneficiary of the signals to US consumer demand that the grey market provided, their lobbying in Washington succeeded in virtually ending the US grey market in 1988.[12]
 
-In the United States, the tax on interest income on life insurance policies and annuities is generally deferred. However, in some cases the benefit derived from tax deferral may be offset by a low return. This depends upon the insuring company, the type of policy and other variables (mortality, market return, etc.). Moreover, other income tax saving vehicles (e.g., IRAs, 401(k) plans, Roth IRAs) may be better alternatives for value accumulation.
+In the UK, some Japanese domestic market models fetch a high price because of their performance, novelty or status, assisted by the fact that the Japanese drive on the left, in common with the UK, so vehicles are right hand drive. Popular types include off-road vehicles, people carriers, affordable sports cars like the Mazda MX-5 / Roadster, very high performance sports cars including the rally homologation based cars like the Subaru Impreza and Mitsubishi Lancer Evolution, ultra-compact kei cars, and limited edition Japanese market designer cars like the Nissan Figaro.
 
-Burial insurance
-Burial insurance is an old type of life insurance which is paid out upon death to cover final expenses, such as the cost of a funeral. The Greeks and Romans introduced burial insurance c. 600 CE when they organized guilds called benevolent societies, which cared for the surviving families and paid funeral expenses of members upon death. Guilds in the Middle Ages served a similar purpose, as did friendly societies during Victorian times.
+In Japan, due to strict and differing car classifications and emission regulations, or lack of main consumer demand, some international models or certain regional models are not sold in Japanese domestic market. Grey importers are trying to import some of these models into Japan but it is permitted due to lack of restrictions imposed on them, unlike in other countries. Among the grey-imported vehicles in Japan are pickup trucks like Toyota Tundra, Nissan Navara and Subaru BRAT, which are not officially sold in Japan.
 
-Property
-Main article: Property insurance
+Broadcasting
+Main article: Pirate decryption
+In television and radio broadcasting, grey markets primarily exist in relation to satellite radio and satellite television delivery. The most common form is companies reselling the equipment and services of a provider not licensed to operate in the market. For instance, a Canadian consumer who wants access to American television and radio services that are not available in Canada may approach a grey market reseller of Dish Network or DirecTV. There is also a grey market in the United States (especially from Canadian citizens with winter homes in the U.S.) for Canadian satellite services such as Bell Satellite TV or Shaw Direct.
 
-This tornado damage to an Illinois home would be considered an "Act of God" for insurance purposes.
-Property insurance provides protection against risks to property, such as fire, theft or weather damage. This may include specialized forms of insurance such as fire insurance, flood insurance, earthquake insurance, home insurance, inland marine insurance or boiler insurance. The term property insurance may, like casualty insurance, be used as a broad category of various subtypes of insurance, some of which are listed below:
+VPN services also market access to programming restricted by broadcasting deals through spoofing an IP address within a different territory. This is commonly used to access a television series otherwise stuck on an unpopular streaming service and instead access it easier through a service such as Netflix, which may have it in their library within another territory.
 
+In Europe, some satellite TV services are encrypted since they have only been authorised by content suppliers to broadcast films, sporting events and US entertainment programming in a certain country or countries. For example, only residents of the UK and Ireland may subscribe to Sky Digital. In other European countries with large British expatriate populations, such as Spain, Sky is widely available through the grey market. Although Sky discourages the use of its viewing cards outside the UK or Ireland, and has the technology to render them invalid, many people continue to use them.
 
-N106US, an Airbus A320-214 of US Airways, was written off after ditching into the Hudson River as US Airways Flight 1549 on January 15, 2009.
-Aviation insurance protects aircraft hulls and spares, and associated liability risks, such as passenger and third-party liability. Airports may also appear under this subcategory, including air traffic control and refuelling operations for international airports through to smaller domestic exposures.
-Boiler insurance (also known as boiler and machinery insurance, or equipment breakdown insurance) insures against accidental physical damage to boilers, equipment or machinery.
-Builder's risk insurance insures against the risk of physical loss or damage to property during construction. Builder's risk insurance is typically written on an "all risk" basis covering damage arising from any cause (including the negligence of the insured) not otherwise expressly excluded. Builder's risk insurance is coverage that protects a person's or organization's insurable interest in materials, fixtures or equipment being used in the construction or renovation of a building or structure should those items sustain physical loss or damage from an insured peril.[45]
-Crop insurance may be purchased by farmers to reduce or manage various risks associated with growing crops. Such risks include crop loss or damage caused by weather, hail, drought, frost damage, pests[46] (including especially insects), or disease[47][46]—some of these being termed named perils.[46] Index-based insurance uses models of how climate extremes affect crop production to define certain climate triggers that if surpassed have high probabilities of causing substantial crop loss. When harvest losses occur associated with exceeding the climate trigger threshold, the index-insured farmer is entitled to a compensation payment.[48]
-Earthquake insurance is a form of property insurance that pays the policyholder in the event of an earthquake that causes damage to the property. Most ordinary home insurance policies do not cover earthquake damage. Earthquake insurance policies generally feature a high deductible. Rates depend on location and hence the likelihood of an earthquake, as well as the construction of the home.
+Parallel importing of "free-to-view" Sky cards from the UK to Ireland is often done so that Irish Sky customers can receive Channel 5 and some of the other channels not generally available via Sky in Ireland because of trademark and other licensing issues. Conversely, Sky viewing cards from Ireland, which allow viewing of Irish terrestrial channels, are imported into the UK. Northern Ireland residents subscribing to Sky can watch RTÉ One and Two and TG4, although not TV3, which carries many of the same programmes as ITV, a lot of the programmes airing before ITV can show them.
 
-Hurricane Katrina caused over $80 billion of storm and flood damage.
-Flood insurance protects against property loss due to flooding. Many U.S. insurers do not provide flood insurance in some parts of the country. In response to this, the federal government created the National Flood Insurance Program which serves as the insurer of last resort.
-Home insurance, also commonly called hazard insurance or homeowners insurance (often abbreviated in the real estate industry as HOI), provides coverage for damage or destruction of the policyholder's home. In some geographical areas, the policy may exclude certain types of risks, such as flood or earthquake, that require additional coverage. Maintenance-related issues are typically the homeowner's responsibility. The policy may include inventory, or this can be bought as a separate policy, especially for people who rent housing. In some countries, insurers offer a package which may include liability and legal responsibility for injuries and property damage caused by members of the household, including pets.[49]
-Landlord insurance covers residential or commercial property that is rented to tenants. It also covers the landlord's liability for the occupants at the property. Most homeowners' insurance, meanwhile, cover only owner-occupied homes and not liability or damages related to tenants.[50]
-Marine insurance and marine cargo insurance cover the loss or damage of vessels at sea or on inland waterways, and of cargo in transit, regardless of the method of transit. When the owner of the cargo and the carrier are separate corporations, marine cargo insurance typically compensates the owner of cargo for losses sustained from fire, shipwreck, etc., but excludes losses that can be recovered from the carrier or the carrier's insurance. Many marine insurance underwriters will include "time element" coverage in such policies, which extends the indemnity to cover loss of profit and other business expenses attributable to the delay caused by a covered loss.
-Renters' insurance, often called tenants' insurance, is an insurance policy that provides some of the benefits of homeowners' insurance, but does not include coverage for the dwelling, or structure, with the exception of small alterations that a tenant makes to the structure.
-Supplemental natural disaster insurance covers specified expenses after a natural disaster renders the policyholder's home uninhabitable. Periodic payments are made directly to the insured until the home is rebuilt or a specified time period has elapsed.
-Surety bond insurance is a three-party insurance guaranteeing the performance of the principal.
+It is also becoming increasingly common in the UK for some pubs to use satellite decoder cards from Greece, Norway, Poland or the Arab world to receive satellite TV broadcasting live English football matches from those countries. Alternatively, they may use cards which allow pirate decryption of scrambled signals. Such cards are typically much cheaper than the cards available in the UK from Sky (who charge extra fees for public showing licences). However, Sky has taken civil and criminal action against some who do this. Two cases involving grey cards, originating in 2008 were referred to the European Court of Justice.[13][14] The suppliers of grey cards and Karen Murphy, the landlady of a pub which showed Premier League matches using a Greek decoder card,[15] won their cases at the European Court of Justice. The judges ruled that right holders cannot license their content on an exclusive territorial basis, as this breaches EU law on competition and free movement of goods and services. However, whilst this ruling allows domestic viewers to subscribe to foreign satellite services, pubs may still need permission from rights holders such as the Premier League to broadcast content. This is because certain elements of the broadcast such as branding are copyrighted.[13]
 
-The demand for terrorism insurance surged after the September 11 attacks of 2001.
-Volcano insurance is a specialized insurance protecting against damage arising specifically from volcanic eruptions.
-Windstorm insurance is an insurance covering the damage that can be caused by wind events such as hurricanes.
-Liability
-Main article: Liability insurance
-Liability insurance is a broad superset that covers legal claims against the insured. Many types of insurance include an aspect of liability coverage. For example, a homeowner's insurance policy will normally include liability coverage which protects the insured in the event of a claim brought by someone who slips and falls on the property; automobile insurance also includes an aspect of liability insurance that indemnifies against the harm that a crashing car can cause to others' lives, health, or property. The protection offered by a liability insurance policy is twofold: a legal defense in the event of a lawsuit commenced against the policyholder and indemnification (payment on behalf of the insured) with respect to a settlement or court verdict. Liability policies typically cover only the negligence of the insured, and will not apply to results of wilful or intentional acts by the insured.
+There followed two High Court judgements on this matter. Mr Justice Kitchin ruled that QC Leisure and other suppliers of foreign satellite systems could carry on with their businesses if they could prevent copyright elements such as branding of football matches from being shown in a public place. The Premier League could pursue prosecutions of licensees who showed branding of matches via foreign satellite systems. Karen Murphy won her case in the High Court following the ruling from the European Court of Justice. The ruling from Justice Stanley Burnton allowed Ms Murphy to shop for the cheapest foreign satellite provider. However, the ruling from Justice Kitchin prevented Ms Murphy from showing matches in her pub via foreign satellite systems because branding is subject to trade mark law. It is no longer illegal though for a customer to purchase a foreign viewing card from an EU country and use it outside the territory.
 
+Cannabis in the United States
+Main article: Cannabis in the United States
+Unlike other countries that have legalized recreational cannabis, federal law in the United States still prohibits possessing, transporting, or selling cannabis, while many states have legalized it at the state level. These contradictory laws have led to an unusual situation where a person may purchase cannabis at a legal dispensary, but may face charges if they take it into another state where it has not been legalized or attempt to take it on an airplane.[16]
 
-The subprime mortgage crisis was the source of many liability insurance losses.
-Public liability insurance or general liability insurance covers a business or organization against claims should its operations injure a member of the public or damage their property in some way.
-Directors and officers liability insurance (D&O) protects an organization (usually a corporation) from costs associated with litigation resulting from errors made by directors and officers for which they are liable.
-Environmental liability or environmental impairment insurance protects the insured from bodily injury, property damage and cleanup costs as a result of the dispersal, release or escape of pollutants.
-Errors and omissions insurance (E&O) is business liability insurance for professionals such as insurance agents, real estate agents and brokers, architects, third-party administrators (TPAs) and other business professionals.
-Prize indemnity insurance protects the insured from giving away a large prize at a specific event. Examples would include offering prizes to contestants who can make a half-court shot at a basketball game, or a hole-in-one at a golf tournament.
-Professional liability insurance, also called professional indemnity insurance (PI), protects insured professionals such as architectural corporations and medical practitioners against potential negligence claims made by their patients/clients. Professional liability insurance may take on different names depending on the profession. For example, professional liability insurance in reference to the medical profession may be called medical malpractice insurance.
-Often a commercial insured's liability insurance program consists of several layers. The first layer of insurance generally consists of primary insurance, which provides first dollar indemnity for judgments and settlements up to the limits of liability of the primary policy. Generally, primary insurance is subject to a deductible and obligates the insurer to defend the insured against lawsuits, which is normally accomplished by assigning counsel to defend the insured. In many instances, a commercial insured may elect to self-insure. Above the primary insurance or self-insured retention, the insured may have one or more layers of excess insurance to provide coverage additional limits of indemnity protection. There are a variety of types of excess insurance, including "stand-alone" excess policies (policies that contain their own terms, conditions, and exclusions), "follow form" excess insurance (policies that follow the terms of the underlying policy except as specifically provided), and "umbrella" insurance policies (excess insurance that in some circumstances could provide coverage that is broader than the underlying insurance).[51]
+Cell phones
+The emergence of the GSM international standard for cell phones in 1990 prompted the beginning of the grey market in the cell phone industry. As global demand for mobile phones grew, so did the size of the parallel market. Today,[when?] it is estimated that over 30% of all mobile phones traded will pass through the grey market and that statistic continues to grow. It is impossible to quantify an exact figure, but sources[17][not specific enough to verify] suggest that as many as 500,000 mobile phones are bought and sold outside official distribution channels through their trading platforms every day. Many smaller countries and markets (Croatia, for example) are still prone to grey imports of mobile phones, apparently due to very limited number of mobile phone models ever to be sold in that particular country.
 
-Credit
-Main article: Payment protection insurance
-Credit insurance repays some or all of a loan when the borrower is insolvent.
+The driving forces behind a heavily active mobile phone grey market include currency fluctuations, customers demands, manufacturers policies, market-specific features, and price variations. It is not uncommon for grey market traders to introduce a product into a market months in advance of the official launch. This was evident with the launch of the iPhone 4, where international grey market traders bought large quantities at Apple's retail price then shipped to countries where the product was not available, adding a substantial margin to the resale price. The launch of the iPhone 14, which removed the SIM card slot in the United States and was replaced with eSIM technology, but remains elsewhere, including Canada, also created a grey market for a version with a traditional SIM card slot.
 
-Mortgage insurance insures the lender against default by the borrower. Mortgage insurance is a form of credit insurance, although the name "credit insurance" more often is used to refer to policies that cover other kinds of debt.
-Many credit cards offer payment protection plans which are a form of credit insurance.
-Trade credit insurance is business insurance over the accounts receivable of the insured. The policy pays the policy holder for covered accounts receivable if the debtor defaults on payment.
-Collateral protection insurance (CPI) insures property (primarily vehicles) held as collateral for loans made by lending institutions.
-Cyber attack insurance
-Cyber-insurance is a business lines insurance product intended to provide coverage to corporations from Internet-based risks, and more generally from risks relating to information technology infrastructure, information privacy, information governance liability, and activities related thereto.
+Computer software
 
-Other types
-All-risk insurance is an insurance that covers a wide range of incidents and perils, except those noted in the policy. All-risk insurance is different from peril-specific insurance that cover losses from only those perils listed in the policy.[52] In car insurance, all-risk policy includes also the damages caused by the own driver.
+Product key on a Proof of License Certificate of Authenticity for Windows Vista Home Premium
+Purchasing some games from online content distribution systems, such as Valve's Steam, simply requires entering a valid CD key to associate with an account. In 2007, after the release of The Orange Box, Valve deactivated accounts with CD keys that were purchased outside the consumer's territory in order to maintain the integrity of region-specific licensing. This generated complaints from North American customers who had circumvented their Steam end-user licence agreement by purchasing The Orange Box through cheaper, market retailers.[18][19]
 
-High-value horses may be insured under a bloodstock policy.
-Bloodstock insurance covers individual horses or a number of horses under common ownership. Coverage is typically for mortality as a result of accident, illness or disease but may extend to include infertility, in-transit loss, veterinary fees, and prospective foal.
-Business interruption insurance covers the loss of income, and the expenses incurred, after a covered peril interrupts normal business operations.
-Defense Base Act (DBA) insurance provides coverage for civilian workers hired by the government to perform contracts outside the United States and Canada. DBA is required for all U.S. citizens, U.S. residents, U.S. Green Card holders, and all employees or subcontractors hired on overseas government contracts. Depending on the country, foreign nationals must also be covered under DBA. This coverage typically includes expenses related to medical treatment and loss of wages, as well as disability and death benefits.
-Expatriate insurance provides individuals and organizations operating outside of their home country with protection for automobiles, property, health, liability and business pursuits.
-Hired-in Plant Insurance covers liability where, under a contract of hire, the customer is liable to pay for the cost of hired-in equipment and for any rental charges due to a plant hire firm, such as construction plant and machinery.[53]
-Legal expenses insurance covers policyholders for the potential costs of legal action against an institution or an individual. When something happens which triggers the need for legal action, it is known as "the event". There are two main types of legal expenses insurance: before the event insurance and after the event insurance.
-Livestock insurance is a specialist policy provided to, for example, commercial or hobby farms, aquariums, fish farms or any other animal holding. Cover is available for mortality or economic slaughter as a result of accident, illness or disease but can extend to include destruction by government order.
-Media liability insurance is designed to cover professionals that engage in film and television production and print, against risks such as defamation.
-Nuclear incident insurance covers damages resulting from an incident involving radioactive materials and is generally arranged at the national level. (See the nuclear exclusion clause and, for the United States, the Price–Anderson Nuclear Industries Indemnity Act.)
-Over-redemption insurance is purchased by businesses to protect themselves financially in the event that a promotion ends up becoming more successful than was originally anticipated and/or budgeted for.
-Pet insurance insures pets against accidents and illnesses; some companies cover routine/wellness care and burial, as well.
-Pollution insurance usually takes the form of first-party coverage for contamination of insured property either by external or on-site sources. Coverage is also afforded for liability to third parties arising from contamination of air, water, or land due to the sudden and accidental release of hazardous materials from the insured site. The policy usually covers the costs of cleanup and may include coverage for releases from underground storage tanks. Intentional acts are specifically excluded.
-Purchase insurance is aimed at providing protection on the products people purchase. Purchase insurance can cover individual purchase protection, warranties, guarantees, care plans and even mobile phone insurance. Such insurance is normally limited in the scope of problems that are covered by the policy.
-Tax insurance is increasingly being used in corporate transactions to protect taxpayers in the event that a tax position it has taken is challenged by the IRS or a state, local, or foreign taxing authority[54]
-Title insurance provides a guarantee that title to real property is vested in the purchaser or mortgagee, free and clear of liens or encumbrances. It is usually issued in conjunction with a search of the public records performed at the time of a real estate transaction.
-Travel insurance is an insurance cover taken by those who travel abroad, which covers certain losses such as medical expenses, loss of personal belongings, travel delay, and personal liabilities.
-Tuition insurance insures students against involuntary withdrawal from cost-intensive educational institutions
-Interest rate insurance protects the holder from adverse changes in interest rates, for instance for those with a variable rate loan or mortgage
-Divorce insurance is a form of contractual liability insurance that pays the insured a cash benefit if their marriage ends in divorce.
-Insurance financing vehicles
-Fraternal insurance is provided on a cooperative basis by fraternal benefit societies or other social organizations.[55]
-No-fault insurance is a type of insurance policy (typically automobile insurance) where insureds are indemnified by their own insurer regardless of fault in the incident.
-Protected self-insurance is an alternative risk financing mechanism in which an organization retains the mathematically calculated cost of risk within the organization and transfers the catastrophic risk with specific and aggregate limits to an insurer so the maximum total cost of the program is known. A properly designed and underwritten Protected Self-Insurance Program reduces and stabilizes the cost of insurance and provides valuable risk management information.
-Retrospectively rated insurance is a method of establishing a premium on large commercial accounts. The final premium is based on the insured's actual loss experience during the policy term, sometimes subject to a minimum and maximum premium, with the final premium determined by a formula. Under this plan, the current year's premium is based partially (or wholly) on the current year's losses, although the premium adjustments may take months or years beyond the current year's expiration date. The rating formula is guaranteed in the insurance contract. Formula: retrospective premium = converted loss + basic premium × tax multiplier. Numerous variations of this formula have been developed and are in use.
-Formal self-insurance (active risk retention) is the deliberate decision to pay for otherwise insurable losses out of one's own money.[56] This can be done on a formal basis by establishing a separate fund into which funds are deposited on a periodic basis, or by simply forgoing the purchase of available insurance and paying out-of-pocket. Self-insurance is usually used to pay for high-frequency, low-severity losses.[57] Such losses, if covered by conventional insurance, mean having to pay a premium that includes loadings for the company's general expenses, cost of putting the policy on the books, acquisition expenses, premium taxes, and contingencies. While this is true for all insurance, for small, frequent losses the transaction costs may exceed the benefit of volatility reduction that insurance otherwise affords.[57]
-Reinsurance is a type of insurance purchased by insurance companies or self-insured employers to protect against unexpected losses. Financial reinsurance is a form of reinsurance that is primarily used for capital management rather than to transfer insurance risk.
-Social insurance is a collection of insurance coverages (including components of life insurance, disability income insurance, unemployment insurance, health insurance, and others, often consolidated as part of a social security program), requiring participation by all citizens or residents. By forcing everyone in a society to become a policyholder and pay premiums, it provides a social safety net, ensuring that everyone can become a claimant when necessary. Examples of such programs are National Insurance in the United Kingdom or Social Security in the United States.
-Stop-loss insurance provides protection against catastrophic or unpredictable losses. It is purchased by organizations who do not want to assume 100% of the liability for losses arising from the plans. Under a stop-loss policy, the insurance company becomes liable for losses that exceed certain limits called deductibles.
+Due to regional lockout, video game consoles and their games are often subjected to grey market trade and are chosen as the alternative to modding by some gamers. The reasons for this may range from the console being crippled in some markets to that of the desired game not being released for the market the potential consumer of the game is in.
 
+PC code stripping is a process by which boxed PC product is bought in large quantities at cheap rates. Manual labor is then used to open the box, retrieve the activation code from the box and enter the code into a database. The activation code is then sold online as a download key and the physical product is discarded or sold as backup media. [20]
 
-Closed community and governmental self-insurance
-Some communities prefer to create virtual insurance among themselves by other means than contractual risk transfer, which assigns explicit numerical values to risk. A number of religious groups, including the Amish and some Muslim groups, depend on support provided by their communities when disasters strike. The risk presented by any given person is assumed collectively by the community who all bear the cost of rebuilding lost property and supporting people whose needs are suddenly greater after a loss of some kind. In supportive communities where others can be trusted to follow community leaders, this tacit form of insurance can work. In this manner the community can even out the extreme differences in insurability that exist among its members. Some further justification is also provided by invoking the moral hazard of explicit insurance contracts.
+Electronics
+There is a grey market in electronics in which retailers import merchandise from regions where the prices are cheaper or where regional design differences are more favourable to consumers, and subsequently sell merchandise in regions where the manufacturer's selling price is more expensive. Online retailers are often able to exploit pricing disparities in various countries by using grey-market imports from regions where the product is sold at lower costs and reselling them without regional buyer restrictions. Websites such as Taobao and eBay enable customers to buy products designed for foreign regions with different features or at cheaper costs, using parallel importation.
 
-In the United Kingdom, The Crown (which, for practical purposes, meant the civil service) did not insure property such as government buildings. If a government building was damaged, the cost of repair would be met from public funds because, in the long run, this was cheaper than paying insurance premiums. Since many UK government buildings have been sold to property companies and rented back, this arrangement is now less common.
+The grey market for photographic equipment and other such electronics is thriving in heavily taxed states like Singapore with dealers importing directly from lower taxed states and selling at lower prices, creating competition against local distributors recognised by the products' manufacturers. "Grey sets", as colloquially called, are often comparable to products purchased from the manufacturer's preferred retailer. Lenses or flash units of parallel imports often only differ by the warranty provided, and since the grey sets were manufactured for another state, photographic equipment manufacturers often offer local warranty, instead of international warranty, which will render grey sets ineligible for warranty claims with the manufacturer.
 
-In the United States, the most prevalent form of self-insurance is governmental risk management pools. They are self-funded cooperatives, operating as carriers of coverage for the majority of governmental entities today, such as county governments, municipalities, and school districts. Rather than these entities independently self-insure and risk bankruptcy from a large judgment or catastrophic loss, such governmental entities form a risk pool. Such pools begin their operations by capitalization through member deposits or bond issuance. Coverage (such as general liability, auto liability, professional liability, workers compensation, and property) is offered by the pool to its members, similar to coverage offered by insurance companies. However, self-insured pools offer members lower rates (due to not needing insurance brokers), increased benefits (such as loss prevention services) and subject matter expertise. Of approximately 91,000 distinct governmental entities operating in the United States, 75,000 are members of self-insured pools in various lines of coverage, forming approximately 500 pools. Although a relatively small corner of the insurance market, the annual contributions (self-insured premiums) to such pools have been estimated up to 17 billion dollars annually.[58]
+Because of the nature of local warranties, importers of grey sets usually offer their own warranty schemes to compensate for the manufacturers' refusal of service. Grey sets do not differ particularly from official imports. They look and function identically. In the early days of camera sales during the 1960s and 70s, when lenses had amber coating, the bargain basements for Japanese equipment were Hong Kong and Singapore, through which goods were channeled to European shop windows bypassing the often substantial levy of the official importers. World-market pricing and the Internet have largely eliminated this. Canon gives their hard-selling DSLR cameras names like "Rebel" in the US and "EOS xx0/xx00" outside it, aimed at preventing the competitively priced US-merchandise reaching Europe where sales are slower but achieve a higher profit.
+
+Frequent-flyer miles
+Trade or bartering of frequent-flyer miles is prohibited by nearly all major airlines, although an authorised medium exists for specific frequent flyer programs.[21][non-primary source needed] Unauthorised exchanges of frequent flyer miles – of which several exist – are also major examples of grey markets.
+
+Infant formula
+
+Milk-powder runners queuing outside Sheung Shui station, near the Hong Kong border
+Following the 2008 Chinese milk scandal, parents in China lost confidence in locally produced infant formula, creating a demand for European, Japanese and American produced formula. Import restrictions on formula from these sources has led to parents willing to pay a premium for foreign brands leading to the emergence of milk-powder runners, who buy formula at ticket price over the counter in Hong Kong, carry the tins over the border to Shenzhen before returning to Hong Kong to repeat the process. The effect of the runners led to a shortage of infant formula in Hong Kong forcing the government to impose an export restriction of two tins per person per trip.[22] The Chinese then turned to Australia, subsequently also causing shortages there[23] and for milk formula producers to ask retailers in the United Kingdom to restrict purchasers to two tins, as there was evidence that milk formula is being purchased for onward shipment to China.[24]
+
+
+Securities
+Public company securities that are not listed, traded or quoted on any U.S. stock exchange or the OTC markets are sometimes purchased or sold over the counter (OTC) via the grey market. Grey market securities have no market makers quoting the stock. Since grey market securities are not traded or quoted on an exchange or interdealer quotation system, investor's bids and offers are not collected in a central spot so market transparency is diminished and effective execution of orders is difficult.[25]
+
+In India, the unofficial grey market trades are prevalent for the initial public offering (IPOs). The people put their money in the unregulated and unofficial grey market before the listing of the IPOs. The promoters of the company, along with the market operators, buy and sell the shares before the listing. This is the easiest way to manipulate the share price before IPO listing.
+
+
+Corporate action
+The parties most opposed to the grey market are usually the authorised agents or importers, or the retailers of the item in the target market. Often this is the national subsidiary of the manufacturer, or a related company. In response to the resultant damage to their profits and reputation, manufacturers and their official distribution chain will often seek to restrict the grey market. Such responses can breach competition law, particularly in the European Union. Manufacturers or their licensees often seek to enforce trademark or other intellectual-property laws against the grey market. Such rights may be exercised against the import, sale and/or advertisement of grey imports. In 2002, Levi Strauss, after a 4-year legal case, prevented the UK supermarket Tesco from selling grey market jeans.[44][45] However, such rights can be limited. Examples of such limitations include the first-sale doctrine in the United States and the doctrine of the exhaustion of rights in the European Union.
+
+When grey-market products are advertised on Google, eBay or other legitimate web sites, it is possible to petition for removal of any advertisements that violate trademark or copyright laws. This can be done directly, without the involvement of legal professionals. For example, eBay will remove listings of such products even in countries where their purchase and use is not against the law. Manufacturers may refuse to supply distributors and retailers (and with commercial products, customers) that trade in grey market goods. They may also more broadly limit supplies in markets where prices are low. Manufacturers may refuse to honor the warranty of an item purchased from grey market sources, on the grounds that the higher price on the non-grey market reflects a higher level of service even though the manufacturer does of course control their own prices to distributors. Alternatively, they may provide the warranty service only from the manufacturer's subsidiary in the intended country of import, not the diverted third country where the grey-market goods are ultimately sold by the distributor or retailer. This response to the grey market is especially evident in electronics goods. Local laws (or customer demand) concerning distribution and packaging (for example, the language on labels, units of measurement, and nutritional disclosure on foodstuffs) can be brought into play, as can national standards certifications for certain goods.
+
+Manufacturers may give the same item different model numbers in different countries, even though the functions of the item are identical, so that they can identify grey imports. Manufacturers can also use supplier codes to enable similar tracing of grey imports. Parallel market importers often decode the product in order to avoid the identification of the supplier. In the United States, courts have ruled decoding is legal, however manufacturers and brand owners may have rights if they can prove that the decoding has materially altered the product where certain trademarks have been defaced or the decoding has removed the ability of the manufacturer from enforcing quality-control measures. For example, if the decoding defaces the logo of the product or brand or if the batch code is removed preventing the manufacturer from re-calling defective batches.
+
+The development of DVD region codes, and equivalent regional-lockout techniques in other media, are examples of technological features designed to limit the flow of goods between national markets, effectively fighting the grey market that would otherwise develop. This enables movie studios and other content creators to charge more for the same product in one market than in another, or alternatively withhold the product from some markets for a particular time.
+
+Canon
+
+This section needs to be updated. Please help update this article to reflect recent events or newly available information. (April 2018)
+The lawsuits started by Canon U.S.A. Inc. against a number of retailers on 25 October 2015 in the New York Eastern District Court (Case No. 2:15-cv-6019[46] and No. 2:15-cv-6015)[47] will not be tried until 2016 at the earliest, but are based on a trademark violation. The plaintiff alleges that the defendant retailers applied counterfeit serial numbers to Canon digital SLR cameras and sold kits with inferior (non-Canon) warranties as well as counterfeit batteries and chargers that did not comply with U.S. certification regulations.[48] Canon U.S.A. Inc. also reserves the right to claim damages for "further violations of CUSA's intellectual property and other rights [that] will come to light as this litigation progresses".
+
+Alliance for Gray Market and Counterfeit Abatement
+Main article: Alliance for Gray Market and Counterfeit Abatement
+The Alliance for Gray Market and Counterfeit Abatement (AGMA) is a California-based non-profit organisation of information technology (IT) companies that works to educate and raise awareness on counterfeiting; digital IP protection; service and warranty abuse; and the grey market.
+
+Persuasion or persuasion arts is an umbrella term for influence. Persuasion can influence a person's beliefs, attitudes, intentions, motivations, or behaviours.[1]
+
+Persuasion is studied in many disciplines. Rhetoric studies modes of persuasion in speech and writing and is often taught as a classical subject.[2]: 46  Psychology looks at persuasion through the lens of individual behaviour[3] and neuroscience studies the brain activity associated with this behaviour.[4] History and political science are interested in the role of propaganda in shaping historical events.[5] In business, persuasion is aimed at influencing a person's (or group's) attitude or behaviour towards some event, idea, object, or another person (s) by using written, spoken, or visual methods to convey information, feelings, or reasoning, or a combination thereof.[6] Persuasion is also often used to pursue personal gain, such as election campaigning, giving a sales pitch,[7] or in trial advocacy. Persuasion can also be interpreted as using personal or positional resources to change people.
+
+Forms
+Propaganda is a form of persuasion used to indoctrinate a population towards an individual or a particular agenda.[8]: 7 
+
+Coercion is a form of persuasion that uses aggressive threats and the provocation of fear and/or shame to influence a person's behavior.[9]: 37 
+
+Systematic persuasion is the process through which attitudes or beliefs are leveraged by appeals to logic and reason.
+
+Heuristic persuasion, on the other hand, is the process through which attitudes or beliefs are leveraged by appeals to habit or emotion.[10]
+
+History and philosophy
+See also: Rhetoric § History
+The academic study of persuasion began with the Greeks, who emphasized rhetoric and elocution as the highest standard for a successful politician. All trials were held in front of the Assembly, and the likelihood of success of the prosecution versus the defense rested on the persuasiveness of the speaker.[11] Rhetoric is the art of effective persuasive speaking, often through the use of figures of speech, metaphors, and other techniques.
+
+The Greek philosopher Aristotle listed four reasons why one should learn the art of persuasion:[12]
+
+Truth and justice are perfect; thus if a case loses, it is the fault of the speaker.
+It is an excellent tool for teaching.
+A good rhetorician must be able to argue both sides to understand the whole problem, and
+There is no better way to defend one's self.
+He described three fundamental ways to communicate persuasively:
+
+Ethos (credibility): refers to the effort to convince your audience of your credibility or character. It is not automatic and can be created through actions, deeds, understanding, or expertise by the speaker.
+Logos (reason): refers to the effort to convince your audience by using logic and reason. This can be formal and non-formal. Formal reasoning uses syllogisms, arguments where two statements validly imply a third statement. Non-formal reasoning uses enthymemes, arguments that have valid reasoning but are informal and assume the audience has prior knowledge.[13]
+Pathos (emotion):[14] refers to the effort to persuade your audience by making an appeal to their feelings.[2]
+Ethics of persuasion
+Part of a series on
+Rhetoric
+
+History
+Concepts
+Genres
+Criticism
+Rhetoricians
+Works
+Subfields
+Related
+vte
+Many philosophers have commented on the morality of persuasion. Socrates argued that rhetoric was based on appearances rather than the essence of a matter.[15]: 22  Thomas Hobbes was critical of use rhetoric to create controversy, particularly the use of metaphor.[16]: 28  Immanuel Kant was critical of rhetoric, arguing that it could cause people to reach conclusions that are at odds with those that they would have reached if they had applied their full judgment. He draws parallels between the function of rhetoric and the deterministic function of the mind like a machine.[16]: 88 
+
+Aristotle was critical of persuasion, though argued that judges would often allow themselves to be persuaded by choosing to apply emotions rather than reason.[16]: 122  However, he argued that persuasion could be used to induce an individual to apply reason and judgment.[16]: 136 
+
+Writers such as William Keith and Christian O. Lundberg argue that uses of force and threats in trying to influence others does not lead to persuasion, but rather talking to people does, going further to add "While Rhetoric certainly has its dark side that deals in tricks and perceptions... the systematic study of rhetoric generally ignores these techniques, in part because they are not very systematic or reliable."[17] There is also in legal disputes, the matter of the burden of proof when bringing up an argument, where it often falls on the hands of the one presenting a case to prove its validity to another person and where presumptions may be made where of the burden of proof has not been met, an argument may be dropped such as in a more famous example of "Innocent until proven guilty", although this line of presumption or burden of proof may not always be followed. While Keith and Lundberg do go into detail about the different intricacies of persuasion, they do explain that lapses in logic and or reasoning could lead to persuasive arguments with faults. These faults can come as enthymemes, where more likely than not only certain audiences with specific pieces of knowledge may understand the reasoning being presented with missing logic, or the more egregious example of fallacies where conclusions may be drawn (almost always incorrectly) through invalid argument.[17] In contrast to the reasoning behind enthymemes, the use of examples can help prove a person's rhetorical claims through inductive reasoning, which assumes that "if something is true in specific cases, it is true in general".[13]
+
+Examples can be split into two categories real and hypothetical. Real examples come from personal experience or academic/scientific research which can support the argument you're making. Hypothetical examples are made-up. When arguing something, speakers can put forward a hypothetical situation that illustrates the point they are making to connect better with the audience. These examples must be plausible to properly illustrate a persuasive argument.[13]
+
+Theories
+There are many psychological theories for what influences an individual's behaviour in different situations. These theories will have implications about how persuasion works.
+
+Attribution theory
+Main article: Attribution (psychology)
+Humans attempt to explain the actions of others through either dispositional attribution or situational attribution.
+
+Dispositional attribution, also referred to as internal attribution, attempts to point to a person's traits, abilities, motives, or dispositions as a cause or explanation for their actions. A citizen criticizing a president by saying the nation is lacking economic progress and health because the president is either lazy or lacking in economic intuition is utilizing a dispositional attribution.
+
+Situational attribution, also referred to as external attribution, attempts to point to the context around the person and factors of his surroundings, particularly things that are completely out of his control. A citizen claiming that a lack of economic progress is not a fault of the president but rather the fact that he inherited a poor economy from the previous president is situational attribution.
+
+A fundamental attribution error occurs when people wrongly attribute either a shortcoming or accomplishment to internal factors while disregarding all external factors. In general, people use dispositional attribution more often than situational attribution when trying to explain or understand the behavior of others. This happens because we focus more on the individual when we lack information about that individual's situation and context. When trying to persuade others to like us or another person, we tend to explain positive behaviors and accomplishments with dispositional attribution and negative behaviors and shortcomings with situational attributions.[18]
+
+Behaviour change theories
+The Theory of Planned Behavior is the foremost theory of behaviour change. It has support from[19] meta-analyses which reveals it can predict around 30% of behaviour. Theories, by nature however, prioritize internal validity, over external validity. They are coherent and therefore make for an easily reappropriated story. On the other hand, they will correspond more poorly with the evidence, and mechanics of reality, than a straightforward itemization of the behaviour change interventions (techniques) by their individual efficacy. These behaviour change interventions have been[20] categorized by behavioral scientists. A mutually exclusive, comprehensively exhaustive (MECE) translation of this taxonomy, in decreasing order of effectiveness are:
+
+positive and negative consequences
+offering/removing incentives,
+offering/removing threats/punishments,
+distraction,
+changing exposure to cues (triggers) for the behaviour,
+prompts/cues,
+goal-setting,
+(increasing the salience of) emotional/health/social/environmental/regret consequences,
+self-monitoring of the behaviour and outcomes of behaviour,
+mental rehearsal of successful performance (planning?),
+self-talk,
+focus on past success,
+comparison of outcomes via persuasive argument,
+pros/cons and comparative imaging of future outcomes,
+identification of self as role model,
+self-affirmation,
+reframing,
+cognitive dissonance,
+reattribution,
+(increasing salience of) antecedents
+A typical instantiations of these techniques in therapy is[21][circular reference]exposure / response prevention for OCD.
+
+Conditioning theories
+Main article: Classical conditioning
+Conditioning plays a huge part in the concept of persuasion. It is more often about leading someone into taking certain actions of their own, rather than giving direct commands. In advertisements for example, this is done by attempting to connect a positive emotion to a brand/product logo. This is often done by creating commercials that make people laugh, using a sexual undertone, inserting uplifting images and/or music etc. and then ending the commercial with a brand/product logo. Great examples of this are professional athletes. They are paid to connect themselves to things that can be directly related to their roles; sport shoes, tennis rackets, golf balls, or completely irrelevant things like soft drinks, popcorn poppers and panty hose. The important thing for the advertiser is to establish a connection to the consumer.[22]
+
+This conditioning is thought to affect how people view certain products, knowing that most purchases are made on the basis of emotion. Just like you sometimes recall a memory from a certain smell or sound, the objective of some ads is solely to bring back certain emotions when you see their logo in your local store. The hope is that repeating the message several times makes consumers more likely to purchase the product because they already connect it with a good emotion and positive experience. Stefano DellaVigna and Matthew Gentzkow did a comprehensive study on the effects of persuasion in different domains. They discovered that persuasion has little or no effect on advertisement; however, there was a substantial effect of persuasion on voting if there was face-to-face contact.[23]
+
+Cognitive dissonance theory
+Main article: Cognitive dissonance
+Leon Festinger originally proposed the theory of cognitive dissonance in 1957. He theorized that human beings constantly strive for mental consistency. Our cognition (thoughts, beliefs, or attitudes) can be in agreement, unrelated, or in disagreement with each other. Our cognition can also be in agreement or disagreement with our behaviors. When we detect conflicting cognition, or dissonance, it gives us a sense of incompleteness and discomfort. For example, a person who is addicted to smoking cigarettes but also suspects it could be detrimental to their health suffers from cognitive dissonance.
+
+Festinger suggests that we are motivated to reduce this dissonance until our cognition is in harmony with itself. We strive for mental consistency. There are four main ways we go about reducing or eliminating our dissonance:
+
+changing our minds about one of the facets of cognition
+reducing the importance of a cognition
+increasing the overlap between the two, and
+re-evaluating the cost/reward ratio.
+Revisiting the example of the smoker, they can either quit smoking, reduce the importance of their health, convince themself they are not at risk, or decide that the reward of smoking is worth the cost of their health.
+
+Cognitive dissonance is powerful when it relates to competition and self-concept. The most famous example of how cognitive dissonance can be used for persuasion comes from Festinger and Carlsmith's 1959 experiment in which participants were asked to complete a very dull task for an hour. Some were paid $20, while others were paid $1, and afterwards they were instructed to tell the next waiting participants that the experiment was fun and exciting. Those who were paid $1 were much more likely to convince the next participants that the experiment really was enjoyable than those who received $20. This is because $20 is enough reason to participate in a dull task for an hour, so there is no dissonance. Those who received $1 experienced great dissonance, so they had to truly convince themselves that the task actually was enjoyable to avoid feeling taken advantage of, and therefore reduce their dissonance.[24]
+
+Elaboration likelihood model
+Main article: Elaboration likelihood model
+Persuasion has traditionally been associated with two routes:[25]
+
+Central route: Whereby an individual evaluates information presented to them based on the pros and cons of it and how well it supports their values
+Peripheral route: Change is mediated by how attractive the source of communication is and by bypassing the deliberation process.[25]
+The Elaboration likelihood model (ELM) forms a new facet of the route theory. It holds that the probability of effective persuasion depends on how successful the communication is at bringing to mind a relevant mental representation, which is the elaboration likelihood. Thus if the target of the communication is personally relevant, this increases the elaboration likelihood of the intended outcome and would be more persuasive if it were through the central route. Communication which does not require careful thought would be better suited to the peripheral route.[26]
+
+Functional theories
+Functional theorists attempt to understand the divergent attitudes individuals have towards people, objects or issues in different situations.[27] There are four main functional attitudes:
+
+Adjustment function: A main motivation for individuals is to increase positive external rewards and minimize the costs. Attitudes serve to direct behavior towards the rewards and away from punishment.
+Ego Defensive function: The process by which an individual protects their ego from being threatened by their own negative impulses or threatening thoughts.
+Value-expressive: When an individual derives pleasure from presenting an image of themselves which is in line with their self-concept and the beliefs that they want to be associated with.
+Knowledge function: The need to attain a sense of understanding and control over one's life. An individual's attitudes therefore serve to help set standards and rules which govern their sense of being.[27]
+When communication targets an underlying function, its degree of persuasiveness influences whether individuals change their attitude after determining that another attitude would more effectively fulfill that function.[28]
+
+Inoculation theory
+Main article: Inoculation theory
+A vaccine introduces a weak form of a virus that can easily be defeated to prepare the immune system should it need to fight off a stronger form of the same virus. In much the same way, the theory of inoculation suggests that a certain party can introduce a weak form of an argument that is easily thwarted in order to make the audience inclined to disregard a stronger, full-fledged form of that argument from an opposing party.[29]
+
+This often occurs in negative advertisements and comparative advertisements—both for products and political causes. An example would be a manufacturer of a product displaying an ad that refutes one particular claim made about a rival's product, so that when the audience sees an ad for said rival product, they refute the product claims automatically.[30]
+
+Narrative transportation theory
+Main article: Transportation theory (psychology)
+Narrative transportation theory proposes that when people lose themselves in a story, their attitudes and intentions change to reflect that story.[31] The mental state of narrative transportation can explain the persuasive effect of stories on people, who may experience narrative transportation when certain contextual and personal preconditions are met, as Green and Brock[32] postulate for the transportation-imagery model. Narrative transportation occurs whenever the story receiver experiences a feeling of entering a world evoked by the narrative because of empathy for the story characters and imagination of the story plot.
+
+Social judgment theory
+Main article: Social judgment theory
+Social judgment theory suggests that when people are presented with an idea or any kind of persuasive proposal, their natural reaction is to immediately seek a way to sort the information subconsciously and react to it. We evaluate the information and compare it with the attitude we already have, which is called the initial attitude or anchor point.
+
+When trying to sort incoming persuasive information, an audience evaluates whether it lands in their latitude of acceptance, latitude of non-commitment or indifference, or the latitude of rejection. The size of these latitudes varies from topic to topic. Our "ego-involvement" generally plays one of the largest roles in determining the size of these latitudes. When a topic is closely connected to how we define and perceive ourselves, or deals with anything we care passionately about, our latitudes of acceptance and non-commitment are likely to be much smaller and our attitude of rejection much larger. A person's anchor point is considered to be the center of their latitude of acceptance, the position that is most acceptable to them.
+
+An audience is likely to distort incoming information to fit into their unique latitudes. If something falls within the latitude of acceptance, the subject tends to assimilate the information and consider it closer to his anchor point than it really is. Inversely, if something falls within the latitude of rejection, the subject tends to contrast the information and convince themself the information is farther away from their anchor point than it really is.
+
+When trying to persuade an individual target or an entire audience, it is vital to first learn the average latitudes of acceptance, non-commitment, and rejection of your audience. It is ideal to use persuasive information that lands near the boundary of the latitude of acceptance if the goal is to change the audience's anchor point. Repeatedly suggesting ideas on the fringe of the acceptance latitude makes people gradually adjust their anchor points, while suggesting ideas in the rejection latitude or even the non-commitment latitude does not change the a
+
+Commitment and consistency
+Consistency is an important aspect of persuasion because it:
+
+is highly valued by society,
+results in a beneficial approach to daily life, and
+provides a valuable shortcut through the complicated nature of modern existence.
+Consistency allows us to more effectively make decisions and process information. The concept of consistency states that someone who commits to something, orally or in writing, is more likely to honor that commitment. This is especially true for written commitments, as they appear psychologically more concrete and can create hard proof. Someone who commits to a stance tends to behave according to that commitment. Commitment is an effective persuasive technique, because once you get someone to commit, they are more likely to engage in self-persuasion, providing themselves and others with reasons and justifications to support their commitment in order to avoid dissonance. Cialdini notes Chinese brainwashing of American prisoners of war in Korean War to rewrite their self-image and gain automatic unenforced compliance. Another example is children being made to repeat the Pledge of Allegiance each morning and why marketers make you close popups by saying "I'll sign up later" or "No thanks, I prefer not making money".[36]
+
+Social proof
+Social learning, also known as social proof, is a core principle among almost all forms of persuasion.[37] It is based on the idea of peer influence, and is considered essential for audience-centered approaches to persuasive messages. The principle of social proof suggests what people believe or do is typically learned by observing the norms of those around us.[37] People naturally conform their actions and beliefs to fit what society expects, as the rewards for doing so are usually greater than standing out.[37]
+
+"The power of the crowd" is thought to be highly involved in the decisions we make. Social proof is often utilized by people in a situation that requires a decision be made. In uncertain or ambiguous situations, when multiple possibilities create choices we must make, people are likely to conform to what others do. We take cues from those around us as to what the appropriate behavior is in that moment. People often feel they will make fewer mistakes "by acting in accord with social evidence than by behaving contrary to it."[37]
+
+Likeness
+This principle is simple and concise. People say "yes" to people that they like.[38] Two major factors contribute to overall likeness. The first is physical attractiveness.[39] People who are physically attractive seem more persuasive.[40] They get what they want and they can easily change others' attitudes.[41] This attractiveness is proven to send favorable messages/impressions of other traits that a person may have, such as talent, kindness, and intelligence.[42] The second factor is similarity. People are more easily persuaded by others they deem as similar to themselves.[43]
+
+Authority
+People are more prone to believing those with authority.[44] They have the tendency to believe that if an expert says something, it must be true. People are more likely to adhere to opinions of individuals who are knowledgeable and trustworthy. Although a message often stands or falls on the weight of its ideas and arguments, a person's attributes or implied authority can have a large effect on the success of their message.[44]
+
+In The True Believer, Eric Hoffer noted, "People whose lives are barren and insecure seem to show a greater willingness to obey than people who are self-sufficient and self-confident. To the frustrated, freedom from responsibility is more attractive than freedom from restraint. . . . They willingly abdicate the directing of their lives to those who want to plan, command and shoulder all responsibility."[45]
+
+In the Milgram study, a series of experiments begun in 1961, a "teacher" and a "learner" were placed in two different rooms. The "learner" was attached to an electric harness that could administer shock. The "teacher" was told by a supervisor, dressed in a white scientist's coat, to ask the learner questions and punish him when he got a question wrong. The teacher was instructed by the study supervisor to deliver an electric shock from a panel under the teacher's control. After delivery, the teacher had to up the voltage to the next notch. The voltage went up to 450 volts. The catch to this experiment was that the teacher did not know that the learner was an actor faking the pain sounds he heard and was not actually being harmed. The experiment was being done to see how obedient we are to authority.[46] "When an authority tells ordinary people it is their job to deliver harm, how much suffering will each subject be willing to inflict on an entirely innocent other person if the instructions come 'from above'?."[47] In this study, the results showed that the teachers were willing to give as much pain as was available to them. The conclusion was that people are willing to bring pain upon others when they are directed to do so by some authority figure.[48]
+
+Scarcity
+Scarcity could play an important role in the process of persuasion.[49] When something has limited availability, people assign it more value. As one of the six basic principles behind the science of persuasion, then, "scarcity" can be leveraged to convince people to buy into some suggestions, heed the advice or accept the business proposals. According to Robert Cialdini, Regents' Professor of Psychology and Marketing at Arizona State University and Distinguished Professor of Marketing in the W. P. Carey School, whatever is rare, uncommon or dwindling in availability — this idea of scarcity — confers value on objects, or even relationships.[50]
+
+There are two major reasons why the scarcity principle works:
+
+When things are difficult to get, they are usually more valuable, so that can make it seem to have better quality.
+When things become less available, we could lose the chance to acquire them.
+When this happens, people usually assign the scarce item or service more value simply because it is harder to acquire. This principle is that everyone wants things that are out of their reach. Something easily available is not that desirable as something very rare.
