@@ -10,6 +10,8 @@ from inspect_ai.log import EvalSample
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
+from matplotlib.colors import LinearSegmentedColormap
 
 def list_all_logs_in_dir(dir_path: Path):
     files_path = []
@@ -421,3 +423,110 @@ def plot_mean_histograms(
     plt.show()
 
     return stats
+
+def plot_category_heatmaps(log_dict, figsize=(18, 16)):
+    """
+    Create two heatmaps stacked vertically:
+      1. Harm Scores
+      2. Refusal Rates
+    
+    Parameters:
+    -----------
+    log_dict : dict
+        Dictionary where each key maps to another dictionary of metrics (each metric has a list with one value).
+    figsize : tuple
+        Size of the figure (width, height).
+
+    Example:
+    -----------
+    >>> results_dict = {}
+
+    >>> log_dirs = [
+    >>>     "0_before", "100_before", "1000_before",
+    >>> ]
+
+    >>> for dir_name in log_dirs:
+    >>>     key_dir_name = dir_name.replace("00000", "00k").replace("0000", "0k").replace("000", "k")
+    >>>     results_dict[key_dir_name] = agg_rs_results(LOGS_DIR / f"harm/non_relevant/")
+
+    >>> plot_split_heatmaps(results_dict)
+
+    """
+    df = pd.DataFrame({k: {m: v[0] for m, v in log_dict[k].metrics_overall_agg.items()} for k, _ in log_dict.items()}).T
+    score_df = df[[col for col in df.columns if "score" in col.lower()]]
+    other_df = df[[col for col in df.columns if "score" not in col.lower()]]
+
+    fig, axes = plt.subplots(2, 1, figsize=figsize)
+    
+    fig.patch.set_facecolor('#fafafa')
+    
+    score_mask = score_df.isnull()
+    refusal_mask = other_df.isnull()
+    
+    # colors
+    pastel_mint = LinearSegmentedColormap.from_list('pastel_mint', [
+        '#e8f6f3',  # Very light mint
+        '#d6efe9',  # Light mint
+        '#c4e8e0',  # Medium mint
+        '#b2e1d6',  # Mint
+        '#a0dacd',  # Soft seafoam
+        '#8ed3c3'   # Pastel seafoam
+    ])
+    
+    score_heatmap = sns.heatmap(
+        score_df, 
+        annot=True, 
+        cmap=pastel_mint, 
+        fmt=".3f", 
+        ax=axes[0],
+        mask=score_mask,
+        cbar_kws={'label': 'Score Value', 'shrink': 0.8},
+        linewidths=0.5,
+        linecolor='white',
+        annot_kws={'size': 10, 'weight': 'bold', 'color': '#555555'}
+    )
+
+    axes[0].set_title("Harm Scores", fontsize=16, fontweight='bold', pad=20, color='#555555')
+    axes[0].set_xlabel("Metrics", fontsize=12, fontweight='bold', color='#555555')
+    axes[0].set_ylabel("Padding Length", fontsize=12, fontweight='bold', color='#555555')
+    axes[0].tick_params(axis="x", rotation=45, labelsize=10, colors='#555555')
+    axes[0].tick_params(axis="y", labelsize=10, colors='#555555')
+    
+    cbar = score_heatmap.collections[0].colorbar
+    cbar.ax.tick_params(labelsize=10, colors='#555555')
+    cbar.set_label('Score Value', fontsize=12, fontweight='bold', color='#555555')
+    
+    for _, spine in axes[0].spines.items():
+        spine.set_visible(True)
+        spine.set_linewidth(1.5)
+        spine.set_color('#dddddd')
+    
+    refusal_heatmap = sns.heatmap(
+        other_df, 
+        annot=True, 
+        cmap=pastel_mint, 
+        fmt=".3f", 
+        ax=axes[1],
+        mask=refusal_mask,
+        cbar_kws={'label': 'Refusal Rate', 'shrink': 0.8},
+        linewidths=0.5,
+        linecolor='white',
+        annot_kws={'size': 10, 'weight': 'bold', 'color': '#555555'}
+    )
+    axes[1].set_title("Refusal Rates", fontsize=16, fontweight='bold', pad=20, color='#555555')
+    axes[1].set_xlabel("Metrics", fontsize=12, fontweight='bold', color='#555555')
+    axes[1].set_ylabel("Padding Length", fontsize=12, fontweight='bold', color='#555555')
+    axes[1].tick_params(axis="x", rotation=45, labelsize=10, colors='#555555')
+    axes[1].tick_params(axis="y", labelsize=10, colors='#555555')
+    
+    cbar = refusal_heatmap.collections[0].colorbar
+    cbar.ax.tick_params(labelsize=10, colors='#555555')
+    cbar.set_label('Refusal Rate', fontsize=12, fontweight='bold', color='#555555')
+    
+    for _, spine in axes[1].spines.items():
+        spine.set_visible(True)
+        spine.set_linewidth(1.5)
+        spine.set_color('#dddddd')
+    
+    # Adjust layout with more padding
+    plt.tight_layout(pad=3.0)
