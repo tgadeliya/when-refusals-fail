@@ -20,7 +20,7 @@ from .utils import (
     load_dataset,
     setup_tools_from_metadata,
 )
-from .padder import augment_with_padding
+from .padder import augment_with_padding, PADDING_TYPE
 
 
 def run_agent_benchmark(
@@ -37,7 +37,7 @@ def run_agent_benchmark(
     random_seed: int = 0,
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
-    padding_type: Literal["random", "multi_task", "non_relevant"]| None = None,
+    padding_type: PADDING_TYPE| None = None,
     padding_length: int | None = None,
     padding_kwargs: dict = {},
 ) -> Task:

@@ -41,6 +41,53 @@ def eval_gpt41_nano_single_rand() -> None:
         )
         time.sleep(25)
 
+
+def eval_gpt41_nano_relevant_padding() -> None:
+    for task_type in ["harm", "benign"]:
+        for pad_len in [1000]:
+            model_id="openai/gpt-4.1-nano-2025-04-14"
+            random_seeds = [3,14,15] # 92,65] 
+            padding_length = pad_len
+            padding_type = "relevant"
+            padding_kwargs={"padding_position": "after"}
+            tasks = []
+            for random_seed in random_seeds:
+                model_id_prefix = model_id.split("/")[1][:-11]
+                name_prefix = f"{model_id_prefix}_rs_{random_seed}_hint_detprompt_test"
+                if task_type == "harm":
+                    task = agentharm(
+                        split="test_public",
+                        padding_type=padding_type, padding_length=padding_length, padding_kwargs=padding_kwargs,
+                        hint_included=True, detailed_behaviors=True,
+                        random_seed=random_seed,
+                        name_prefix=name_prefix,
+                    )
+                elif task_type == "benign":
+                    task = agentharm(
+                        split="test_public",
+                        padding_type=padding_type, padding_length=padding_length, padding_kwargs=padding_kwargs,
+                        hint_included=True, detailed_behaviors=True,
+                        random_seed=random_seed,
+                        name_prefix=name_prefix,
+                    )
+                else:
+                    raise ValueError(f"Wrong {task_type=}")
+                tasks.append(task)
+            eval_set(
+                tasks=tasks, 
+                log_dir= f"logs/harm/relevant_padding/{pad_len}_after/gpt_4.1_nano/test_hint_det_prompt",
+                model=model_id,
+                retry_on_error=3,
+                timeout=500,
+                max_connections=1
+            )
+            time.sleep(25)
+
+
+
+
+
+
 def run_eval_set_with_config(config: dict):
     """
     Run evaluation based on YAML configuration
