@@ -44,7 +44,7 @@ def eval_gpt41_nano_single_rand() -> None:
 
 def eval_gpt41_nano_relevant_padding() -> None:
     for task_type in ["harm", "benign"]:
-        for pad_len in [1000]:
+        for pad_len in [1_000, 5_000, 10_000, 50_000, 100_000]:
             model_id="openai/gpt-4.1-nano-2025-04-14"
             random_seeds = [3,14,15] # 92,65] 
             padding_length = pad_len
