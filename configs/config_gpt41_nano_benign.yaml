@@ -1,10 +1,13 @@
 model_id: "openai/gpt-4.1-nano-2025-04-14"
 task_type: "benign"
-context_lengths: [0, 100, 1000, 2000, 5000, 10000]
-padding_type: "non_relevant_around"
-log_dir: "logs/redone/padding_around_task/41_nano_benign"
+context_lengths: [1000, 5000, 10000, 50000, 100000]
+padding_type: "non_relevant"
+log_dir: "logs/uniform/"
 retry_on_error: 3
 split: "test_public"
-hint_included: false
-detailed_behaviors: false
-seed: 42
+hint_included: true
+detailed_behaviors: true
+random_seeds: [3, 14, 15]
+padding_position: "after"
+semantic_judge: "openai/gpt-4.1-nano-2025-04-14"
+refusal_judge: "openai/gpt-4.1-nano-2025-04-14"
