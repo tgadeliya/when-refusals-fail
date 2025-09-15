@@ -1,0 +1,181 @@
+A license (American English) or licence (Commonwealth English) is an official permission or permit to do, use, or own something (as well as the document of that permission or permit).[1]
+
+A license is granted by a party (licensor) to another party (licensee) as an element of an agreement between those parties. In the case of a license issued by a government, the license is obtained by applying for it. In the case of a private party, it is by a specific agreement, usually in writing (such as a lease or other contract). The simplest definition is "A license is a promise not to sue", because a license usually either permits the licensed party to engage in an illegal activity, and subject to prosecution, without the license (e.g. fishing, driving an automobile, or operating a broadcast radio or television station), or it permits the licensed party to do something that would violate the rights of the licensing party (e.g. make copies of a copyrighted work), which, without the license, the licensed party could be sued, civilly, criminally, or both.
+
+In particular, a license may be issued by authorities, to allow an activity that would otherwise be forbidden. It may require paying a fee or proving a capability (or both). The requirement may also serve to keep the authorities informed on a type of activity, and to allow them to set conditions and limitations.
+
+A licensor may grant a license under intellectual property laws to authorize a use (such as copying software or using a patented invention) to a licensee, sparing the licensee from a claim of infringement brought by the licensor.[2] A license under intellectual property commonly has several components beyond the grant itself, including a term, territory, renewal provisions, and other limitations deemed vital to the licensor.
+
+Term: many licenses are valid for a particular length of time. This protects the licensor should the value of the license increase, or market conditions change. It also preserves enforceability by ensuring that no license extends beyond the term of the agreement.
+
+Territory: a license may stipulate what territory the rights pertain to. For example, a license with a territory limited to "North America" (Mexico/United States/Canada) would not permit a licensee any protection from actions for use in Kyrgyzstan.
+
+Again, a shorthand definition of a license is "a promise by the licensor not to sue the licensee". That means without a license any use or exploitation of intellectual property by a third party would amount to copying or infringement. Such copying would be improper and could, by using the legal system, be stopped if the intellectual property owner wanted to do so.
+
+Intellectual property licensing plays a major role in business, academia and broadcasting. Business practices such as franchising, technology transfer, publication and character merchandising entirely depend on the licensing of intellectual property. Land licensing (proprietary licensing) and IP licensing.
+
+Real property licenses
+A license provides one party with the authority to act on another's land, when such action would typically amount to trespass absent that license. A key distinction between licenses and leases is that a license grants the licensee a revocable non-assignable privilege to act upon the land of the licensor, without granting any possessory interest in the land.[4] Once a license is agreed upon, the licensee may occupy the land only so far as is necessary to complete the act. Another key distinction between a license and a lease is that leases are generally required to be in writing, where the statute of frauds requires it, while licenses can be made orally.
+
+Creation
+A license is generally created by an express or implied agreement. The licensor must agree to the license which can be shown in writing or the licensors acquiescence in its exercise. Furthermore, unlike many other contractual agreements, a license does not require consideration, a license can be created with or without it. Moreover, whether an agreement is held to be a "license" and not a lease will depend on three essential characteristics of a license: (1) a clause allowing the licensor to revoke "at will"; (2) the retention by the licensor of absolute control over the premises; and (3) the licensor's supplying to the licensee all of the essential services required for the licensee's permitted use of the premises.[5]
+
+Termination
+Under a pure licensing agreement, the licensor, under its terms and by common-law, can cancel the agreement at will and without cause, unless it is coupled with an interest or made irrevocable by contract. A license that has been coupled with an interest is not revocable by the licensor without exposure to liability and potential damages. In the event a license is coupled with an interest, the licensor must provide reasonable time for the licensee to remove that interest from the property prior to termination. Additionally, because a license does not confer any possessory interest in the licensee, in the event of a sale of the property, the license is terminated and cannot be enforced against the new owners of that property. Moreover, the death of either the licensee or licensor will terminate the agreement.
+
+Remedies
+If a license is revocable at will by the licensor, courts will be unable to grant specific performance in favor of the licensee.[4] A licensee would be unsuccessful in bringing forcible entry claims or a detainer proceeding because the licensee was never granted any possessory interest. The Licensee would also not be able to recover damages for money spent unless they are able to show detrimental reliance on the license. In certain cases, however, licenses can be made irrevocable, and specific performance may be granted. Where a license is made with a set term period and valid consideration is transferred, revocation of the license prior to the terms expiration may raise breach of contract claims that could provide damages against the licensor. Furthermore, once the licensor terminates or revokes the license, notice is statutorily required prior to the commencement of any special proceeding to recover possession of the property (e.g., in NY that requirement is 10 days).
+
+Mass licensing of software
+Mass distributed software is used by individuals on personal computers under license from the developer of that software. Such license is typically included in a more extensive end-user license agreement (EULA)[6] entered into upon the installation of that software on a computer. Typically, a license is associated with a unique code, that when approved grants the end user access to the software in question.
+
+Under a typical end-user license agreement, the user may install the software on a limited number of computers.[7]
+
+The enforceability of end-user license agreements is sometimes questioned.
+
+As of 2020, there are various ways to license software with different kinds of licensing models, which allow software vendors to profit from their product offerings in flexible ways.
+
+Patent licensing
+Like other intellectual property, patent owners may grant permission to others to engage in conduct that would otherwise be within the scope of a patent.[8] For example, a patent owner may authorize a licensee to make, use, sell, offer for sale, or import a patented product. Such agreements are typically referred to as a patent license agreement or a covenant not to sue. These agreements can last for a specific period of time (such as five years) or for the entire life of the patent (i.e., until the patent expires).[8] Patent license agreements may also be exclusive (i.e., the licensee is the only person or entity that is allowed to sell, make, use, offer to sell, or import the patented invention) or non-exclusive (i.e., the licensee is simply one of several entities who has rights under the patent).[8] Finally, any rights given under the agreement may be limited to a particular "field of use" (e.g., a licensee may be able to practice an invention in the field of consumer electronics, but not in the field of industrial electronics).[8]
+
+Often, patent owners will require a licensee to pay money in exchange for granting a patent license. Such payments are referred to as royalty payments and come primarily in two forms: lump sum or running royalty.[8] A lump sum royalty involves an upfront, one-time payment, while a running royalty typically involves periodic payments (e.g., quarterly or annual) based on the number of patented products sold or imported.
+
+Trademark and brand licensing
+Main article: Brand licensing
+A licensor may grant permission to a licensee to distribute products under a trademark. With such a license, the licensee may use the trademark without fear of a claim of trademark infringement by the licensor. The assignment of a license often depends on specific contractual terms. The most common terms are, that a license is only applicable for a particular geographic region, just for a certain period of time or merely for a stage in the value chain. Moreover, there are different types of fees within the trademark and brand licensing. The first form demands a fee independent of sales and profits, the second type of license fee is dependent on the productivity of the licensee.
+
+For example, McDonald's licenses their trademark such as the "Golden Arches" or the "Big Mac", but the licenses gives McDonald's a right to impose strict quality standards to their franchisees as they can take back the right to the trademark if they do not meet McDonald's standards.[9]
+
+When a licensor grants permission to a licensee to not only distribute, but manufacture a patented product, it is known as licensed production.
+
+Artwork and character licensing
+A licensor may grant a permission to a licensee to copy and distribute copyrighted works such as "art" (e.g., Thomas Kinkade's painting Dawn in Los Gato) and characters (e.g., Mickey Mouse). With such license, a licensee need not fear a claim of copyright infringement brought by the copyright owner.
+
+Artistic license is, however, not related to the aforementioned license. It is a euphemism that denotes freedom of expression, the ability to make the subject appear more engaging or attractive, by fictionalizing part of the subject.
+
+Academia
+National examples of the licentiate are listed at licentiate (degree)
+A licentiate is an academic degree that traditionally conferred the license to teach at a university or to practice a particular profession. The term survived despite the fact that nowadays a doctorate is typically needed in order to teach at a university. The term is also used for a person who holds a licentiate.[10][11] In English, the degree has never been called a license. In France, the licence is the first degree awarded in Universities.
+
+In Sweden, Finland, and in some other European university systems, a 'licentiate' is a postgraduate degree between the master's degree and the doctorate. The licentiate is a popular choice in those countries where a full doctoral degree would take five or more years to achieve.
+
+Vehicle licensing
+A vehicle license is required in most countries to legally drive a vehicle on public roads. This typically involves obtaining a driver's license, which is granted based on an individual's ability to operate specific types of vehicles. The requirements and processes for obtaining a driver's license vary from country to country and may depend on the type of vehicle one intends to drive.
+
+How it works in various countries
+
+Driver's License in Florida, United States
+In the United States, each state has its own system for issuing driver's licenses, which usually involves passing both a written test and a road test. The classes of licenses differ by the type of vehicle, such as standard passenger vehicles, motorcycles, commercial trucks, and buses. A commercial driver's license (CDL) is required for large vehicles like trucks and buses, while a motorcycle endorsement is required to ride a motorcycle. [12]
+In the United Kingdom, the system is centralized and managed by the Driver and Vehicle Licensing Agency (DVLA). A person must first obtain a provisional license and then take a driving theory test followed by a practical driving test. There are different categories of licenses depending on the type of vehicle, including a Category B for cars, Category A for motorcycles, and Category C for larger vehicles such as trucks.[13]
+In Germany, the process for obtaining a driver's license is handled through a series of steps that include enrolling in driving school, passing both a theoretical test and a practical driving test, and meeting a minimum age requirement. Germany has a highly structured system for vehicle licenses, with licenses divided into categories such as Class B for cars, Class A for motorcycles, and Class C for trucks. The process is often more stringent, requiring thorough training and examinations.[14]
+In India, the licensing system is governed by the Ministry of Road Transport and Highways (MoRTH). An individual must first obtain a learner's license before taking the driving test for a permanent driver's license. There are separate licenses for motorcycles, cars, and heavy vehicles. Road safety and traffic regulations are major components of the testing process.
+
+Cable television
+This describes the ability to control what information one reveals about oneself over cable television, and who can access that information. For example, third parties can track IP TV programs someone has watched at any given time. "The addition of any information in a broadcasting stream is not required for an audience rating survey, additional devices are not requested to be installed in the houses of viewers or listeners, and without the necessity of their cooperations, audience ratings can be automatically performed in real-time."[3]
+
+Educational
+In the United Kingdom in 2012, the Education Secretary Michael Gove described the National Pupil Database as a "rich dataset" whose value could be "maximised" by making it more openly accessible, including to private companies. Kelly Fiveash of The Register said that this could mean "a child's school life including exam results, attendance, teacher assessments and even characteristics" could be available, with third-party organizations being responsible for anonymizing any publications themselves, rather than the data being anonymized by the government before being handed over. An example of a data request that Gove indicated had been rejected in the past, but might be possible under an improved version of privacy regulations, was for "analysis on sexual exploitation".[4]
+
+Financial
+Main article: Financial privacy
+Information about a person's financial transactions, including the amount of assets, positions held in stocks or funds, outstanding debts, and purchases can be sensitive. If criminals gain access to information such as a person's accounts or credit card numbers, that person could become the victim of fraud or identity theft. Information about a person's purchases can reveal a great deal about that person's history, such as places they have visited, whom they have contact with, products they have used, their activities and habits, or medications they have used. In some cases, corporations may use this information to target individuals with marketing customized towards those individual's personal preferences, which that person may or may not approve.[4]
+
+Information technology
+
+This section has multiple issues. Please help improve it or discuss these issues on the talk page. (Learn how and when to remove these messages)
+This section needs additional citations for verification. (July 2024)
+This article needs to be updated. (July 2024)
+As heterogeneous information systems with differing privacy rules are interconnected and information is shared, policy appliances will be required to reconcile, enforce, and monitor an increasing amount of privacy policy rules (and laws). There are two categories of technology to address privacy protection in commercial IT systems: communication and enforcement.
+
+Policy communication
+P3P – The Platform for Privacy Preferences. P3P is a standard for communicating privacy practices and comparing them to the preferences of individuals.
+Policy enforcement
+XACML – The Extensible Access Control Markup Language together with its Privacy Profile is a standard for expressing privacy policies in a machine-readable language which a software system can use to enforce the policy in enterprise IT systems.
+EPAL – The Enterprise Privacy Authorization Language is very similar to XACML, but is not yet a standard.
+WS-Privacy – "Web Service Privacy" will be a specification for communicating privacy policy in web services. For example, it may specify how privacy policy information can be embedded in the SOAP envelope of a web service message.
+Improving privacy through individualization
+Computer privacy can be improved through individualization. Currently security messages are designed for the "average user", i.e. the same message for everyone. Researchers have posited that individualized messages and security "nudges", crafted based on users' individual differences and personality traits, can be used for further improvements for each person's compliance with computer security and privacy.[5]
+
+Improve privacy through data encryption
+
+By converting data into a non-readable format, encryption prevents unauthorized access. At present, common encryption technologies include AES and RSA. Use data encryption so that only users with decryption keys can access the data.[6]
+
+Internet
+Main article: Internet privacy
+The ability to control the information one reveals about oneself over the internet and who can access that information has become a growing concern. These concerns include whether email can be stored or read by third parties without consent or whether third parties can continue to track the websites that someone visited. Another concern is whether websites one visits can collect, store, and possibly share personally identifiable information about users.
+
+The advent of various search engines and the use of data mining created a capability for data about individuals to be collected and combined from a wide variety of sources very easily.[7][8][9] AI facilitated creating inferential information about individuals and groups based on such enormous amounts of collected data, transforming the information economy. [10] The FTC has provided a set of guidelines that represent widely accepted concepts concerning fair information practices in an electronic marketplace, called the Fair Information Practice Principles. But these have been critiqued for their insufficiency in the context of AI-enabled inferential information. [10]
+
+On the internet many users give away a lot of information about themselves: unencrypted emails can be read by the administrators of an e-mail server if the connection is not encrypted (no HTTPS), and also the internet service provider and other parties sniffing the network traffic of that connection are able to know the contents. The same applies to any kind of traffic generated on the Internet, including web browsing, instant messaging, and others. In order not to give away too much personal information, emails can be encrypted and browsing of webpages as well as other online activities can be done anonymously via anonymizers, or by open source distributed anonymizers, so-called mix networks. Nym[11] and I2P[12] are examples of well-known mix nets.
+
+Email is not the only internet content with privacy concerns. In an age where increasing amounts of information are online, social networking sites pose additional privacy challenges. People may be tagged in photos or have valuable information exposed about themselves either by choice or unexpectedly by others, referred to as participatory surveillance. Data about location can also be accidentally published, for example, when someone posts a picture with a store as a background. Caution should be exercised when posting information online. Social networks vary in what they allow users to make private and what remains publicly accessible.[13] Without strong security settings in place and careful attention to what remains public, a person can be profiled by searching for and collecting disparate pieces of information, leading to cases of cyberstalking[14] or reputation damage.[15]
+
+Cookies are used on websites so that users may allow the website to retrieve some information from the user's internet, but they usually do not mention what the data being retrieved is.[16] In 2018, the General Data Protection Regulation (GDPR) passed a regulation that forces websites to visibly disclose to consumers their information privacy practices, referred to as cookie notices.[16] This was issued to give consumers the choice of what information about their behavior they consent to letting websites track; however, its effectiveness is controversial.[16] Some websites may engage in deceptive practices such as placing cookie notices in places on the page that are not visible or only giving consumers notice that their information is being tracked but not allowing them to change their privacy settings.[16] Apps like Instagram and Facebook collect user data for a personalized app experience; however, they track user activity on other apps, which jeopardizes users' privacy and data. By controlling how visible these cookie notices are, companies can discreetly collect data, giving them more power over consumers.[16]
+
+Locational
+As location tracking capabilities of mobile devices are advancing (location-based services), problems related to user privacy arise. Location data is among the most sensitive data currently being collected.[17] A list of potentially sensitive professional and personal information that could be inferred about an individual knowing only their mobility trace was published in 2009 by the Electronic Frontier Foundation.[18] These include the movements of a competitor sales force, attendance of a particular church or an individual's presence in a motel, or at an abortion clinic. A recent MIT study[19][20] by de Montjoye et al. showed that four spatio-temporal points, approximate places and times, are enough to uniquely identify 95% of 1.5 million people in a mobility database. The study further shows that these constraints hold even when the resolution of the dataset is low. Therefore, even coarse or blurred datasets provide little anonymity to the person.
+
+Medical
+Main article: Medical privacy
+People may not wish for their medical records to be revealed to others due to the confidentiality and sensitivity of what the information could reveal about their health. For example, they might be concerned that it might affect their insurance coverage or employment. Or, it may be because they would not wish for others to know about any medical or psychological conditions or treatments that would bring embarrassment upon themselves. Revealing medical data could also reveal other details about one's personal life.[21] There are three major categories of medical privacy: informational (the degree of control over personal information), physical (the degree of physical inaccessibility to others), and psychological (the extent to which the doctor respects patients' cultural beliefs, inner thoughts, values, feelings, and religious practices and allows them to make personal decisions).[22] Physicians and psychiatrists in many cultures and countries have standards for doctor–patient relationships, which include maintaining confidentiality. In some cases, the physician–patient privilege is legally protected. These practices are in place to protect the dignity of patients, and to ensure that patients feel free to reveal complete and accurate information required for them to receive the correct treatment.[23] To view the United States' laws on governing privacy of private health information, see HIPAA and the HITECH Act. The Australian law is the Privacy Act 1988 Australia as well as state-based health records legislation.
+
+Political
+Main article: Political privacy
+Political privacy has been a concern since voting systems emerged in ancient times. The secret ballot is the simplest and most widespread measure to ensure that political views are not known to anyone other than the voters themselves—it is nearly universal in modern democracy and considered to be a basic right of citizenship. In fact, even where other rights of privacy do not exist, this type of privacy very often does. There are several forms of voting fraud or privacy violations possible with the use of digital voting machines.[24]
+
+Legality
+Main article: Information privacy law
+The legal protection of the right to privacy in general – and of data privacy in particular – varies greatly around the world.[25]
+
+Laws and regulations related to Privacy and Data Protection are constantly changing, it is seen as important to keep abreast of any changes in the law and to continually reassess compliance with data privacy and security regulations.[26] Within academia, Institutional Review Boards function to assure that adequate measures are taken to ensure both the privacy and confidentiality of human subjects in research.[27]
+
+Privacy concerns exist wherever personally identifiable information or other sensitive information is collected, stored, used, and finally destroyed or deleted – in digital form or otherwise. Improper or non-existent disclosure control can be the root cause for privacy issues. Informed consent mechanisms including dynamic consent are important in communicating to data subjects the different uses of their personally identifiable information. Data privacy issues may arise in response to information from a wide range of sources, such as:[28]
+
+Healthcare records
+Criminal justice investigations and proceedings
+Financial institutions and transactions
+Biological traits, such as genetic material
+Residence and geographic records
+Privacy breach
+Location-based service and geolocation
+Web surfing behavior or user preferences using persistent cookies
+Academic research
+Data protection laws
+Main articles: Information privacy law and Privacy law
+Data protection laws across the globe aim to secure personal information and safeguard individual privacy in a digital era. The European Union’s General Data Protection Regulation (GDPR) sets a high benchmark, emphasizing consent, transparency, and robust accountability by imposing strict penalties. Many countries adopt similar principles, mandating that organizations implement effective security measures, respect user rights, and notify breaches. In regions such as North America, Asia, and Oceania, data protection frameworks vary from sector-specific regulations to comprehensive legislation. Globally, these laws balance innovation with privacy, ensuring that personal data is appropriately accessible, managed ethically while mitigating misuse and cyber threats.
+
+Authorities by country
+See also: Information commissioner and National data protection authority
+National data protection authorities in the European Union and the European Free Trade Association
+Office of the Australian Information Commissioner (Australia)
+Privacy Commissioner (New Zealand)
+Commission nationale de l'informatique et des libertés (CNIL, France)
+Federal Commissioner for Data Protection and Freedom of Information (Germany)
+Office of the Privacy Commissioner for Personal Data (Hong Kong)
+Data Protection Commissioner (Ireland)
+Office of the Data Protection Supervisor (Isle of Man)
+National Privacy Commission (Philippines)
+Personal Data Protection Commission (Singapore)
+Turkish Data Protection Authority (KVKK, Turkey)
+Federal Data Protection and Information Commissioner (Switzerland)
+Information Commissioner's Office (ICO, United Kingdom)
+Agencia Española de Protección de Datos (AEPD, Spain)
+Safe Harbor program
+This section is about the previously invalidated privacy regime. For current legal standard, see EU-US Data Privacy Framework.
+The United States Department of Commerce created the International Safe Harbor Privacy Principles certification program in response to the 1995 Directive on Data Protection (Directive 95/46/EC) of the European Commission.[29] Both the United States and the European Union officially state that they are committed to upholding information privacy of individuals, but the former has caused friction between the two by failing to meet the standards of the EU's stricter laws on personal data. The negotiation of the Safe Harbor program was, in part, to address this long-running issue.[30] Directive 95/46/EC declares in Chapter IV Article 25 that personal data may only be transferred from the countries in the European Economic Area to countries which provide adequate privacy protection. Historically, establishing adequacy required the creation of national laws broadly equivalent to those implemented by Directive 95/46/EU. Although there are exceptions to this blanket prohibition – for example where the disclosure to a country outside the EEA is made with the consent of the relevant individual (Article 26(1)(a)) – they are limited in practical scope. As a result, Article 25 created a legal risk to organizations which transfer personal data from Europe to the United States.
+
+The program regulates the exchange of passenger name record information between the EU and the US. According to the EU directive, personal data may only be transferred to third countries if that country provides an adequate level of protection. Some exceptions to this rule are provided, for instance when the controller themself can guarantee that the recipient will comply with the data protection rules.
+
+The European Commission has set up the "Working party on the Protection of Individuals with regard to the Processing of Personal Data," commonly known as the "Article 29 Working Party". The Working Party gives advice about the level of protection in the European Union and third countries.[31]
+
+The Working Party negotiated with U.S. representatives about the protection of personal data, the Safe Harbor Principles were the result. Notwithstanding that approval, the self-assessment approach of the Safe Harbor remains controversial with a number of European privacy regulators and commentators.[32]
+
+The Safe Harbor program addresses this issue in the following way: rather than a blanket law imposed on all organizations in the United States, a voluntary program is enforced by the Federal Trade Commission. U.S. organizations which register with this program, having self-assessed their compliance with a number of standards, are "deemed adequate" for the purposes of Article 25. Personal information can be sent to such organizations from the EEA without the sender being in breach of Article 25 or its EU national equivalents. The Safe Harbor was approved as providing adequate protection for personal data, for the purposes of Article 25(6), by the European Commission on 26 July 2000.[33]
+
+Under the Safe Harbor, adoptee organizations need to carefully consider their compliance with the onward transfer obligations, where personal data originating in the EU is transferred to the US Safe Harbor, and then onward to a third country. The alternative compliance approach of "binding corporate rules", recommended by many EU privacy regulators, resolves this issue. In addition, any dispute arising in relation to the transfer of HR data to the US Safe Harbor must be heard by a panel of EU privacy regulators.[34]
+
+In July 2007, a new, controversial,[35] Passenger Name Record agreement between the US and the EU was made.[36] A short time afterwards, the Bush administration gave exemption for the Department of Homeland Security, for the Arrival and Departure Information System (ADIS) and for the Automated Target System from the 1974 Privacy Act.[37]
+
+In February 2008, Jonathan Faull, the head of the EU's Commission of Home Affairs, complained about the US bilateral policy concerning PNR.[38] The US had signed in February 2008 a memorandum of understanding (MOU) with the Czech Republic in exchange of a visa waiver scheme, without concerting before with Brussels.[35] The tensions between Washington and Brussels are mainly caused by a lesser level of data protection in the US, especially since foreigners do not benefit from the US Privacy Act of 1974. Other countries approached for bilateral MOU included the United Kingdom, Estonia, Germany and Greece.[39]
+
+

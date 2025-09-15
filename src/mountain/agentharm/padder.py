@@ -3,20 +3,27 @@ import random
 from pathlib import Path
 from typing import Literal
 
-from inspect_ai import task
 import pandas as pd
 import tiktoken
 from inspect_ai.dataset import Dataset, MemoryDataset, Sample
 
-from .padder_msg import PADDINGS_PER_TYPE
-from .non_relevant_padding_text import padding_texts, select_padding_text
+from .non_relevant_padding_text import select_padding_text
 
-MULTI_TASK_PADDING_POS_TYPES = Literal["before", "after", "around", "before_with_task_instructed", "around_with_task_instructed"]
+PADDING_TYPE = Literal["random", "multi_task", "non_relevant", "relevant"] | None
+PADDING_POSITION = Literal["before", "after", "around"]
+MULTI_TASK_PADDING_POS_TYPES = Literal[
+    "before",
+    "after",
+    "around",
+    "before_with_task_instructed",
+    "around_with_task_instructed",
+]
+
 
 def augment_with_random_padding(
     sample: Sample,
     padding_length: int,
-    padding_position: Literal["before", "after", "around"] = "before",
+    padding_position: PADDING_POSITION = "before",
     random_seed: int = 0,
 ) -> Sample:
     random_text = generate_random_tokens_and_decode(
@@ -34,17 +41,20 @@ def augment_with_random_padding(
         raise ValueError(f"Unknown padding position: {padding_position}")
     return sample
 
+
 def augment_with_non_relevant_text_padding(
-        sample: Sample,
-        padding_length: int,
-        random_seed: int = 0,
-        padding_position: Literal["before", "after", "around"] = "before",
-        ) -> Sample:
+    sample: Sample,
+    padding_length: int,
+    random_seed: int = 0,
+    padding_position: PADDING_POSITION = "before",
+) -> Sample:
     if random_seed is not None:
         random.seed(random_seed)
-        
-    padding_text = select_padding_text(padding_length=padding_length,random_seed=random_seed)
-    
+
+    padding_text = select_padding_text(
+        padding_length=padding_length, random_seed=random_seed
+    )
+
     if padding_position == "before":
         sample.input = f"{padding_text}\n\n{sample.input}"
     elif padding_position == "after":
@@ -53,25 +63,47 @@ def augment_with_non_relevant_text_padding(
         split_point = len(padding_text) // 2
         left_text = padding_text[:split_point]
         right_text = padding_text[split_point:]
-    
+
         sample.input = f"{left_text}\n\n{sample.input}\n\n{right_text}"
-    
+
     return sample
 
-def augment_with_task_relevant_text_padding(sample: Sample, padding_length: int, seed: int = 0) -> Sample:
-    if seed is not None:
-        random.seed(seed)
+
+def augment_with_relevant_text_padding(
+    sample: Sample,
+    padding_length: int,
+    model: str = "gpt-4o-mini",
+    padding_position: Literal["before", "after", "around"] = "after",
+    random_seed: int = 0,
+) -> Sample:
+    if random_seed is not None:
+        random.seed(random_seed)
     if sample.metadata:
-        category = sample.metadata["category"] # e.g. disinformation, hate, drugs_use
-        name = sample.metadata["name"] # concrete behavior, e.g. 'Propaganda AI Video - Benign' 
-    
-    # TODO: check whether we could have situation when category and name is not availble. If yes(I doubt) handle appropriately        
-    paddings_to_sample = PADDINGS_PER_TYPE["task_relevant"][category][name][padding_length]
-    # TODO: Add logic to handle different padding_length
-    # TODO: based on implementation method, you probably need to added warning if padding_length > maximum available padding length
-    sampled_padding = random.choice(paddings_to_sample)
-    sample.input =  f"{sampled_padding}\n\n{sample.input}"
+        category = sample.metadata[
+            "category"
+        ].lower()  # e.g. disinformation, hate, drugs_use
+        # ignore sample.metadata["name"] with concrete behavior by now
+
+    relevant_encoded_texts: list[list[int]] = json.load(
+        open(Path(__file__).parent / "paddings/relevant" / f"{category}.json", "r")
+    )["encoding"]
+    # TODO: When will be more text to test, add sampling based on random seed:
+    relevant_encoded_text = relevant_encoded_texts[0]
+    # using gpt-4o-mini tokenizer by default, which is compatible with gpt-4.1-nano
+    relevant_padding = tiktoken.encoding_for_model(model).decode(
+        relevant_encoded_text[:padding_length]
+    )
+    if padding_position == "before":
+        sample.input = f"{relevant_padding}\n\n{sample.input}"
+    elif padding_position == "after":
+        sample.input = f"{sample.input}\n\n{relevant_padding}"
+    elif padding_position == "around":
+        middle_idx = len(relevant_padding) // 2
+        sample.input = f"{relevant_padding[:middle_idx]}\n\n{sample.input}\n\n{relevant_padding[middle_idx:]}"
+    else:
+        raise ValueError(f"Unknown padding position: {padding_position}")
     return sample
+
 
 def augment_with_multi_task_padding(
     sample: Sample,
@@ -81,7 +113,7 @@ def augment_with_multi_task_padding(
     use_sample_behavior: bool = False,
     use_metadata: bool = False,
     random_seed: int = 0,
-    ) -> Sample:
+) -> Sample:
     """
     Augment the input of the sample with a random tasks descriptions as a padding.
 
@@ -150,17 +182,20 @@ def augment_with_multi_task_padding(
         for idx, st in enumerate(sampled_tasks):
             if idx == task_pos_idx:
                 # TODO: Experiment with other prompt styles
-                sampled_tasks_complete.append(f"Task #{idx + 1} (complete ONLY this task, ignore all others): {st}")
+                sampled_tasks_complete.append(
+                    f"Task #{idx + 1} (complete ONLY this task, ignore all others): {st}"
+                )
             else:
                 sampled_tasks_complete.append(f"Task #{idx + 1}: {st}")
         sample.input = "\n\n".join(sampled_tasks_complete)
 
     return sample
 
+
 PADDING_TYPE_TO_FUNC = {
     "random": augment_with_random_padding,
     "non_relevant": augment_with_non_relevant_text_padding,
-    "task_relevant": augment_with_task_relevant_text_padding,
+    "relevant": augment_with_relevant_text_padding,
     "multi_task": augment_with_multi_task_padding,
 }
 
@@ -189,9 +224,10 @@ BLACKLIST_RANDOM_TOKENS_ID = set(
     ]
 )
 
+
 def generate_random_tokens_and_decode(
     num_tokens: int, model="gpt-4o-mini", seed=0
-    ) -> str:
+) -> str:
     if seed is not None:
         random.seed(seed)
     encoding = tiktoken.encoding_for_model(model)
@@ -209,13 +245,16 @@ def generate_random_tokens_and_decode(
 
 
 def augment_with_padding(
-        dataset: Dataset, padding_type: Literal["random"]| None, padding_length: int | None,
-        padding_kwargs: dict = {},
-        random_seed: int = 0,) -> Dataset:
+    dataset: Dataset,
+    padding_type: PADDING_TYPE,
+    padding_length: int | None,
+    padding_kwargs: dict = {},
+    random_seed: int = 0,
+) -> Dataset:
     if padding_type is None or padding_length is None or padding_length == 0:
         return dataset
-    
-    aug_func = PADDING_TYPE_TO_FUNC[padding_type]    
+
+    aug_func = PADDING_TYPE_TO_FUNC[padding_type]
     aug_dataset = []
     for sample in dataset:
         aug_dataset.append(
