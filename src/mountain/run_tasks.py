@@ -111,7 +111,10 @@ def run_eval_set_with_config(config: dict):
     padding_position = config.get("padding_position", "before")
     random_seeds = config.get("random_seeds")  # Default seed if not specified
     behavior_ids = config.get("behavior_ids", None)
-    padding_kwargs = {"padding_position": padding_position}
+    semantic_judge = config.get("semantic_judge", "openai/gpt-4.1-nano-2025-04-14")
+    refusal_judge = config.get("refusal_judge", "openai/gpt-4.1-nano-2025-04-14")
+    padding_kwargs={"padding_position": padding_position}
+
 
     for context_length in context_lengths:
         # Extract model name prefix (handling various model ID formats)
@@ -137,8 +140,10 @@ def run_eval_set_with_config(config: dict):
                     behavior_ids=behavior_ids,
                     padding_length=context_length,
                     name_prefix=name_prefix,
-                    hint_included=hint_included,
-                    split=split,
+                    hint_included=hint_included, 
+                    split=split, 
+                    refusal_judge=refusal_judge,
+                    semantic_judge=semantic_judge,
                     detailed_behaviors=detailed_behaviors,
                     random_seed=random_seed,
                     padding_kwargs=padding_kwargs,
@@ -149,8 +154,10 @@ def run_eval_set_with_config(config: dict):
                     behavior_ids=behavior_ids,
                     padding_length=context_length,
                     name_prefix=name_prefix,
-                    hint_included=hint_included,
-                    split=split,
+                    hint_included=hint_included, 
+                    split=split, 
+                    refusal_judge=refusal_judge,
+                    semantic_judge=semantic_judge,
                     detailed_behaviors=detailed_behaviors,
                     random_seed=random_seed,
                     padding_kwargs=padding_kwargs,
