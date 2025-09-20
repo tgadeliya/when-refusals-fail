@@ -3,33 +3,22 @@
 # Exit immediately if a command fails
 set -e
 
-# Optional: activate virtual environment if you have one
+# activate virtual env
 source /Users/jauhar/Repositories/algoverse_mountain/.venv/bin/activate
 
 echo "Starting Python script sequence..."
 
-uv run src/mountain/run_evals.py --config_file configs/config_gpt41_nano_harm.yaml --seed 42
-echo "Finished GPT4.1-nano for harmful prompts ✅"
+uv run src/mountain/run_tasks.py --config configs/sonoma_dusk_harm.yaml
+echo "Finished Sonoma Dusk for harmful prompts ✅"
 
-uv run src/mountain/run_evals.py --config_file configs/config_gpt41_nano_benign.yaml --seed 42
-echo "Finished GPT4.1-nano for benign prompts ✅"
+# uv run src/mountain/run_tasks.py --config configs/sonoma_dusk_benign.yaml
+# echo "Finished Sonoma Dusk for benign prompts ✅"
 
-uv run src/mountain/run_evals.py --config_file configs/config_gpt4o_mini_harm.yaml --seed 42
-echo "Finished GPT4o-mini for harmful prompts ✅"
+# uv run src/mountain/run_tasks.py --config configs/sonoma_sky_harm.yaml
+# echo "Finished Sonoma Sky for harmful prompts ✅"
 
-uv run src/mountain/run_evals.py --config_file configs/config_gpt4o_mini_benign.yaml --seed 42
-echo "Finished GPT4o-mini for benign prompts ✅"
+# uv run src/mountain/run_tasks.py --config configs/sonoma_sky_benign.yaml
+# echo "Finished Sonoma Sky for benign prompts ✅"
 
-uv run src/mountain/run_evals.py --config_file configs/config_gpt5_nano_harm.yaml --seed 42
-echo "Finished GPT5-nano for hamrful prompts"
-
-uv run src/mountain/run_evals.py --config_file configs/config_gpt5_nano_benign.yaml --seed 42
-echo "Finished GPT5-nano for benign prompts"
-
-# uv run src/mountain/run_evals.py --config_file configs/config_gemini2o_flash_benign.yaml
-# echo "Finished Gemini 2 flash for benign prompts ✅"
-
-# uv run src/mountain/run_evals.py --config_file configs/config_gemini2o_flash_harm.yaml
-# echo "Finished Gemini 2 flash for harmful prompts ✅"
 
 echo "All scripts executed successfully 🎉"

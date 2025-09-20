@@ -52,11 +52,11 @@ padding_texts = {
 # -- New set of fiction texts, divided by genre --
 # -- Each text contains over 1M English words --
 file_map = {
-    "scifi": "scifi.txt",
-    "crime": "crime.txt",
-    "humour": "humour.txt",
-    "myth": "myth.txt",
-    "romance": "romance.txt",
+    "scifi": "scifi_ext.txt",
+    "crime": "crime_ext.txt",
+    "humour": "humour_ext.txt",
+    "myth": "myth_ext.txt",
+    "romance": "romance_ext.txt",
 }
 texts = {}
 for genre, filename in file_map.items():
