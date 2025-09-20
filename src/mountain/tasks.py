@@ -4,7 +4,7 @@ from inspect_ai import Task, task
 from dotenv import load_dotenv
 
 from mountain.agentharm.agentharm import run_agent_benchmark
-
+from mountain.agentharm.padder import PADDING_TYPE
 load_dotenv()
 
 
@@ -38,7 +38,7 @@ def agentharm_benign(
     agent_kwargs: Optional[Dict[str, Any]] = None,
     name_prefix: str = "",
     random_seed: int = 0,
-    padding_type: Literal["random", "multi_task", "non_relevant"]| None = None,
+    padding_type: PADDING_TYPE = None,
     padding_length: int| None = None,
     padding_kwargs: dict = {}
 ) -> Task:
@@ -75,7 +75,7 @@ def agentharm(
     chat_dataset: Optional[bool] = False,
     name_prefix: str = "",
     random_seed: int = 0,
-    padding_type: Literal["random", "multi_task", "non_relevant"]| None = None,
+    padding_type: PADDING_TYPE = None,
     padding_length: int| None = None,
     padding_kwargs: dict = {}
 ) -> Task:
