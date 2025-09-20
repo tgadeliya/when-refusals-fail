@@ -113,6 +113,8 @@ def run_eval_set_with_config(config: dict):
     behavior_ids = config.get("behavior_ids", None)
     semantic_judge = config.get("semantic_judge", "openai/gpt-4.1-nano-2025-04-14")
     refusal_judge = config.get("refusal_judge", "openai/gpt-4.1-nano-2025-04-14")
+    prompt_technique = config.get("prompt_technique", "standard")
+    agent_kwargs = {"prompt_technique": prompt_technique}
     padding_kwargs={"padding_position": padding_position}
 
 
@@ -147,6 +149,7 @@ def run_eval_set_with_config(config: dict):
                     detailed_behaviors=detailed_behaviors,
                     random_seed=random_seed,
                     padding_kwargs=padding_kwargs,
+                    agent_kwargs=agent_kwargs
                 )
             elif task_type == "benign":
                 task = agentharm_benign(
@@ -161,6 +164,7 @@ def run_eval_set_with_config(config: dict):
                     detailed_behaviors=detailed_behaviors,
                     random_seed=random_seed,
                     padding_kwargs=padding_kwargs,
+                    agent_kwargs=agent_kwargs
                 )
             else:
                 raise ValueError(f"Unknown task type: {task_type}")
