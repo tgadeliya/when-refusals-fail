@@ -42,6 +42,111 @@ def eval_gpt41_nano_single_rand() -> None:
         )
         time.sleep(25)
 
+def eval_grok() -> None:
+    for task_type in ["harm", "benign"]:
+        for pad_len in [0, 1_000, 5_000, 10_000, 50_000, 100_000, 200_000]:
+            model_id = "openrouter/x-ai/grok-4-fast:free"
+            random_seeds = [3,14,15] # 92,65]
+            padding_length = pad_len
+            padding_type = "random"
+            padding_kwargs = {"padding_position": "after"}
+            tasks = []
+            model_id_prefix = model_id.split("/")[2] 
+            for random_seed in random_seeds:
+                name_prefix = f"{model_id_prefix}_rs_{random_seed}_no_hint_test"
+                if task_type == "harm":
+                    task = agentharm(
+                        split="test_public",
+                        padding_type=padding_type,
+                        padding_length=padding_length,
+                        padding_kwargs=padding_kwargs,
+                        hint_included=True,
+                        detailed_behaviors=True,
+                        random_seed=random_seed,
+                        name_prefix=name_prefix,
+                    )
+                elif task_type == "benign":
+                    task = agentharm_benign(
+                        split="test_public",
+                        padding_type=padding_type,
+                        padding_length=padding_length,
+                        padding_kwargs=padding_kwargs,
+                        hint_included=True,
+                        detailed_behaviors=True,
+                        random_seed=random_seed,
+                        name_prefix=name_prefix,
+                    )
+                else:
+                    raise ValueError(f"Wrong {task_type=}")
+                tasks.append(task)
+            
+            eval_set(
+                tasks=tasks,
+                log_dir=f"logs/{task_type}/sonoma_random_padding/{pad_len}_after/{model_id_prefix}/test_no_hint_no_det_prompt",
+                model=model_id,
+                retry_on_error=3,
+                max_tasks=5,
+                timeout=500,
+                max_connections=20,
+            )
+            time.sleep(25)
+
+def eval_models() -> None:
+    for task_type in ["harm", "benign"]:
+        for pad_len in [0, 1_000, 5_000, 10_000, 50_000, 100_000, 200_000]:
+            # "openai/gpt-oss-20b:free",  
+            for model in ["meta-llama/llama-4-maverick:free", "moonshotai/kimi-k2:free", "qwen/qwen3-235b-a22b:free", "google/gemma-3-27b-it:free"]:
+                hint_included = True 
+                detailed_behaviors = True 
+                model_id = f"openrouter/{model}"
+                random_seeds = [3,14,15] # 92,65]
+                padding_length = pad_len
+                padding_type = "random"
+                padding_kwargs = {"padding_position": "after"}
+                tasks = []
+                model_id_prefix = model_id.split("/")[2] 
+
+                for random_seed in random_seeds:
+                    name_prefix = f"{model_id_prefix}_rs_{random_seed}_no_hint_test"
+                    if task_type == "harm":
+                        task = agentharm(
+                            split="test_public",
+                            padding_type=padding_type,
+                            padding_length=padding_length,
+                            padding_kwargs=padding_kwargs,
+                            hint_included=hint_included,
+                            detailed_behaviors=detailed_behaviors,
+                            random_seed=random_seed,
+                            name_prefix=name_prefix,
+                        )
+                    elif task_type == "benign":
+                        task = agentharm_benign(
+                            split="test_public",
+                            padding_type=padding_type,
+                            padding_length=padding_length,
+                            padding_kwargs=padding_kwargs,
+                            hint_included=hint_included,
+                            detailed_behaviors=detailed_behaviors,
+                            random_seed=random_seed,
+                            name_prefix=name_prefix,
+                        )
+                    else:
+                        raise ValueError(f"Wrong {task_type=}")
+                    tasks.append(task)
+                
+                log_dir_name_low = "no_hint_no_det_prompt" if (hint_included and detailed_behaviors) else "hint_det_prompt"
+                eval_set(
+                    tasks=tasks,
+                    log_dir=f"logs/{task_type}/other_random_padding/{model_id_prefix}/{pad_len}_after/{model_id_prefix}/test_{log_dir_name_low}",
+                    model=model_id,
+                    retry_on_error=3,
+                    max_tasks=5,
+                    timeout=500,
+                    max_connections=20,
+                )
+                time.sleep(25)
+
+
 
 def eval_gpt41_nano_relevant_padding() -> None:
     for task_type in ["harm", "benign"]:
