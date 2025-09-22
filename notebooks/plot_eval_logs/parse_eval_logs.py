@@ -1,17 +1,25 @@
+import ast
+from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
-from collections import defaultdict
-from typing import Any, Dict, List, Tuple, Optional
-import ast
+from typing import Any, Dict, List, Optional, Tuple
 
-from inspect_ai import task
-from inspect_ai.log import EvalSampleScore, read_eval_log 
-from inspect_ai.log import EvalSample
-import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 import seaborn as sns
+from inspect_ai import task
+from inspect_ai.log import EvalSample, EvalSampleScore, read_eval_log
+import matplotlib as mpl
 from matplotlib.colors import LinearSegmentedColormap
+
+mpl.rcParams.update({
+    "text.usetex": True,
+    "font.family": "serif",
+    "font.serif": "Computer Modern",
+    "pgf.rcfonts": False,
+})
+
 
 def list_all_logs_in_dir(dir_path: Path):
     files_path = []
@@ -166,6 +174,8 @@ def plot_dict_with_rs(
     dict1_color: str = "blue",
     dict2_color: str | None = None,
     labels: tuple[str, str] = ("", ""),
+    save_figure: bool = True,
+    figure_file_name: str = "figure1",
 ) -> None:
     """
     Plots one or two dicts of values.
@@ -237,12 +247,12 @@ def plot_dict_with_rs(
     plt.grid(True, linestyle="--", alpha=0.5)
     plt.legend()
     plt.tight_layout()
+    if save_figure:
+        plt.savefig(f"paper_plots/{figure_file_name}.pdf")  # vector output
+    
     plt.show()
 
 
-from typing import Tuple, List
-import numpy as np
-import matplotlib.pyplot as plt
 
 def plot_dicts_with_rs(
     dicts_with_rs: List[dict],
