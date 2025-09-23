@@ -2,7 +2,7 @@ model_id: "openrouter/x-ai/grok-4-fast:free"
 task_type: "benign"
 context_lengths: [0, 1000, 5000, 10000, 50000, 100000]
 padding_type: "non_relevant"
-log_dir: "logs/cot/sonoma_dusk/"
+log_dir: "logs/react/sonoma_dusk/"
 retry_on_error: 3
 split: "test_public"
 hint_included: true
@@ -11,4 +11,4 @@ random_seeds: [3, 14, 15]
 padding_position: "after"
 semantic_judge: "openai/gpt-4.1-nano-2025-04-14"
 refusal_judge: "openai/gpt-4.1-nano-2025-04-14"
-prompt_technique: "cot"
+prompt_technique: "react"
