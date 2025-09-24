@@ -11,12 +11,12 @@ load_dotenv()
 
 
 def eval_gpt41_nano_single_rand() -> None:
-    for pad_len in [800_000]:
+    for pad_len in [200_000]:
         model_id = "openai/gpt-4.1-nano-2025-04-14"
         random_seeds = [3]  # [14,15,92,65]
         padding_length = pad_len
         padding_type = "random"
-        padding_kwargs = {"padding_position": "after"}
+        padding_kwargs = {"padding_position": "before"}
         tasks = []
         for random_seed in random_seeds:
             model_id_prefix = model_id.split("/")[1][:-11]
@@ -34,7 +34,7 @@ def eval_gpt41_nano_single_rand() -> None:
             tasks.append(task)
         eval_set(
             tasks=tasks,
-            log_dir=f"logs/harm/random_padding/{pad_len}_after/gpt_4.1_nano/test_hint_det_prompt",
+            log_dir=f"logs/harm/random_padding/{pad_len}_before/gpt_4.1_nano/test_hint_det_prompt",
             model=model_id,
             retry_on_error=3,
             timeout=500,
