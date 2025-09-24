@@ -66,9 +66,19 @@ def augment_with_non_relevant_text_padding(
     return sample
 
 
+<<<<<<< Updated upstream
 def augment_with_task_relevant_text_padding(
     
     sample: Sample, padding_length: int, random_seed: int = 0
+=======
+def augment_with_relevant_text_padding(
+    sample: Sample,
+    padding_length: int,
+    model: str = "gpt-4o-mini",
+    
+    padding_position: Literal["before", "after", "around"] = "after",
+    random_seed: int = 0,
+>>>>>>> Stashed changes
 ) -> Sample:
     if random_seed is not None:
         random.seed(random_seed)
