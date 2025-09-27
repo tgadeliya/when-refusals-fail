@@ -13,7 +13,7 @@ load_dotenv()
 def eval_gpt41_nano_single_rand() -> None:
     for pad_len in [200_000]:
         model_id = "openai/gpt-4.1-nano-2025-04-14"
-        random_seeds = [3]  # [14,15,92,65]
+        random_seeds = [3, 14, 15]  # [14,15,92,65]
         padding_length = pad_len
         padding_type = "random"
         padding_kwargs = {"padding_position": "before"}
@@ -91,11 +91,10 @@ def eval_grok() -> None:
             )
             time.sleep(25)
 
-def eval_models() -> None:
-    for task_type in ["harm", "benign"]:
-        for pad_len in [0, 1_000, 5_000, 10_000, 50_000, 100_000, 200_000]:
-            # "openai/gpt-oss-20b:free",  
-            for model in ["meta-llama/llama-4-maverick:free", "moonshotai/kimi-k2:free", "qwen/qwen3-235b-a22b:free", "google/gemma-3-27b-it:free"]:
+def eval_models_ds() -> None:
+    for pad_len in [0, 1_000, 5_000, 10_000]: #50_000, 100_000, 200_000]:
+        for task_type in ["harm", "benign"]:
+            for model in ["deepseek/deepseek-chat-v3.1"]:    
                 hint_included = True 
                 detailed_behaviors = True 
                 model_id = f"openrouter/{model}"
@@ -107,7 +106,7 @@ def eval_models() -> None:
                 model_id_prefix = model_id.split("/")[2] 
 
                 for random_seed in random_seeds:
-                    name_prefix = f"{model_id_prefix}_rs_{random_seed}_no_hint_test"
+                    name_prefix = f"{model_id_prefix}_rs_{random_seed}_hint_test"
                     if task_type == "harm":
                         task = agentharm(
                             split="test_public",
@@ -134,10 +133,10 @@ def eval_models() -> None:
                         raise ValueError(f"Wrong {task_type=}")
                     tasks.append(task)
                 
-                log_dir_name_low = "no_hint_no_det_prompt" if (hint_included and detailed_behaviors) else "hint_det_prompt"
+                log_dir_name_low = "hint_det_prompt" if (hint_included and detailed_behaviors) else "no_hint_no_det_prompt" 
                 eval_set(
                     tasks=tasks,
-                    log_dir=f"logs/{task_type}/other_random_padding/{model_id_prefix}/{pad_len}_after/{model_id_prefix}/test_{log_dir_name_low}",
+                    log_dir=f"logs/{task_type}/{model_id_prefix}_random_padding/{pad_len}_after/test_{log_dir_name_low}",
                     model=model_id,
                     retry_on_error=3,
                     max_tasks=5,
