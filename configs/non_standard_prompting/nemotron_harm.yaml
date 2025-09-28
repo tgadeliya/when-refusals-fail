@@ -1,0 +1,14 @@
+model_id: "openrouter/nvidia/nemotron-nano-9b-v2:free"
+task_type: "harm"
+context_lengths: [0, 1000, 5000, 10000, 50000, 100000]
+padding_type: "non_relevant"
+log_dir: "logs/cot/nemotron/"
+retry_on_error: 3
+split: "test_public"
+hint_included: true
+detailed_behaviors: true
+random_seeds: [3, 14, 15]
+padding_position: "after"
+semantic_judge: "openai/gpt-4.1-nano-2025-04-14"
+refusal_judge: "openai/gpt-4.1-nano-2025-04-14"
+prompt_technique: "cot"
