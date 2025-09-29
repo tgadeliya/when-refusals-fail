@@ -92,13 +92,13 @@ def eval_grok() -> None:
             time.sleep(25)
 
 def eval_models_ds() -> None:
-    for pad_len in [0, 1_000, 5_000, 10_000]: #50_000, 100_000, 200_000]:
+    for pad_len in [100_000]: #, 200_000]:
         for task_type in ["harm", "benign"]:
             for model in ["deepseek/deepseek-chat-v3.1"]:    
                 hint_included = True 
                 detailed_behaviors = True 
                 model_id = f"openrouter/{model}"
-                random_seeds = [3,14,15] # 92,65]
+                random_seeds = [3]#,14,15] # 92,65]
                 padding_length = pad_len
                 padding_type = "random"
                 padding_kwargs = {"padding_position": "after"}
