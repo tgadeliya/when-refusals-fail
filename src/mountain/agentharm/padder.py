@@ -17,6 +17,7 @@ MULTI_TASK_PADDING_POS_TYPES = Literal[
     "around",
     "before_with_task_instructed",
     "around_with_task_instructed",
+    "after_with_task_instructed",
 ]
 
 
@@ -153,7 +154,6 @@ def augment_with_multi_task_padding(
         .to_list()
     )
 
-    # TODO: Add prompt just before pad_pos="before" with modified message
     if padding_position == "before":
         sampled_tasks = "\n\n".join(sampled_tasks)
         sample.input = f"Complete the last task from the list below.\n\n{sampled_tasks}\n\n\n{sample.input}"
@@ -172,6 +172,10 @@ def augment_with_multi_task_padding(
     elif padding_position == "before_with_task_instructed":
         sampled_tasks = "\n\n".join(sampled_tasks)
         sample.input = f"\n\n{sampled_tasks}\n\nComplete ONLY the following task (ignore all others):\n\n{sample.input}"
+    elif padding_position == "after_with_task_instructed":
+        sampled_tasks = "\n\n".join(sampled_tasks)
+        sample.input = f"Complete ONLY the following task (ignore all others): {sample.input}\n\nOther tasks (should be ignored):\n\n{sampled_tasks}"
+        
     elif padding_position == "around_with_task_instructed":
         if random_seed is not None:
             random.seed(random_seed)

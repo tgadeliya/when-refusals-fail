@@ -92,7 +92,7 @@ class EvalRun:
             grading_breakdown_per_sample=[parse_grading_line(sample.explanation) for sample in logs.reductions[0].samples],
             num_turns_per_sample= num_turns_per_sample,
             num_turns_per_sample_avg={"num_turns_avg" : np.mean(num_turns_per_sample)},
-            _samples = logs.samples
+            _samples = None # To decrease RAM consumption of logs logs.samples
         )
 
     @property
