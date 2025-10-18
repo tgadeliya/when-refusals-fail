@@ -9,51 +9,18 @@ from mountain.tasks import agentharm, agentharm_benign
 
 load_dotenv()
 
-
-def eval_gpt41_nano_single_rand() -> None:
-    for pad_len in [200_000]:
-        model_id = "openai/gpt-4.1-nano-2025-04-14"
-        random_seeds = [3, 14, 15]  # [14,15,92,65]
-        padding_length = pad_len
-        padding_type = "random"
-        padding_kwargs = {"padding_position": "before"}
-        tasks = []
-        for random_seed in random_seeds:
-            model_id_prefix = model_id.split("/")[1][:-11]
-            name_prefix = f"{model_id_prefix}_rs_{random_seed}_hint_detprompt_test"
-            task = agentharm(
-                split="test_public",
-                padding_type=padding_type,
-                padding_length=padding_length,
-                padding_kwargs=padding_kwargs,
-                hint_included=True,
-                detailed_behaviors=True,
-                random_seed=random_seed,
-                name_prefix=name_prefix,
-            )
-            tasks.append(task)
-        eval_set(
-            tasks=tasks,
-            log_dir=f"logs/harm/random_padding/{pad_len}_before/gpt_4.1_nano/test_hint_det_prompt",
-            model=model_id,
-            retry_on_error=3,
-            timeout=500,
-            max_connections=1,
-        )
-        time.sleep(25)
-
-def eval_grok() -> None:
+def eval_gpt41_nano() -> None:
     for task_type in ["harm", "benign"]:
-        for pad_len in [0, 1_000, 5_000, 10_000, 50_000, 100_000, 200_000]:
-            model_id = "openrouter/x-ai/grok-4-fast:free"
-            random_seeds = [3,14,15] # 92,65]
+        for pad_len in [5,10,30,50]:
+            model_id = "openai/gpt-4.1-nano-2025-04-14"
+            random_seeds = [3,14]  # [14,15,92,65]
             padding_length = pad_len
-            padding_type = "random"
-            padding_kwargs = {"padding_position": "after"}
+            padding_type = "multi_task"
+            padding_kwargs = {"task_type": "benign", "padding_position": "after_with_task_instructed"}
             tasks = []
-            model_id_prefix = model_id.split("/")[2] 
             for random_seed in random_seeds:
-                name_prefix = f"{model_id_prefix}_rs_{random_seed}_no_hint_test"
+                model_id_prefix = model_id.split("/")[1][:-11]
+                name_prefix = f"{model_id_prefix}_rs_{random_seed}_hint_detprompt_test"
                 if task_type == "harm":
                     task = agentharm(
                         split="test_public",
@@ -76,29 +43,119 @@ def eval_grok() -> None:
                         random_seed=random_seed,
                         name_prefix=name_prefix,
                     )
-                else:
-                    raise ValueError(f"Wrong {task_type=}")
                 tasks.append(task)
-            
             eval_set(
                 tasks=tasks,
-                log_dir=f"logs/{task_type}/sonoma_random_padding/{pad_len}_after/{model_id_prefix}/test_no_hint_no_det_prompt",
+                log_dir=f"logs/{task_type}/multi_task_padding/benign_new/{pad_len}_after_with_task_instructed/gpt_4.1_nano/test_hint_det_prompt",
                 model=model_id,
                 retry_on_error=3,
-                max_tasks=5,
                 timeout=500,
-                max_connections=20,
+                max_connections=1,
             )
             time.sleep(25)
 
+def eval_gpt5_rand_pad() -> None:
+    for pad_pos in ["after"]:
+        for task_type in ["harm"]:
+            for pad_len in [100000, 200000]:
+                model_id = "openrouter/openai/gpt-5"
+                random_seeds = [3] # [14,15,92,65]
+                padding_length = pad_len
+                padding_type = "random"
+                padding_kwargs = {"padding_position": pad_pos}
+                tasks = []
+                for random_seed in random_seeds:
+                    model_id_prefix = model_id.split("/")[2]
+                    name_prefix = f"{model_id_prefix}_rs_{random_seed}_hint_detprompt_test"
+                    if task_type == "harm":
+                        task = agentharm(
+                            split="test_public",
+                            padding_type=padding_type,
+                            padding_length=padding_length,
+                            padding_kwargs=padding_kwargs,
+                            hint_included=True,
+                            detailed_behaviors=True,
+                            random_seed=random_seed,
+                            name_prefix=name_prefix,
+                            refusal_judge="openai/gpt-4o-2024-08-06",
+                        )
+                    elif task_type == "benign":
+                        task = agentharm_benign(
+                            split="test_public",
+                            padding_type=padding_type,
+                            padding_length=padding_length,
+                            padding_kwargs=padding_kwargs,
+                            hint_included=True,
+                            detailed_behaviors=True,
+                            random_seed=random_seed,
+                            name_prefix=name_prefix,
+                        )
+                    tasks.append(task)
+                eval_set(
+                    tasks=tasks,
+                    log_dir=f"logs/{task_type}/gpt-5_random_padding/{pad_len}_{pad_pos}/test_hint_det_prompt",
+                    model=model_id,
+                    retry_on_error=3,
+                    timeout=500,
+                    batch=True,
+                    reasoning_effort="minimal"
+                )
+                time.sleep(25)
+
+def eval_grok_rand_pad() -> None:
+    for pad_pos in ["after"]:
+        for task_type in ["harm","benign"]:
+            for pad_len in [0, 1_000, 5_000, 10_000, 50_000, 100_000, 200_000]:
+                model_id = "openrouter/x-ai/grok-4-fast:free"
+                random_seeds = [3, 14]  # [14,15,92,65]
+                padding_length = pad_len
+                padding_type = "random"
+                padding_kwargs = {"padding_position": pad_pos}
+                tasks = []
+                for random_seed in random_seeds:
+                    model_id_prefix = model_id.split("/")[1][:-11]
+                    name_prefix = f"{model_id_prefix}_rs_{random_seed}_no_hint_no_detprompt_test"
+                    if task_type == "harm":
+                        task = agentharm(
+                            split="test_public",
+                            padding_type=padding_type,
+                            padding_length=padding_length,
+                            padding_kwargs=padding_kwargs,
+                            hint_included=False,
+                            detailed_behaviors=False,
+                            random_seed=random_seed,
+                            name_prefix=name_prefix,
+                        )
+                    elif task_type == "benign":
+                        task = agentharm_benign(
+                            split="test_public",
+                            padding_type=padding_type,
+                            padding_length=padding_length,
+                            padding_kwargs=padding_kwargs,
+                            hint_included=False,
+                            detailed_behaviors=False,
+                            random_seed=random_seed,
+                            name_prefix=name_prefix,
+                        )
+                    tasks.append(task)
+                eval_set(
+                    tasks=tasks,
+                    log_dir=f"logs/{task_type}/grok-4-fast_random_padding/{pad_len}_{pad_pos}/test_no_hint_no_det_prompt",
+                    model=model_id,
+                    retry_on_error=3,
+                    timeout=500,
+                    max_connections=1,
+                )
+                time.sleep(25)
+
 def eval_models_ds() -> None:
-    for pad_len in [100_000]: #, 200_000]:
-        for task_type in ["harm", "benign"]:
+    for task_type in ["harm", "benign"]:
+        for pad_len in [72_000]:
             for model in ["deepseek/deepseek-chat-v3.1"]:    
                 hint_included = True 
                 detailed_behaviors = True 
                 model_id = f"openrouter/{model}"
-                random_seeds = [3]#,14,15] # 92,65]
+                random_seeds = [3,14] #,15] # 92,65]
                 padding_length = pad_len
                 padding_type = "random"
                 padding_kwargs = {"padding_position": "after"}
@@ -144,56 +201,6 @@ def eval_models_ds() -> None:
                     max_connections=20,
                 )
                 time.sleep(25)
-
-
-
-def eval_gpt41_nano_relevant_padding() -> None:
-    for task_type in ["harm", "benign"]:
-        for pad_len in [1_000, 5_000, 10_000, 50_000, 100_000]:
-            model_id = "openai/gpt-4.1-nano-2025-04-14"
-            random_seeds = [3, 14, 15]  # 92,65]
-            padding_length = pad_len
-            padding_type = "relevant"
-            padding_kwargs = {"padding_position": "after"}
-            tasks = []
-            for random_seed in random_seeds:
-                model_id_prefix = model_id.split("/")[1][:-11]
-                name_prefix = f"{model_id_prefix}_rs_{random_seed}_hint_detprompt_test"
-                if task_type == "harm":
-                    task = agentharm(
-                        split="test_public",
-                        padding_type=padding_type,
-                        padding_length=padding_length,
-                        padding_kwargs=padding_kwargs,
-                        hint_included=True,
-                        detailed_behaviors=True,
-                        random_seed=random_seed,
-                        name_prefix=name_prefix,
-                    )
-                elif task_type == "benign":
-                    task = agentharm(
-                        split="test_public",
-                        padding_type=padding_type,
-                        padding_length=padding_length,
-                        padding_kwargs=padding_kwargs,
-                        hint_included=True,
-                        detailed_behaviors=True,
-                        random_seed=random_seed,
-                        name_prefix=name_prefix,
-                    )
-                else:
-                    raise ValueError(f"Wrong {task_type=}")
-                tasks.append(task)
-            eval_set(
-                tasks=tasks,
-                log_dir=f"logs/harm/relevant_padding/{pad_len}_after/gpt_4.1_nano/test_hint_det_prompt",
-                model=model_id,
-                retry_on_error=3,
-                timeout=500,
-                max_connections=1,
-            )
-            time.sleep(25)
-
 
 def run_eval_set_with_config(config: dict):
     """
@@ -298,13 +305,11 @@ def run_eval_set_with_config(config: dict):
         )
         time.sleep(25)
 
-
 def load_config_from_yaml(config_path: str) -> dict:
     """Load configuration from YAML file"""
     with open(config_path, "r") as f:
         config = yaml.safe_load(f)
     return config
-
 
 def main():
     available_tasks = {
@@ -337,7 +342,6 @@ def main():
     if args.task_name is not None:
         task_function = available_tasks[args.task_name]
         task_function()
-
 
 if __name__ == "__main__":
     main()
