@@ -1,10 +1,10 @@
 model_id: "openrouter/google/gemini-2.0-flash-001"
 task_type: "harmful"
-context_lengths: [0, 100, 1000, 2000, 5000, 10000]
-padding_type: "non_relevant"
+context_lengths: [0]
+padding_type: "random"
 log_dir: "logs/updated/gemini2o_flash_harmful"
 retry_on_error: 3
 split: "test_public"
-hint_included: false
-detailed_behaviors: false
+hint_included: True
+detailed_behaviors: True
 seed: 42

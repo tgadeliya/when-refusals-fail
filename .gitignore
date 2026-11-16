@@ -19,6 +19,8 @@ env/
 .env
 secrets
 
+.mypy_cache
+
 # Ignore logs
 logs
 # Ignore logs for now
