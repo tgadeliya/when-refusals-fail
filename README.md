@@ -23,7 +23,7 @@ uv sync
     Do not forget to specify new subdirectory in `logs`
 2. To run your evals use
 ```
-uv run src/mountain/run_tasks.py <your_function_name>
+uv run src/mountain/run_tasks.py --task_name <your_function_name>
 ```
 
 # Model names for the experiments 
