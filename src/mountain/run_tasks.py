@@ -202,6 +202,41 @@ def eval_models_ds() -> None:
                 )
                 time.sleep(25)
 
+def eval_gemini25_flash_lite() -> None:
+    model_id="google/gemini-2.5-flash-lite"
+    random_seeds = [3] #,14,15,92,65]
+    padding_length = 0
+    padding_type = "random"
+    padding_kwargs={"padding_position": "after"}
+    tasks = []
+    for random_seed in random_seeds:
+        model_id_prefix = model_id.split("/")[1][:-11]
+        name_prefix = f"{model_id_prefix}_rs_{random_seed}_hint_detprompt_test"
+        task = agentharm(
+            split="test_public",
+            padding_type=padding_type, padding_length=padding_length, padding_kwargs=padding_kwargs,
+            hint_included=True, detailed_behaviors=True,
+            random_seed=random_seed,
+            name_prefix=name_prefix,
+        )
+        tasks.append(task)
+    eval_set(
+        tasks=tasks,
+        log_dir= f"logs/benign/random_padding/0/gemini_2.5_flash_lite/test_hint_det_prompt",
+        log_level="trace",
+        model=model_id,
+        retry_on_error=3,
+        timeout=500,
+        max_connections=1,
+        max_subprocesses=1,
+        limit=20,
+        debug_errors=True,
+        max_samples=1,
+        max_tasks=1,
+        max_tool_output=1
+    )
+    time.sleep(25)
+
 def run_eval_set_with_config(config: dict):
     """
     Run evaluation based on YAML configuration
