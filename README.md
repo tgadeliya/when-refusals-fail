@@ -65,8 +65,8 @@ The dataset itself is downloaded from Hugging Face ([`ai-safety-institute/AgentH
 This project uses [`uv`](https://docs.astral.sh/uv/) and Python ≥ 3.13.3.
 
 ```bash
-git clone https://github.com/diogo-cruz/algoverse_mountain.git
-cd algoverse_mountain
+git clone https://github.com/tgadeliya/when-refusals-fail.git
+cd when-refusals-fail
 uv sync
 ```
 
